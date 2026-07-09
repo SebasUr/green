@@ -1,0 +1,20 @@
+# Facility track configuration (CERN CDC) - DEFERRED to Milestones 3-4.
+#
+# Present as a documented stub so window_scoring.combine has a counterpart and
+# the data contracts are stable. No CDC code runs in Milestones 0-2.
+
+zone: CERN-CDC
+status: deferred
+data_dir: data
+
+curated_load_series:            # physically plausible POD load (~1.96 MW mean)
+  - PDCITR5.POD.CONS
+  - PDCITR6.POD.CONS
+  - PDCMMR.POD.CONS
+
+cleaning:
+  drop_zero_only_series: true
+  temperature_valid_range_c: [-20, 70]   # flag, do not silently delete
+  humidity_valid_range_pct: [0, 100]
+  do_not_sum_raw_power: true             # raw feeders/PDUs/outlets may double-count
+  water_counter_to_delta: true           # WUE is a cumulative counter

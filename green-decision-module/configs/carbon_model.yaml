@@ -1,0 +1,78 @@
+# Carbon track configuration - Green Window Observatory (V1.0)
+#
+# Ground truth: RTE `taux_co2` (production-based gCO2/kWh) from ODRE eCO2mix.
+# Everything here is configuration, not truth: vary it in experiments.
+
+zone: FR
+
+provider:
+  name: odre
+  base_url: https://odre.opendatasoft.com/api/explore/v2.1
+  history_dataset: eco2mix-national-cons-def   # consolidated + definitive (long history)
+  realtime_dataset: eco2mix-national-tr        # near-real-time, rolling window
+  target_field: taux_co2                       # gCO2/kWh, RTE ground truth
+  timestamp_field: date_heure                  # ISO8601 w/ offset -> normalized to UTC
+
+data:
+  native_resolution_minutes: 15
+  resolution_minutes: 60          # aggregate native 15-min to hourly
+  aggregation: mean
+  drop_null_target: true          # only rows with populated taux_co2 are supervised
+  cache_dir: data/cache
+  snapshot_format: parquet
+
+calendar:
+  # Climatology grouping + calendar features use LOCAL time (human/market/grid
+  # patterns follow the local clock incl. DST). Stored instants remain UTC.
+  local_timezone: Europe/Paris
+  holidays_country: FR
+
+climatology:
+  group_by: [month, day_of_week, hour_of_day]
+  quantiles: [0.10, 0.25, 0.50, 0.75, 0.90]
+  center: median                  # point prediction = bucket median
+  min_samples_per_bucket: 8       # sparse buckets fall back to coarser grouping
+  fallback_group_by: [day_of_week, hour_of_day]
+
+corrected_climatology:
+  # forecast = future_climatology + decayed EWMA of recent (actual - climatology)
+  residual_halflife_hours: 12
+  correction_decay_halflife_hours: 24
+  max_lookback_hours: 168
+
+model:
+  algorithm: hist_gradient_boosting   # primary; `random_forest` for comparison
+  random_state: 42
+  horizons_hours: [1, 3, 6, 12, 24, 48]
+  target: carbon_intensity_gco2_kwh
+  hist_gradient_boosting:
+    max_iter: 400
+    learning_rate: 0.05
+    max_leaf_nodes: 31
+    l2_regularization: 0.0
+    early_stopping: true
+    validation_fraction: 0.1
+  random_forest:
+    n_estimators: 400
+    min_samples_leaf: 5
+    n_jobs: -1
+
+features:
+  calendar: [hour_of_day, day_of_week, month, is_weekend, is_holiday,
+             hour_sin, hour_cos, doy_sin, doy_cos]
+  recent_signal:
+    lags_hours: [1, 2, 3, 24, 168]
+    rolling_means_hours: [3, 6, 24]
+    rolling_slope_hours: 6
+    residual_from_climatology: true
+  electricity_system:               # as-of observed mix (no future leakage)
+    use: [consumption_mw, nuclear_mw, gas_mw, coal_mw, fuel_oil_mw,
+          wind_mw, solar_mw, hydro_mw, bioenergy_mw, pumped_storage_mw,
+          physical_exchange_mw]
+
+evaluation:
+  protocol: rolling_origin          # expanding-window backtest, strictly no look-ahead
+  test_period_days: 90              # last N days held out
+  origin_stride_hours: 6            # advance the forecast origin every N hours
+  metrics: [mae, rmse, bias, spearman,
+            top_k_window_accuracy, green_window_regret, pct_oracle_potential]

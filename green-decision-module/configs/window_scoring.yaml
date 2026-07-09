@@ -1,0 +1,32 @@
+# Green-window scoring - Green Window Observatory (V1.0)
+#
+# Score convention (LOCKED): green_score in [0, 1], HIGHER = greener (lower CO2).
+
+zone: FR
+
+green_score:
+  # Map raw gCO2/kWh -> [0, 1] green score (higher = cleaner).
+  method: quantile_rank        # quantile_rank | min_max | threshold
+  reference: horizon           # normalize within the forecast horizon
+                               # (use `climatology` for a stable historical view)
+  invert: true                 # lower carbon => higher score
+  clip: true
+
+windows:
+  # A low-carbon window is a contiguous block sitting below a percentile
+  # threshold of the horizon's intensity distribution.
+  definition: percentile_of_horizon
+  percentile: 0.25             # hours below p25 of the horizon are candidates
+  horizon_hours: 48
+  min_duration_hours: 1
+  max_duration_hours: 6
+  merge_gap_hours: 1           # merge candidate blocks separated by <= gap
+  max_windows: 10
+
+confidence:
+  from_sample_count: true      # more historical support -> higher confidence
+  from_variance: true          # lower historical variance -> higher confidence
+
+combine:                        # Milestone 5+ (facility track inactive in M0-2)
+  carbon_weight: 0.75
+  facility_weight: 0.25

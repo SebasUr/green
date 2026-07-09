@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "green-observatory"
+version = "0.1.0"
+description = "Green Window Observatory - carbon temporal intelligence for when-to-run decisions (V1.0)"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "CERN Green Decision Module" }]
+keywords = ["carbon-aware", "electricity", "rte", "eco2mix", "forecasting", "cern"]
+
+# Runtime deps are also provisioned via the conda env (see README). Declared
+# here so the package is installable with `pip install -e .` inside that env.
+dependencies = [
+  "numpy>=1.26",
+  "pandas>=2.1",
+  "scikit-learn>=1.4",
+  "scipy>=1.11",
+  "pyarrow>=14",
+  "pydantic>=2.5",
+  "pyyaml>=6",
+  "typer>=0.12",
+  "httpx>=0.27",
+  "holidays>=0.45",
+  "joblib>=1.3",
+]
+
+[project.optional-dependencies]
+api = ["fastapi>=0.110", "uvicorn>=0.29"]
+viz = ["matplotlib>=3.8"]
+stats = ["statsmodels>=0.14"]  # SARIMAX comparison forecaster (optional)
+dev = ["pytest>=8.0", "statsmodels>=0.14"]
+
+[project.scripts]
+greenctl = "green_observatory.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"

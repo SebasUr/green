@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Data caches + run artifacts + models
+data/cache/
+runs/
+models/
+*.parquet
+*.joblib
+*.pkl
+
+# Large raw CDC exports (provided locally, not committed)
+data/cdc_*_1y_hourly.csv
+
+# Env
+.venv/
+.env
