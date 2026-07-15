@@ -1,0 +1,232 @@
+{
+  "data": {
+    "result": [
+      {
+        "metric": {
+          "__name__": "kepler_pod_cpu_joules_total",
+          "container": "kepler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "f93d514a-181e-4ca1-9cb0-3d4dacf0d93d",
+          "pod_name": "mc-smoke-runner-02-5wjdt",
+          "pod_namespace": "green-experiment",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015190.384,
+            "0.933178"
+          ],
+          [
+            1784015200.384,
+            "12.074058"
+          ],
+          [
+            1784015210.384,
+            "23.546521"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_pod_cpu_joules_total",
+          "container": "kepler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "f93d514a-181e-4ca1-9cb0-3d4dacf0d93d",
+          "pod_name": "mc-smoke-runner-02-5wjdt",
+          "pod_namespace": "green-experiment",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015190.384,
+            "42.212727"
+          ],
+          [
+            1784015200.384,
+            "492.022724"
+          ],
+          [
+            1784015210.384,
+            "957.705632"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_pod_cpu_joules_total",
+          "container": "kepler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "f93d514a-181e-4ca1-9cb0-3d4dacf0d93d",
+          "pod_name": "mc-smoke-runner-02-5wjdt",
+          "pod_namespace": "green-experiment",
+          "service": "kepler",
+          "state": "terminated",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015220.384,
+            "24.979102"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_pod_cpu_joules_total",
+          "container": "kepler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "f93d514a-181e-4ca1-9cb0-3d4dacf0d93d",
+          "pod_name": "mc-smoke-runner-02-5wjdt",
+          "pod_namespace": "green-experiment",
+          "service": "kepler",
+          "state": "terminated",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015220.384,
+            "1017.085119"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_pod_cpu_watts",
+          "container": "kepler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "f93d514a-181e-4ca1-9cb0-3d4dacf0d93d",
+          "pod_name": "mc-smoke-runner-02-5wjdt",
+          "pod_namespace": "green-experiment",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015190.384,
+            "0.5050091320715837"
+          ],
+          [
+            1784015200.384,
+            "1.1173740215345906"
+          ],
+          [
+            1784015210.384,
+            "1.1494646905877968"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_pod_cpu_watts",
+          "container": "kepler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "f93d514a-181e-4ca1-9cb0-3d4dacf0d93d",
+          "pod_name": "mc-smoke-runner-02-5wjdt",
+          "pod_namespace": "green-experiment",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015190.384,
+            "20.54061731674311"
+          ],
+          [
+            1784015200.384,
+            "45.40963237396932"
+          ],
+          [
+            1784015210.384,
+            "45.506276747671706"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_pod_cpu_watts",
+          "container": "kepler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "f93d514a-181e-4ca1-9cb0-3d4dacf0d93d",
+          "pod_name": "mc-smoke-runner-02-5wjdt",
+          "pod_namespace": "green-experiment",
+          "service": "kepler",
+          "state": "terminated",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015220.384,
+            "1.0699539538473728"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_pod_cpu_watts",
+          "container": "kepler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "f93d514a-181e-4ca1-9cb0-3d4dacf0d93d",
+          "pod_name": "mc-smoke-runner-02-5wjdt",
+          "pod_namespace": "green-experiment",
+          "service": "kepler",
+          "state": "terminated",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015220.384,
+            "44.348840563982534"
+          ]
+        ]
+      }
+    ],
+    "resultType": "matrix"
+  },
+  "status": "success"
+}

@@ -1,0 +1,34 @@
+{
+  "actual_duration_seconds": 900.0077939033508,
+  "available_zones": [
+    {
+      "path": "aggregated-core",
+      "zone": "core"
+    },
+    {
+      "path": "aggregated-package",
+      "zone": "package"
+    }
+  ],
+  "capture_type": "idle-baseline",
+  "command": [
+    "scripts/capture_idle.py",
+    "--duration",
+    "15m",
+    "--step",
+    "10",
+    "--zone",
+    "package"
+  ],
+  "ended_at": "2026-07-13T15:40:40.459977Z",
+  "include_processes": false,
+  "node": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+  "node_internal_ip": "188.184.49.170",
+  "primary_zone": "package",
+  "prometheus_url_supplied": false,
+  "query_step_seconds": 10,
+  "requested_duration_seconds": 900,
+  "schema_version": "1.0",
+  "started_at": "2026-07-13T15:25:40.452183Z",
+  "timezone": "UTC"
+}

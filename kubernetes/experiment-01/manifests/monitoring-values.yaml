@@ -1,0 +1,25 @@
+grafana:
+  nodeSelector:
+    sustainability.cern.ch/role: observability
+
+prometheusOperator:
+  nodeSelector:
+    sustainability.cern.ch/role: observability
+
+prometheus:
+  prometheusSpec:
+    nodeSelector:
+      sustainability.cern.ch/role: observability
+    retention: 30d
+    retentionSize: 40GB
+    scrapeInterval: 15s
+    evaluationInterval: 15s
+
+alertmanager:
+  alertmanagerSpec:
+    nodeSelector:
+      sustainability.cern.ch/role: observability
+
+kube-state-metrics:
+  nodeSelector:
+    sustainability.cern.ch/role: observability

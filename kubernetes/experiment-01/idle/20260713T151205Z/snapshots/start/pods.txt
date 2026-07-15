@@ -1,0 +1,14 @@
+NAMESPACE     NAME                                                            READY   STATUS    RESTARTS           AGE     IP               NODE                                        NOMINATED NODE   READINESS GATES
+default       node-debugger-sebas-green-baremetal-jpmdwiscskyy-node-0-6mhg9   0/1     Error     0                  5h46m   188.184.49.170   sebas-green-baremetal-jpmdwiscskyy-node-0   <none>           <none>
+default       node-debugger-sebas-green-baremetal-jpmdwiscskyy-node-0-jcbg6   1/1     Running   0                  3h44m   188.184.49.170   sebas-green-baremetal-jpmdwiscskyy-node-0   <none>           <none>
+kepler        kepler-5k5h5                                                    1/1     Running   0                  178m    10.100.2.41      sebas-green-baremetal-jpmdwiscskyy-node-0   <none>           <none>
+kube-system   cern-magnum-ceph-csi-cephfs-nodeplugin-wjmdz                    2/2     Running   0                  4d20h   188.184.49.170   sebas-green-baremetal-jpmdwiscskyy-node-0   <none>           <none>
+kube-system   cern-magnum-cvmfs-csi-nodeplugin-jsm4k                          5/5     Running   0                  4d20h   10.100.2.2       sebas-green-baremetal-jpmdwiscskyy-node-0   <none>           <none>
+kube-system   cern-magnum-eosxd-csi-nodeplugin-w9st8                          4/4     Running   0                  4d20h   188.184.49.170   sebas-green-baremetal-jpmdwiscskyy-node-0   <none>           <none>
+kube-system   cern-magnum-falco-zbjrb                                         1/1     Running   0                  4d20h   10.100.2.158     sebas-green-baremetal-jpmdwiscskyy-node-0   <none>           <none>
+kube-system   cern-magnum-node-feature-discovery-worker-5l2g7                 1/1     Running   0                  4d20h   10.100.2.5       sebas-green-baremetal-jpmdwiscskyy-node-0   <none>           <none>
+kube-system   cern-magnum-node-problem-detector-pxtnb                         1/1     Running   0                  4d20h   10.100.2.191     sebas-green-baremetal-jpmdwiscskyy-node-0   <none>           <none>
+kube-system   cern-magnum-openstack-manila-csi-nodeplugin-th8wh               2/2     Running   1240 (5m19s ago)   4d20h   188.184.49.170   sebas-green-baremetal-jpmdwiscskyy-node-0   <none>           <none>
+kube-system   cilium-envoy-vzrgm                                              1/1     Running   0                  4d20h   188.184.49.170   sebas-green-baremetal-jpmdwiscskyy-node-0   <none>           <none>
+kube-system   cilium-fqr2k                                                    1/1     Running   0                  4d20h   188.184.49.170   sebas-green-baremetal-jpmdwiscskyy-node-0   <none>           <none>
+monitoring    monitoring-prometheus-node-exporter-rxjld                       1/1     Running   0                  5h20m   188.184.49.170   sebas-green-baremetal-jpmdwiscskyy-node-0   <none>           <none>

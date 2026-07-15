@@ -1,0 +1,66 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: mc-${TRIAL_ID}
+  namespace: green-experiment
+  labels:
+    sustainability.cern.ch/experiment: "green-window-01"
+    sustainability.cern.ch/workload: "monte-carlo"
+    sustainability.cern.ch/trial: "${TRIAL_ID}"
+    sustainability.cern.ch/policy: "${POLICY}"
+    sustainability.cern.ch/track: "true"
+spec:
+  backoffLimit: 0
+
+  template:
+    metadata:
+      labels:
+        sustainability.cern.ch/experiment: "green-window-01"
+        sustainability.cern.ch/workload: "monte-carlo"
+        sustainability.cern.ch/trial: "${TRIAL_ID}"
+        sustainability.cern.ch/policy: "${POLICY}"
+        sustainability.cern.ch/track: "true"
+
+    spec:
+      restartPolicy: Never
+
+      nodeSelector:
+        sustainability.cern.ch/hardware: baremetal
+
+      containers:
+        - name: monte-carlo
+          image: "${IMAGE}"
+          imagePullPolicy: IfNotPresent
+
+          command:
+            - python
+            - /workload/monte_carlo.py
+
+          env:
+            - name: WORKERS
+              value: "${WORKERS}"
+
+            - name: SAMPLES_PER_WORKER
+              value: "${SAMPLES_PER_WORKER}"
+
+            - name: BASE_SEED
+              value: "${BASE_SEED}"
+
+          resources:
+            requests:
+              cpu: "${WORKERS}"
+              memory: "${MEMORY}"
+
+            limits:
+              cpu: "${WORKERS}"
+              memory: "${MEMORY}"
+
+          volumeMounts:
+            - name: workload
+              mountPath: /workload
+              readOnly: true
+
+      volumes:
+        - name: workload
+          configMap:
+            name: monte-carlo-code

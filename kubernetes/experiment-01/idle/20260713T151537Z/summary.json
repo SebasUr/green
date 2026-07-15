@@ -1,0 +1,182 @@
+{
+  "blocking_conditions": [
+    "CrashLoopBackOff en el nodo: kube-system/cern-magnum-openstack-manila-csi-nodeplugin-th8wh",
+    "sesión de depuración activa: default/node-debugger-sebas-green-baremetal-jpmdwiscskyy-node-0-jcbg6"
+  ],
+  "collection_warnings": [
+    "kubectl top pods -A --field-selector spec.nodeName=sebas-green-baremetal-jpmdwiscskyy-node-0: Error from server (BadRequest): \"spec.nodeName\" is not a known field selector: only \"metadata.name\", \"metadata.namespace\"",
+    "la consulta node_power_supply no devolvió series"
+  ],
+  "metadata": {
+    "actual_duration_seconds": 20.005192041397095,
+    "available_zones": [
+      {
+        "path": "aggregated-core",
+        "zone": "core"
+      },
+      {
+        "path": "aggregated-package",
+        "zone": "package"
+      }
+    ],
+    "capture_type": "idle-baseline",
+    "command": [
+      "kubernetes/experiment-01/scripts/capture_idle.py",
+      "--duration",
+      "20s",
+      "--step",
+      "10",
+      "--zone",
+      "package"
+    ],
+    "ended_at": "2026-07-13T15:15:58.460940Z",
+    "include_processes": false,
+    "node": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+    "node_internal_ip": "188.184.49.170",
+    "primary_zone": "package",
+    "prometheus_url_supplied": false,
+    "query_step_seconds": 10,
+    "requested_duration_seconds": 20,
+    "schema_version": "1.0",
+    "started_at": "2026-07-13T15:15:38.455748Z",
+    "timezone": "UTC"
+  },
+  "notes": [
+    "Los deltas son diferencias observadas entre muestras, no extrapolaciones PromQL increase().",
+    "El resumen usa una sola zone para evitar doble conteo entre core y package.",
+    "metrics.csv y prometheus/raw conservan las muestras originales para análisis posterior.",
+    "Las métricas Kepler por proceso se excluyen por defecto debido a su alta cardinalidad."
+  ],
+  "pod_state_end": {
+    "blocking_conditions": [
+      "sesión de depuración activa: default/node-debugger-sebas-green-baremetal-jpmdwiscskyy-node-0-jcbg6",
+      "CrashLoopBackOff en el nodo: kube-system/cern-magnum-openstack-manila-csi-nodeplugin-th8wh"
+    ],
+    "container_restarts": {
+      "kube-system/cern-magnum-openstack-manila-csi-nodeplugin-th8wh": 1240
+    },
+    "crashloop_pods": [
+      "kube-system/cern-magnum-openstack-manila-csi-nodeplugin-th8wh"
+    ],
+    "running_pods": [
+      "default/node-debugger-sebas-green-baremetal-jpmdwiscskyy-node-0-jcbg6",
+      "kepler/kepler-5k5h5",
+      "kube-system/cern-magnum-ceph-csi-cephfs-nodeplugin-wjmdz",
+      "kube-system/cern-magnum-cvmfs-csi-nodeplugin-jsm4k",
+      "kube-system/cern-magnum-eosxd-csi-nodeplugin-w9st8",
+      "kube-system/cern-magnum-falco-zbjrb",
+      "kube-system/cern-magnum-node-feature-discovery-worker-5l2g7",
+      "kube-system/cern-magnum-node-problem-detector-pxtnb",
+      "kube-system/cern-magnum-openstack-manila-csi-nodeplugin-th8wh",
+      "kube-system/cilium-envoy-vzrgm",
+      "kube-system/cilium-fqr2k",
+      "monitoring/monitoring-prometheus-node-exporter-rxjld"
+    ]
+  },
+  "pod_state_start": {
+    "blocking_conditions": [
+      "sesión de depuración activa: default/node-debugger-sebas-green-baremetal-jpmdwiscskyy-node-0-jcbg6",
+      "CrashLoopBackOff en el nodo: kube-system/cern-magnum-openstack-manila-csi-nodeplugin-th8wh"
+    ],
+    "container_restarts": {
+      "kube-system/cern-magnum-openstack-manila-csi-nodeplugin-th8wh": 1240
+    },
+    "crashloop_pods": [
+      "kube-system/cern-magnum-openstack-manila-csi-nodeplugin-th8wh"
+    ],
+    "running_pods": [
+      "default/node-debugger-sebas-green-baremetal-jpmdwiscskyy-node-0-jcbg6",
+      "kepler/kepler-5k5h5",
+      "kube-system/cern-magnum-ceph-csi-cephfs-nodeplugin-wjmdz",
+      "kube-system/cern-magnum-cvmfs-csi-nodeplugin-jsm4k",
+      "kube-system/cern-magnum-eosxd-csi-nodeplugin-w9st8",
+      "kube-system/cern-magnum-falco-zbjrb",
+      "kube-system/cern-magnum-node-feature-discovery-worker-5l2g7",
+      "kube-system/cern-magnum-node-problem-detector-pxtnb",
+      "kube-system/cern-magnum-openstack-manila-csi-nodeplugin-th8wh",
+      "kube-system/cilium-envoy-vzrgm",
+      "kube-system/cilium-fqr2k",
+      "monitoring/monitoring-prometheus-node-exporter-rxjld"
+    ]
+  },
+  "primary_metrics": {
+    "active_energy": {
+      "counter_resets": 0,
+      "coverage_ratio": 1.0,
+      "mean": 11817.08354,
+      "median": 11815.590895,
+      "observed_delta_joules": 20.68117700000039,
+      "p95": 11826.9124954,
+      "sample_count": 3
+    },
+    "active_watts": {
+      "coverage_ratio": 1.0,
+      "mean": 0.8956177671614997,
+      "median": 0.9153523166161921,
+      "p95": 1.0841240372434733,
+      "sample_count": 3
+    },
+    "container_cpu_usage_cores": {
+      "coverage_ratio": 1.0,
+      "mean": 0.20582791272079845,
+      "median": 0.20666997621328861,
+      "p95": 0.22295097672366299,
+      "sample_count": 3
+    },
+    "cpu_usage_ratio": {
+      "coverage_ratio": 1.0,
+      "mean": 0.00883132625642597,
+      "median": 0.008988842642785617,
+      "p95": 0.01065498182524971,
+      "sample_count": 3
+    },
+    "idle_energy": {
+      "counter_resets": 0,
+      "coverage_ratio": 1.0,
+      "mean": 1118559.6102533333,
+      "median": 1118593.076943,
+      "observed_delta_joules": 2128.815694999881,
+      "p95": 1119505.8639747,
+      "sample_count": 3
+    },
+    "idle_watts": {
+      "coverage_ratio": 1.0,
+      "mean": 100.40129886251054,
+      "median": 100.63747612154008,
+      "p95": 100.88877984994988,
+      "sample_count": 3
+    },
+    "memory_usage_ratio": {
+      "coverage_ratio": 1.0,
+      "mean": 0.022987036469084583,
+      "median": 0.02298441981292043,
+      "p95": 0.022991484784563643,
+      "sample_count": 3
+    },
+    "node_exporter_cpu_usage_ratio": {
+      "coverage_ratio": 1.0,
+      "mean": 0.009626157407371938,
+      "median": 0.009604166666678071,
+      "p95": 0.009663541666551511,
+      "sample_count": 3
+    },
+    "total_energy": {
+      "counter_resets": 0,
+      "coverage_ratio": 1.0,
+      "mean": 81854.91800133332,
+      "median": 81886.892046,
+      "observed_delta_joules": 2149.4968720000033,
+      "p95": 82811.0006781,
+      "sample_count": 3
+    },
+    "total_watts": {
+      "coverage_ratio": 1.0,
+      "mean": 101.29691662967203,
+      "median": 101.74035257218658,
+      "p95": 101.8228845799691,
+      "sample_count": 3
+    }
+  },
+  "schema_version": "1.0",
+  "valid_idle_baseline": false
+}

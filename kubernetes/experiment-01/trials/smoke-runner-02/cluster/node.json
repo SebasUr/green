@@ -1,0 +1,400 @@
+{
+  "apiVersion": "v1",
+  "kind": "Node",
+  "metadata": {
+    "annotations": {
+      "csi.volume.kubernetes.io/nodeid": "{\"cephfs.csi.ceph.com\":\"sebas-green-baremetal-jpmdwiscskyy-node-0\",\"cvmfs.csi.cern.ch\":\"sebas-green-baremetal-jpmdwiscskyy-node-0\",\"eosxd.csi.cern.ch\":\"sebas-green-baremetal-jpmdwiscskyy-node-0\"}",
+      "nfd.node.kubernetes.io/feature-labels": "cpu-cpuid.ADX,cpu-cpuid.AESNI,cpu-cpuid.AVX,cpu-cpuid.AVX2,cpu-cpuid.CLZERO,cpu-cpuid.CMPXCHG8,cpu-cpuid.CPBOOST,cpu-cpuid.FMA3,cpu-cpuid.FP256,cpu-cpuid.FXSR,cpu-cpuid.FXSROPT,cpu-cpuid.IBPB,cpu-cpuid.IBRS,cpu-cpuid.IBRS_PREFERRED,cpu-cpuid.IBRS_PROVIDES_SMP,cpu-cpuid.IBS,cpu-cpuid.IBSBRNTRGT,cpu-cpuid.IBSFETCHSAM,cpu-cpuid.IBSFFV,cpu-cpuid.IBSOPCNT,cpu-cpuid.IBSOPCNTEXT,cpu-cpuid.IBSOPSAM,cpu-cpuid.IBSRDWROPCNT,cpu-cpuid.IBSRIPINVALIDCHK,cpu-cpuid.IBS_FETCH_CTLX,cpu-cpuid.IBS_OPFUSE,cpu-cpuid.INT_WBINVD,cpu-cpuid.LAHF,cpu-cpuid.LBRVIRT,cpu-cpuid.MCAOVERFLOW,cpu-cpuid.MCOMMIT,cpu-cpuid.MOVBE,cpu-cpuid.MOVU,cpu-cpuid.MSRIRC,cpu-cpuid.MSR_PAGEFLUSH,cpu-cpuid.NRIPS,cpu-cpuid.OSXSAVE,cpu-cpuid.PPIN,cpu-cpuid.RDPRU,cpu-cpuid.SEV,cpu-cpuid.SEV_ES,cpu-cpuid.SHA,cpu-cpuid.SME,cpu-cpuid.SPEC_CTRL_SSBD,cpu-cpuid.SSE4A,cpu-cpuid.STIBP,cpu-cpuid.SUCCOR,cpu-cpuid.SVM,cpu-cpuid.SVMDA,cpu-cpuid.SVMFBASID,cpu-cpuid.SVML,cpu-cpuid.SVMNP,cpu-cpuid.SVMPF,cpu-cpuid.SVMPFT,cpu-cpuid.SYSCALL,cpu-cpuid.SYSEE,cpu-cpuid.TOPEXT,cpu-cpuid.TSCRATEMSR,cpu-cpuid.VMCBCLEAN,cpu-cpuid.VTE,cpu-cpuid.WBNOINVD,cpu-cpuid.X87,cpu-cpuid.XGETBV1,cpu-cpuid.XSAVE,cpu-cpuid.XSAVEC,cpu-cpuid.XSAVEOPT,cpu-cpuid.XSAVES,cpu-hardware_multithreading,cpu-model.family,cpu-model.id,cpu-model.vendor_id,cpu-rdt.RDTCMT,cpu-rdt.RDTL3CA,cpu-rdt.RDTMBM,cpu-rdt.RDTMON,cpu-security.sev.enabled,kernel-config.NO_HZ,kernel-config.NO_HZ_FULL,kernel-selinux.enabled,kernel-version.full,kernel-version.major,kernel-version.minor,kernel-version.revision,memory-numa,network-sriov.capable,pci-0300_1a03.present,storage-nonrotationaldisk,system-os_release.ID,system-os_release.VERSION_ID,system-os_release.VERSION_ID.major",
+      "node.alpha.kubernetes.io/ttl": "0",
+      "volumes.kubernetes.io/controller-managed-attach-detach": "true"
+    },
+    "creationTimestamp": "2026-07-08T18:44:37Z",
+    "labels": {
+      "beta.kubernetes.io/arch": "amd64",
+      "beta.kubernetes.io/os": "linux",
+      "feature.node.kubernetes.io/cpu-cpuid.ADX": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.AESNI": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.AVX": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.AVX2": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.CLZERO": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.CMPXCHG8": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.CPBOOST": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.FMA3": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.FP256": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.FXSR": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.FXSROPT": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.IBPB": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.IBRS": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.IBRS_PREFERRED": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.IBRS_PROVIDES_SMP": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.IBS": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.IBSBRNTRGT": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.IBSFETCHSAM": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.IBSFFV": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.IBSOPCNT": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.IBSOPCNTEXT": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.IBSOPSAM": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.IBSRDWROPCNT": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.IBSRIPINVALIDCHK": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.IBS_FETCH_CTLX": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.IBS_OPFUSE": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.INT_WBINVD": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.LAHF": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.LBRVIRT": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.MCAOVERFLOW": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.MCOMMIT": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.MOVBE": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.MOVU": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.MSRIRC": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.MSR_PAGEFLUSH": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.NRIPS": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.OSXSAVE": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.PPIN": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.RDPRU": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.SEV": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.SEV_ES": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.SHA": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.SME": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.SPEC_CTRL_SSBD": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.SSE4A": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.STIBP": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.SUCCOR": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.SVM": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.SVMDA": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.SVMFBASID": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.SVML": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.SVMNP": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.SVMPF": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.SVMPFT": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.SYSCALL": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.SYSEE": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.TOPEXT": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.TSCRATEMSR": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.VMCBCLEAN": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.VTE": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.WBNOINVD": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.X87": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.XGETBV1": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.XSAVE": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.XSAVEC": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.XSAVEOPT": "true",
+      "feature.node.kubernetes.io/cpu-cpuid.XSAVES": "true",
+      "feature.node.kubernetes.io/cpu-hardware_multithreading": "true",
+      "feature.node.kubernetes.io/cpu-model.family": "23",
+      "feature.node.kubernetes.io/cpu-model.id": "49",
+      "feature.node.kubernetes.io/cpu-model.vendor_id": "AMD",
+      "feature.node.kubernetes.io/cpu-rdt.RDTCMT": "true",
+      "feature.node.kubernetes.io/cpu-rdt.RDTL3CA": "true",
+      "feature.node.kubernetes.io/cpu-rdt.RDTMBM": "true",
+      "feature.node.kubernetes.io/cpu-rdt.RDTMON": "true",
+      "feature.node.kubernetes.io/cpu-security.sev.enabled": "true",
+      "feature.node.kubernetes.io/kernel-config.NO_HZ": "true",
+      "feature.node.kubernetes.io/kernel-config.NO_HZ_FULL": "true",
+      "feature.node.kubernetes.io/kernel-selinux.enabled": "true",
+      "feature.node.kubernetes.io/kernel-version.full": "6.19.12-200.fc43.x86_64",
+      "feature.node.kubernetes.io/kernel-version.major": "6",
+      "feature.node.kubernetes.io/kernel-version.minor": "19",
+      "feature.node.kubernetes.io/kernel-version.revision": "12",
+      "feature.node.kubernetes.io/memory-numa": "true",
+      "feature.node.kubernetes.io/network-sriov.capable": "true",
+      "feature.node.kubernetes.io/pci-0300_1a03.present": "true",
+      "feature.node.kubernetes.io/storage-nonrotationaldisk": "true",
+      "feature.node.kubernetes.io/system-os_release.ID": "fedora",
+      "feature.node.kubernetes.io/system-os_release.VERSION_ID": "43",
+      "feature.node.kubernetes.io/system-os_release.VERSION_ID.major": "43",
+      "kubernetes.io/arch": "amd64",
+      "kubernetes.io/hostname": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+      "kubernetes.io/os": "linux",
+      "magnum.openstack.org/nodegroup": "baremetal",
+      "magnum.openstack.org/role": "worker",
+      "sustainability.cern.ch/experiment-node": "true",
+      "sustainability.cern.ch/hardware": "baremetal"
+    },
+    "name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+    "resourceVersion": "1957617",
+    "uid": "0ac749f1-4726-4cf0-b352-88554a23d752"
+  },
+  "spec": {
+    "podCIDR": "10.100.2.0/24",
+    "podCIDRs": [
+      "10.100.2.0/24"
+    ]
+  },
+  "status": {
+    "addresses": [
+      {
+        "address": "188.184.49.170",
+        "type": "InternalIP"
+      },
+      {
+        "address": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+        "type": "Hostname"
+      }
+    ],
+    "allocatable": {
+      "cpu": "64",
+      "ephemeral-storage": "1873866788Ki",
+      "hugepages-1Gi": "0",
+      "hugepages-2Mi": "0",
+      "memory": "263438104Ki",
+      "pods": "110"
+    },
+    "capacity": {
+      "cpu": "64",
+      "ephemeral-storage": "1873866788Ki",
+      "hugepages-1Gi": "0",
+      "hugepages-2Mi": "0",
+      "memory": "263950104Ki",
+      "pods": "110"
+    },
+    "conditions": [
+      {
+        "lastHeartbeatTime": "2026-07-14T07:46:09Z",
+        "lastTransitionTime": "2026-07-08T18:45:50Z",
+        "message": "kernel has no deadlock",
+        "reason": "KernelHasNoDeadlock",
+        "status": "False",
+        "type": "KernelDeadlock"
+      },
+      {
+        "lastHeartbeatTime": "2026-07-14T07:46:09Z",
+        "lastTransitionTime": "2026-07-08T18:45:50Z",
+        "message": "Filesystem is not read-only",
+        "reason": "FilesystemIsNotReadOnly",
+        "status": "False",
+        "type": "ReadonlyFilesystem"
+      },
+      {
+        "lastHeartbeatTime": "2026-07-14T07:46:09Z",
+        "lastTransitionTime": "2026-07-08T18:45:50Z",
+        "message": "docker overlay2 is functioning properly",
+        "reason": "NoCorruptDockerOverlay2",
+        "status": "False",
+        "type": "CorruptDockerOverlay2"
+      },
+      {
+        "lastHeartbeatTime": "2026-07-08T18:45:22Z",
+        "lastTransitionTime": "2026-07-08T18:45:22Z",
+        "message": "Cilium is running on this node",
+        "reason": "CiliumIsUp",
+        "status": "False",
+        "type": "NetworkUnavailable"
+      },
+      {
+        "lastHeartbeatTime": "2026-07-14T07:45:30Z",
+        "lastTransitionTime": "2026-07-08T18:44:37Z",
+        "message": "kubelet has sufficient memory available",
+        "reason": "KubeletHasSufficientMemory",
+        "status": "False",
+        "type": "MemoryPressure"
+      },
+      {
+        "lastHeartbeatTime": "2026-07-14T07:45:30Z",
+        "lastTransitionTime": "2026-07-08T18:44:37Z",
+        "message": "kubelet has no disk pressure",
+        "reason": "KubeletHasNoDiskPressure",
+        "status": "False",
+        "type": "DiskPressure"
+      },
+      {
+        "lastHeartbeatTime": "2026-07-14T07:45:30Z",
+        "lastTransitionTime": "2026-07-08T18:44:37Z",
+        "message": "kubelet has sufficient PID available",
+        "reason": "KubeletHasSufficientPID",
+        "status": "False",
+        "type": "PIDPressure"
+      },
+      {
+        "lastHeartbeatTime": "2026-07-14T07:45:30Z",
+        "lastTransitionTime": "2026-07-08T18:45:18Z",
+        "message": "kubelet is posting ready status",
+        "reason": "KubeletReady",
+        "status": "True",
+        "type": "Ready"
+      }
+    ],
+    "daemonEndpoints": {
+      "kubeletEndpoint": {
+        "Port": 10250
+      }
+    },
+    "features": {
+      "supplementalGroupsPolicy": true
+    },
+    "images": [
+      {
+        "names": [
+          "registry.cern.ch/kubernetes/cephcsi/cephcsi@sha256:f064d74506570613c9f70e670d0069297d851a79e42c1366e6a085c5167abfda",
+          "registry.cern.ch/kubernetes/cephcsi/cephcsi:v3.15.1"
+        ],
+        "sizeBytes": 1024918467
+      },
+      {
+        "names": [
+          "registry.cern.ch/kubernetes/eosxd-csi@sha256:5bd055e4f81d686dc653b95e43c02e5a15c680921aac572400d92a84cade59a4",
+          "registry.cern.ch/kubernetes/eosxd-csi:v1.4.5"
+        ],
+        "sizeBytes": 260246480
+      },
+      {
+        "names": [
+          "registry.cern.ch/kubernetes/cilium/cilium@sha256:49d87af187eeeb9e9e3ec2bc6bd372261a0b5cb2d845659463ba7cc10fe9e45f"
+        ],
+        "sizeBytes": 248840828
+      },
+      {
+        "names": [
+          "registry.cern.ch/kubernetes/cvmfs-csi@sha256:144460ffa61507d47804a886915090319700b753897a49b5b844a30c31ab85ac",
+          "registry.cern.ch/kubernetes/cvmfs-csi:v2.6.0"
+        ],
+        "sizeBytes": 195541783
+      },
+      {
+        "names": [
+          "quay.io/sustainable_computing_io/kepler@sha256:1936d0e05276296cd4aeb0315b1c5fee5024c115bbead03daf3b3cf9b485dafc",
+          "quay.io/sustainable_computing_io/kepler:v0.11.4"
+        ],
+        "sizeBytes": 96101225
+      },
+      {
+        "names": [
+          "quay.io/sustainable_computing_io/kepler@sha256:1c822681f48d8c6f66a4613987007107322e5320f695c1cd284cef2d343bf24b",
+          "quay.io/sustainable_computing_io/kepler:release-0.8.0"
+        ],
+        "sizeBytes": 79705251
+      },
+      {
+        "names": [
+          "docker.io/library/fedora@sha256:6c75d5bf57cb0fa5aa4b92c6a83c86c791644496d9ac230de7711f5b8ec3b898",
+          "docker.io/library/fedora:latest"
+        ],
+        "sizeBytes": 69320596
+      },
+      {
+        "names": [
+          "registry.cern.ch/kubernetes/cilium/cilium-envoy@sha256:1deb6709afcb5523579bf1abbc3255adf9e354565a88c4a9162c8d9cb1d77ab5"
+        ],
+        "sizeBytes": 67692953
+      },
+      {
+        "names": [
+          "registry.cern.ch/kubernetes/nfd/node-feature-discovery@sha256:21c2681deb07aaa1eac74daef2c576392fcc9c72c87ffd4f43769e8a7cd39ddd",
+          "registry.cern.ch/kubernetes/nfd/node-feature-discovery:v0.15.4"
+        ],
+        "sizeBytes": 65993155
+      },
+      {
+        "names": [
+          "registry.cern.ch/kubernetes/node-problem-detector/node-problem-detector@sha256:f8f66daddc1844e6cf51bc3b4e902dbe6c64f25928d21ce7bc406f298286a2e4",
+          "registry.cern.ch/kubernetes/node-problem-detector/node-problem-detector:v0.8.10"
+        ],
+        "sizeBytes": 53800369
+      },
+      {
+        "names": [
+          "registry.cern.ch/kubernetes/falcosecurity/falco@sha256:43a7c5e8359970740198f9797a03dd5b5ae35323f7b593aa769d5a1913fff8f4",
+          "registry.cern.ch/kubernetes/falcosecurity/falco:43a7c5e"
+        ],
+        "sizeBytes": 49871545
+      },
+      {
+        "names": [
+          "docker.io/library/python@sha256:64695412729fbe8cf054511723820c82bbe5a077d4a6b4070cd4a7225d3422ce",
+          "docker.io/library/python:3.12-slim"
+        ],
+        "sizeBytes": 43200635
+      },
+      {
+        "names": [
+          "registry.cern.ch/kubernetes/falcosecurity/falcoctl@sha256:fcd52d307e0b19d92170801912312033d4ab007bf165e1001ee6d467ec53e5a4",
+          "registry.cern.ch/kubernetes/falcosecurity/falcoctl:0.11.4"
+        ],
+        "sizeBytes": 32742231
+      },
+      {
+        "names": [
+          "registry.cern.ch/kubernetes/provider-os/manila-csi-plugin@sha256:e668ddc9008cee2edd3431c63b2960326e430b1c9b787bf2f79e89502ce5f7ff",
+          "registry.cern.ch/kubernetes/provider-os/manila-csi-plugin:v1.34.1"
+        ],
+        "sizeBytes": 22188542
+      },
+      {
+        "names": [
+          "registry.cern.ch/kubernetes/sig-storage/csi-node-driver-registrar@sha256:11f199f6bec47403b03cb49c79a41f445884b213b382582a60710b8c6fdc316a",
+          "registry.cern.ch/kubernetes/sig-storage/csi-node-driver-registrar:v2.15.0"
+        ],
+        "sizeBytes": 15243146
+      },
+      {
+        "names": [
+          "registry.cern.ch/kubernetes/sig-storage/csi-node-driver-registrar@sha256:d7138bcc3aa5f267403d45ad4292c95397e421ea17a0035888850f424c7de25d",
+          "registry.cern.ch/kubernetes/sig-storage/csi-node-driver-registrar:v2.13.0"
+        ],
+        "sizeBytes": 14781503
+      },
+      {
+        "names": [
+          "quay.io/prometheus/node-exporter@sha256:843ed23bb564f897ddcc6b6b9b605e398779487a561aae36fddd2933394836cd",
+          "quay.io/prometheus/node-exporter:v1.12.0-distroless"
+        ],
+        "sizeBytes": 13122799
+      },
+      {
+        "names": [
+          "registry.cern.ch/kubernetes/sig-storage/csi-node-driver-registrar@sha256:f6717ce72a2615c7fbc746b4068f788e78579c54c43b8716e5ce650d97af2df1",
+          "registry.cern.ch/kubernetes/sig-storage/csi-node-driver-registrar:v2.8.0"
+        ],
+        "sizeBytes": 10536524
+      },
+      {
+        "names": [
+          "ghcr.io/jkroepke/kube-webhook-certgen@sha256:76a2170cd0c9a7758c4ac8ac5bbe9b6f73e869a15ffb77d9f684664f7d7b96b1",
+          "ghcr.io/jkroepke/kube-webhook-certgen:1.8.4"
+        ],
+        "sizeBytes": 9069654
+      },
+      {
+        "names": [
+          "registry.cern.ch/kubernetes/busybox@sha256:6e494387c901caf429c1bf77bd92fb82b33a68c0e19f6d1aa6a3ac8d27a7049d",
+          "registry.cern.ch/kubernetes/busybox:1.36.1"
+        ],
+        "sizeBytes": 2595868
+      },
+      {
+        "names": [
+          "registry.cern.ch/kubernetes/pause@sha256:e9622b01071c38e4fe1ca9822a3841feab630ae13ff5ad7f540f73771e56ae86",
+          "registry.cern.ch/kubernetes/pause:3.10"
+        ],
+        "sizeBytes": 319634
+      }
+    ],
+    "nodeInfo": {
+      "architecture": "amd64",
+      "bootID": "41c857dc-1980-41b5-91ad-b661263f83de",
+      "containerRuntimeVersion": "containerd://2.1.4",
+      "kernelVersion": "6.19.12-200.fc43.x86_64",
+      "kubeProxyVersion": "",
+      "kubeletVersion": "v1.35.3",
+      "machineID": "2e956539af804f789d018c65edebc48f",
+      "operatingSystem": "linux",
+      "osImage": "Fedora CoreOS 43.20260413.3.2",
+      "systemUUID": "00000000-0000-0000-0000-3cecef0de66e"
+    },
+    "runtimeHandlers": [
+      {
+        "features": {
+          "recursiveReadOnlyMounts": true,
+          "userNamespaces": true
+        },
+        "name": ""
+      },
+      {
+        "features": {
+          "recursiveReadOnlyMounts": true,
+          "userNamespaces": true
+        },
+        "name": "runc"
+      }
+    ]
+  }
+}

@@ -1,0 +1,278 @@
+{
+  "data": {
+    "result": [
+      {
+        "metric": {
+          "__name__": "node_memory_Buffers_bytes",
+          "container": "node-exporter",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "2990080"
+          ],
+          [
+            1784015160.384,
+            "2990080"
+          ],
+          [
+            1784015170.384,
+            "2990080"
+          ],
+          [
+            1784015180.384,
+            "2990080"
+          ],
+          [
+            1784015190.384,
+            "2990080"
+          ],
+          [
+            1784015200.384,
+            "2990080"
+          ],
+          [
+            1784015210.384,
+            "2990080"
+          ],
+          [
+            1784015220.384,
+            "2990080"
+          ],
+          [
+            1784015230.384,
+            "2990080"
+          ],
+          [
+            1784015240.384,
+            "2990080"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_memory_Cached_bytes",
+          "container": "node-exporter",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "16266371072"
+          ],
+          [
+            1784015160.384,
+            "16266371072"
+          ],
+          [
+            1784015170.384,
+            "16267059200"
+          ],
+          [
+            1784015180.384,
+            "16267100160"
+          ],
+          [
+            1784015190.384,
+            "16267100160"
+          ],
+          [
+            1784015200.384,
+            "16270180352"
+          ],
+          [
+            1784015210.384,
+            "16271212544"
+          ],
+          [
+            1784015220.384,
+            "16271212544"
+          ],
+          [
+            1784015230.384,
+            "16271400960"
+          ],
+          [
+            1784015240.384,
+            "16270065664"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_memory_MemAvailable_bytes",
+          "container": "node-exporter",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "264046993408"
+          ],
+          [
+            1784015160.384,
+            "264046993408"
+          ],
+          [
+            1784015170.384,
+            "264049471488"
+          ],
+          [
+            1784015180.384,
+            "264050745344"
+          ],
+          [
+            1784015190.384,
+            "264050745344"
+          ],
+          [
+            1784015200.384,
+            "263977914368"
+          ],
+          [
+            1784015210.384,
+            "263990841344"
+          ],
+          [
+            1784015220.384,
+            "263990841344"
+          ],
+          [
+            1784015230.384,
+            "264016977920"
+          ],
+          [
+            1784015240.384,
+            "264027795456"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_memory_MemFree_bytes",
+          "container": "node-exporter",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "249091547136"
+          ],
+          [
+            1784015160.384,
+            "249091547136"
+          ],
+          [
+            1784015170.384,
+            "249093337088"
+          ],
+          [
+            1784015180.384,
+            "249094582272"
+          ],
+          [
+            1784015190.384,
+            "249094582272"
+          ],
+          [
+            1784015200.384,
+            "249018339328"
+          ],
+          [
+            1784015210.384,
+            "249030311936"
+          ],
+          [
+            1784015220.384,
+            "249030311936"
+          ],
+          [
+            1784015230.384,
+            "249056157696"
+          ],
+          [
+            1784015240.384,
+            "249068314624"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_memory_MemTotal_bytes",
+          "container": "node-exporter",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "270284906496"
+          ],
+          [
+            1784015160.384,
+            "270284906496"
+          ],
+          [
+            1784015170.384,
+            "270284906496"
+          ],
+          [
+            1784015180.384,
+            "270284906496"
+          ],
+          [
+            1784015190.384,
+            "270284906496"
+          ],
+          [
+            1784015200.384,
+            "270284906496"
+          ],
+          [
+            1784015210.384,
+            "270284906496"
+          ],
+          [
+            1784015220.384,
+            "270284906496"
+          ],
+          [
+            1784015230.384,
+            "270284906496"
+          ],
+          [
+            1784015240.384,
+            "270284906496"
+          ]
+        ]
+      }
+    ],
+    "resultType": "matrix"
+  },
+  "status": "success"
+}

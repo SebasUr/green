@@ -72,6 +72,7 @@ class ModelName(str, Enum):
     climatology = "climatology"
     corrected_climatology = "corrected_climatology"
     sarimax = "sarimax"
+    lstm = "lstm"
     project_model = "project_model"
     electricity_maps = "electricity_maps"
     oracle = "oracle"

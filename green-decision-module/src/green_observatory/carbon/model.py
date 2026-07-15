@@ -145,13 +145,15 @@ class ProjectModelForecaster:
 
 
 def train_project_model(
-    train_frame: pd.DataFrame, carbon_cfg: dict, climatology=None
+    train_frame: pd.DataFrame, carbon_cfg: dict, climatology=None, forecast_frame=None
 ) -> ProjectCarbonModel:
     """Build and fit a :class:`ProjectCarbonModel` from a carbon-model config dict."""
     model_cfg = carbon_cfg.get("model", {})
     algorithm = model_cfg.get("algorithm", "hist_gradient_boosting")
     params = model_cfg.get(algorithm, {})
-    builder = feature_builder_from_config(carbon_cfg, climatology=climatology)
+    builder = feature_builder_from_config(
+        carbon_cfg, climatology=climatology, forecast_frame=forecast_frame
+    )
     model = ProjectCarbonModel(
         builder,
         horizons=model_cfg.get("horizons_hours", DEFAULT_HORIZONS),

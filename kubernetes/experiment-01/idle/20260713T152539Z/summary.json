@@ -1,0 +1,160 @@
+{
+  "blocking_conditions": [],
+  "collection_warnings": [
+    "la consulta node_power_supply no devolvió series"
+  ],
+  "metadata": {
+    "actual_duration_seconds": 900.0077939033508,
+    "available_zones": [
+      {
+        "path": "aggregated-core",
+        "zone": "core"
+      },
+      {
+        "path": "aggregated-package",
+        "zone": "package"
+      }
+    ],
+    "capture_type": "idle-baseline",
+    "command": [
+      "scripts/capture_idle.py",
+      "--duration",
+      "15m",
+      "--step",
+      "10",
+      "--zone",
+      "package"
+    ],
+    "ended_at": "2026-07-13T15:40:40.459977Z",
+    "include_processes": false,
+    "node": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+    "node_internal_ip": "188.184.49.170",
+    "primary_zone": "package",
+    "prometheus_url_supplied": false,
+    "query_step_seconds": 10,
+    "requested_duration_seconds": 900,
+    "schema_version": "1.0",
+    "started_at": "2026-07-13T15:25:40.452183Z",
+    "timezone": "UTC"
+  },
+  "notes": [
+    "Los deltas son diferencias observadas entre muestras, no extrapolaciones PromQL increase().",
+    "El resumen usa una sola zone para evitar doble conteo entre core y package.",
+    "metrics.csv y prometheus/raw conservan las muestras originales para análisis posterior.",
+    "Las métricas Kepler por proceso se excluyen por defecto debido a su alta cardinalidad."
+  ],
+  "pod_state_end": {
+    "blocking_conditions": [],
+    "container_restarts": {},
+    "crashloop_pods": [],
+    "running_pods": [
+      "kepler/kepler-5k5h5",
+      "kube-system/cern-magnum-ceph-csi-cephfs-nodeplugin-wjmdz",
+      "kube-system/cern-magnum-cvmfs-csi-nodeplugin-jsm4k",
+      "kube-system/cern-magnum-eosxd-csi-nodeplugin-w9st8",
+      "kube-system/cern-magnum-falco-zbjrb",
+      "kube-system/cern-magnum-node-feature-discovery-worker-5l2g7",
+      "kube-system/cern-magnum-node-problem-detector-pxtnb",
+      "kube-system/cilium-envoy-vzrgm",
+      "kube-system/cilium-fqr2k",
+      "monitoring/monitoring-prometheus-node-exporter-rxjld"
+    ]
+  },
+  "pod_state_start": {
+    "blocking_conditions": [],
+    "container_restarts": {},
+    "crashloop_pods": [],
+    "running_pods": [
+      "kepler/kepler-5k5h5",
+      "kube-system/cern-magnum-ceph-csi-cephfs-nodeplugin-wjmdz",
+      "kube-system/cern-magnum-cvmfs-csi-nodeplugin-jsm4k",
+      "kube-system/cern-magnum-eosxd-csi-nodeplugin-w9st8",
+      "kube-system/cern-magnum-falco-zbjrb",
+      "kube-system/cern-magnum-node-feature-discovery-worker-5l2g7",
+      "kube-system/cern-magnum-node-problem-detector-pxtnb",
+      "kube-system/cilium-envoy-vzrgm",
+      "kube-system/cilium-fqr2k",
+      "monitoring/monitoring-prometheus-node-exporter-rxjld"
+    ]
+  },
+  "primary_metrics": {
+    "active_energy": {
+      "counter_resets": 0,
+      "coverage_ratio": 1.0,
+      "mean": 12906.700413604394,
+      "median": 12907.331774,
+      "observed_delta_joules": 875.8971120000006,
+      "p95": 13302.365969999999,
+      "sample_count": 91
+    },
+    "active_watts": {
+      "coverage_ratio": 1.0,
+      "mean": 0.7510395687349697,
+      "median": 0.7354851470765374,
+      "p95": 0.9344816571075731,
+      "sample_count": 91
+    },
+    "container_cpu_usage_cores": {
+      "coverage_ratio": 1.0,
+      "mean": 0.2104163096472247,
+      "median": 0.21070271205778643,
+      "p95": 0.22725811816872235,
+      "sample_count": 91
+    },
+    "cpu_usage_ratio": {
+      "coverage_ratio": 1.0,
+      "mean": 0.007354426859351999,
+      "median": 0.007240276140811691,
+      "p95": 0.009212312637882681,
+      "sample_count": 91
+    },
+    "idle_energy": {
+      "counter_resets": 0,
+      "coverage_ratio": 1.0,
+      "mean": 1223793.7682956923,
+      "median": 1223846.456608,
+      "observed_delta_joules": 90761.07588699996,
+      "p95": 1264616.483577,
+      "sample_count": 91
+    },
+    "idle_watts": {
+      "coverage_ratio": 1.0,
+      "mean": 101.40665773320094,
+      "median": 101.12571755410092,
+      "p95": 103.99314656811939,
+      "sample_count": 91
+    },
+    "memory_usage_ratio": {
+      "coverage_ratio": 1.0,
+      "mean": 0.022902306557917473,
+      "median": 0.022901116189747772,
+      "p95": 0.022941631422884357,
+      "sample_count": 91
+    },
+    "node_exporter_cpu_usage_ratio": {
+      "coverage_ratio": 1.0,
+      "mean": 0.009444635225893342,
+      "median": 0.009409722222234462,
+      "p95": 0.010215277777853027,
+      "sample_count": 91
+    },
+    "total_energy": {
+      "counter_resets": 0,
+      "coverage_ratio": 1.0,
+      "mean": 57113.47094329671,
+      "median": 57166.790616,
+      "observed_delta_joules": 91636.97299899999,
+      "p95": 98331.851781,
+      "sample_count": 91
+    },
+    "total_watts": {
+      "coverage_ratio": 1.0,
+      "mean": 102.15769730193593,
+      "median": 101.91066809078048,
+      "p95": 104.74253514585114,
+      "sample_count": 91
+    }
+  },
+  "schema_version": "1.0",
+  "valid_idle_baseline": true
+}

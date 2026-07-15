@@ -1,0 +1,9 @@
+{
+  "data": {
+    "result": [],
+    "resultType": "matrix"
+  },
+  "error": "no se pudo consultar Prometheus: http://127.0.0.1:54030/api/v1/query_range?query=container_memory_working_set_bytes%7Bnode%3D%22sebas-green-baremetal-jpmdwiscskyy-node-0%22%2Ccontainer%21%3D%22%22%7D&start=1784014792.387&end=1784014868.095&step=10: timed out",
+  "errorType": "collection_error",
+  "status": "error"
+}

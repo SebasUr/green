@@ -1,0 +1,18 @@
+{
+  "data": {
+    "CWD": "/prometheus",
+    "GODEBUG": "",
+    "GOGC": "75",
+    "GOMAXPROCS": 2,
+    "GOMEMLIMIT": 3358199808,
+    "corruptionCount": 0,
+    "goroutineCount": 293,
+    "hostname": "prometheus-monitoring-kube-prometheus-prometheus-0",
+    "lastConfigTime": "2026-07-13T12:14:19Z",
+    "reloadConfigSuccess": true,
+    "serverTime": "2026-07-14T08:03:17.218816001Z",
+    "startTime": "2026-07-13T09:52:32.467657444Z",
+    "storageRetention": "30d or 40GiB"
+  },
+  "status": "success"
+}

@@ -1,0 +1,144 @@
+{
+  "blocking_conditions": [],
+  "collection_warnings": [
+    "la consulta node_power_supply no devolvió series"
+  ],
+  "energy": {
+    "average_attributed_pod_power_watts": 45.63937984157632,
+    "node_active_energy": {
+      "counter_resets": 0,
+      "first_sample_at": "2026-07-14T08:03:17.984000Z",
+      "last_sample_at": "2026-07-14T08:18:57.984000Z",
+      "observed_delta_joules": 43398.389756000004,
+      "sample_count": 95
+    },
+    "node_active_watts": {
+      "max": 47.93530949271485,
+      "mean": 46.19078842453176,
+      "median": 46.93546599324207,
+      "min": 7.028365324031732,
+      "p95": 47.325936453122544,
+      "sample_count": 93
+    },
+    "node_cpu_usage_ratio": {
+      "max": 0.26113911977245696,
+      "mean": 0.252606221140019,
+      "median": 0.25643403011869936,
+      "min": 0.06117653640644115,
+      "p95": 0.25825915102902436,
+      "sample_count": 93
+    },
+    "node_idle_energy": {
+      "counter_resets": 0,
+      "first_sample_at": "2026-07-14T08:03:17.984000Z",
+      "last_sample_at": "2026-07-14T08:18:57.984000Z",
+      "observed_delta_joules": 127015.38789699972,
+      "sample_count": 95
+    },
+    "node_total_energy": {
+      "counter_resets": 1,
+      "first_sample_at": "2026-07-14T08:03:17.984000Z",
+      "last_sample_at": "2026-07-14T08:18:57.984000Z",
+      "observed_delta_joules": 168637.6282790001,
+      "sample_count": 95
+    },
+    "node_total_watts": {
+      "max": 184.06195002874503,
+      "mean": 182.29018813864639,
+      "median": 183.1283292415881,
+      "min": 114.88661727001154,
+      "p95": 183.7556593857957,
+      "sample_count": 93
+    },
+    "pod_cpu_energy_joules": 42413.381665,
+    "pod_cpu_energy_kwh": 0.011781494906944445,
+    "pod_watts": {
+      "max": 46.987103214192324,
+      "mean": 45.12767162923452,
+      "median": 45.86994119615166,
+      "min": 4.8320011602682404,
+      "p95": 46.36216927389955,
+      "sample_count": 93
+    },
+    "primary_zone": "package"
+  },
+  "execution": {
+    "image": {
+      "container_id": "containerd://cc501994ecd851f99dc95bc1373ddbe58ac248cf28a287b5fde0a39081807249",
+      "image": "docker.io/library/python:3.12-slim",
+      "image_id": "docker.io/library/python@sha256:64695412729fbe8cf054511723820c82bbe5a077d4a6b4070cd4a7225d3422ce",
+      "requested": "python:3.12-slim"
+    },
+    "pi_estimate": 3.1415938055555555,
+    "recommended_samples_per_worker_for_target_runtime": 3050632531,
+    "runtime_seconds": 929.315468619985,
+    "scientific_output_matches_parameters": true,
+    "workload_finished_at": "2026-07-14T08:18:48Z",
+    "workload_started_at": "2026-07-14T08:03:19Z"
+  },
+  "metadata": {
+    "available_zones": [
+      {
+        "path": "aggregated-core",
+        "zone": "core"
+      },
+      {
+        "path": "aggregated-package",
+        "zone": "package"
+      }
+    ],
+    "capture_type": "monte-carlo-trial",
+    "command": [
+      "scripts/run_monte_carlo.py",
+      "--trial-id",
+      "calibration-01"
+    ],
+    "job_name": "mc-calibration-01",
+    "node": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+    "node_internal_ip": "188.184.49.170",
+    "pod_name": "mc-calibration-01-xm5vj",
+    "pod_uid": "18e8ae69-7c5c-4f32-9cfa-b1e811fab0b3",
+    "preflight": {
+      "blocking_conditions": [],
+      "container_restarts": {},
+      "crashloop_pods": [],
+      "running_pods": [
+        "kepler/kepler-5k5h5",
+        "kube-system/cern-magnum-ceph-csi-cephfs-nodeplugin-wjmdz",
+        "kube-system/cern-magnum-cvmfs-csi-nodeplugin-jsm4k",
+        "kube-system/cern-magnum-eosxd-csi-nodeplugin-w9st8",
+        "kube-system/cern-magnum-falco-zbjrb",
+        "kube-system/cern-magnum-node-feature-discovery-worker-5l2g7",
+        "kube-system/cern-magnum-node-problem-detector-pxtnb",
+        "kube-system/cilium-envoy-vzrgm",
+        "kube-system/cilium-fqr2k",
+        "monitoring/monitoring-prometheus-node-exporter-rxjld"
+      ]
+    },
+    "primary_zone": "package",
+    "query_ended_at": "2026-07-14T08:19:23.212842Z",
+    "query_started_at": "2026-07-14T08:02:47.983832Z",
+    "query_step_seconds": 10,
+    "schema_version": "1.0",
+    "submitted_at": "2026-07-14T08:03:17.983832Z",
+    "timezone": "UTC",
+    "trial_id": "calibration-01"
+  },
+  "notes": [
+    "La energía del pod es CPU operational energy attributed by Kepler, no energía total del servidor.",
+    "Los deltas del nodo usan la muestra anterior al inicio y la primera posterior al final.",
+    "El valor por defecto de muestras es una estimación; usa la recomendación para calibrar el siguiente trial."
+  ],
+  "parameters": {
+    "base_seed": 20260713,
+    "memory": "2Gi",
+    "samples_per_worker": 3150000000,
+    "target_runtime_seconds": 900,
+    "total_samples": 50400000000,
+    "workers": 16
+  },
+  "policy": "calibration",
+  "schema_version": "1.0",
+  "trial_id": "calibration-01",
+  "valid_trial": true
+}

@@ -5,7 +5,7 @@ Carbon temporal intelligence for *when-to-run* decisions on the French grid.
 Milestones 0-2 (this codebase so far) cover the **carbon track**: the
 ODRE/eCO2mix provider, the baseline ladder (persistence, climatology, corrected
 climatology), low-carbon windows and the project forecast model with its
-evaluation against an oracle. The CERN CDC **facility track** (Milestones 3-4)
+evaluation against a perfect-foresight upper bound. The CERN CDC **facility track** (Milestones 3-4)
 and the **simulation** / **API** layers are scaffolded but not yet implemented.
 
 See ``IMPLEMENTATION_PLAN_V1.md`` for the full plan and scope boundaries.

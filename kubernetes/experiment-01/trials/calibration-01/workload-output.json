@@ -1,0 +1,10 @@
+{
+  "hostname": "mc-calibration-01-xm5vj",
+  "workers": 16,
+  "samples_per_worker": 3150000000,
+  "total_samples": 50400000000,
+  "pi_estimate": 3.1415938055555555,
+  "elapsed_seconds": 929.315468619985,
+  "started_at": "2026-07-14T08:03:19.168470+00:00",
+  "finished_at": "2026-07-14T08:18:48.483953+00:00"
+}

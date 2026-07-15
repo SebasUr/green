@@ -1,0 +1,40 @@
+{
+    "apiVersion": "monitoring.coreos.com/v1",
+    "kind": "ServiceMonitor",
+    "metadata": {
+        "annotations": {
+            "meta.helm.sh/release-name": "kepler",
+            "meta.helm.sh/release-namespace": "kepler"
+        },
+        "creationTimestamp": "2026-07-13T12:13:46Z",
+        "generation": 1,
+        "labels": {
+            "app.kubernetes.io/instance": "kepler",
+            "app.kubernetes.io/managed-by": "Helm",
+            "app.kubernetes.io/name": "kepler",
+            "app.kubernetes.io/part-of": "kepler",
+            "app.kubernetes.io/version": "v0.11.4",
+            "helm.sh/chart": "kepler-0.11.4",
+            "release": "monitoring"
+        },
+        "name": "kepler",
+        "namespace": "kepler",
+        "resourceVersion": "1676151",
+        "uid": "7cf0e2b8-5321-49d1-8649-64fa3622d188"
+    },
+    "spec": {
+        "endpoints": [
+            {
+                "interval": "10s",
+                "path": "/metrics",
+                "port": "http"
+            }
+        ],
+        "selector": {
+            "matchLabels": {
+                "app.kubernetes.io/instance": "kepler",
+                "app.kubernetes.io/name": "kepler"
+            }
+        }
+    }
+}

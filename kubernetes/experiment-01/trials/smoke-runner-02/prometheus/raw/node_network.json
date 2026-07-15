@@ -1,0 +1,4130 @@
+{
+  "data": {
+    "result": [
+      {
+        "metric": {
+          "__name__": "node_network_receive_bytes_total",
+          "container": "node-exporter",
+          "device": "cilium_host",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "24752340"
+          ],
+          [
+            1784015160.384,
+            "24752340"
+          ],
+          [
+            1784015170.384,
+            "24752406"
+          ],
+          [
+            1784015180.384,
+            "24752472"
+          ],
+          [
+            1784015190.384,
+            "24752472"
+          ],
+          [
+            1784015200.384,
+            "24752472"
+          ],
+          [
+            1784015210.384,
+            "24752819"
+          ],
+          [
+            1784015220.384,
+            "24752819"
+          ],
+          [
+            1784015230.384,
+            "24752885"
+          ],
+          [
+            1784015240.384,
+            "24753364"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_receive_bytes_total",
+          "container": "node-exporter",
+          "device": "cilium_net",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "818"
+          ],
+          [
+            1784015160.384,
+            "818"
+          ],
+          [
+            1784015170.384,
+            "818"
+          ],
+          [
+            1784015180.384,
+            "818"
+          ],
+          [
+            1784015190.384,
+            "818"
+          ],
+          [
+            1784015200.384,
+            "818"
+          ],
+          [
+            1784015210.384,
+            "818"
+          ],
+          [
+            1784015220.384,
+            "818"
+          ],
+          [
+            1784015230.384,
+            "818"
+          ],
+          [
+            1784015240.384,
+            "818"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_receive_bytes_total",
+          "container": "node-exporter",
+          "device": "cilium_vxlan",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "36083872"
+          ],
+          [
+            1784015160.384,
+            "36083872"
+          ],
+          [
+            1784015170.384,
+            "36085018"
+          ],
+          [
+            1784015180.384,
+            "36087258"
+          ],
+          [
+            1784015190.384,
+            "36087258"
+          ],
+          [
+            1784015200.384,
+            "36088670"
+          ],
+          [
+            1784015210.384,
+            "36091201"
+          ],
+          [
+            1784015220.384,
+            "36091201"
+          ],
+          [
+            1784015230.384,
+            "36092399"
+          ],
+          [
+            1784015240.384,
+            "36095034"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_receive_bytes_total",
+          "container": "node-exporter",
+          "device": "docker0",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_receive_bytes_total",
+          "container": "node-exporter",
+          "device": "enp33s0f0",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "6900310644"
+          ],
+          [
+            1784015160.384,
+            "6900310644"
+          ],
+          [
+            1784015170.384,
+            "6900467707"
+          ],
+          [
+            1784015180.384,
+            "6900656948"
+          ],
+          [
+            1784015190.384,
+            "6900656948"
+          ],
+          [
+            1784015200.384,
+            "6900773174"
+          ],
+          [
+            1784015210.384,
+            "6900890314"
+          ],
+          [
+            1784015220.384,
+            "6900890314"
+          ],
+          [
+            1784015230.384,
+            "6901099430"
+          ],
+          [
+            1784015240.384,
+            "6901223879"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_receive_bytes_total",
+          "container": "node-exporter",
+          "device": "enp33s0f1",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_receive_bytes_total",
+          "container": "node-exporter",
+          "device": "lxc16ae34325b7c",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "34348555"
+          ],
+          [
+            1784015160.384,
+            "34348555"
+          ],
+          [
+            1784015170.384,
+            "34349575"
+          ],
+          [
+            1784015180.384,
+            "34350595"
+          ],
+          [
+            1784015190.384,
+            "34350595"
+          ],
+          [
+            1784015200.384,
+            "34351615"
+          ],
+          [
+            1784015210.384,
+            "34352635"
+          ],
+          [
+            1784015220.384,
+            "34352635"
+          ],
+          [
+            1784015230.384,
+            "34353655"
+          ],
+          [
+            1784015240.384,
+            "34354675"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_receive_bytes_total",
+          "container": "node-exporter",
+          "device": "lxc36059a57c50a",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "43253937"
+          ],
+          [
+            1784015160.384,
+            "43253937"
+          ],
+          [
+            1784015170.384,
+            "43258932"
+          ],
+          [
+            1784015180.384,
+            "43258932"
+          ],
+          [
+            1784015190.384,
+            "43258932"
+          ],
+          [
+            1784015200.384,
+            "43259145"
+          ],
+          [
+            1784015210.384,
+            "43259145"
+          ],
+          [
+            1784015220.384,
+            "43259145"
+          ],
+          [
+            1784015230.384,
+            "43264311"
+          ],
+          [
+            1784015240.384,
+            "43264311"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_receive_bytes_total",
+          "container": "node-exporter",
+          "device": "lxc4a271cda4e2d",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "10106"
+          ],
+          [
+            1784015160.384,
+            "10106"
+          ],
+          [
+            1784015170.384,
+            "10106"
+          ],
+          [
+            1784015180.384,
+            "10106"
+          ],
+          [
+            1784015190.384,
+            "10106"
+          ],
+          [
+            1784015200.384,
+            "10106"
+          ],
+          [
+            1784015210.384,
+            "10106"
+          ],
+          [
+            1784015220.384,
+            "10106"
+          ],
+          [
+            1784015230.384,
+            "10106"
+          ],
+          [
+            1784015240.384,
+            "10106"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_receive_bytes_total",
+          "container": "node-exporter",
+          "device": "lxc_health",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "10606303"
+          ],
+          [
+            1784015160.384,
+            "10606303"
+          ],
+          [
+            1784015170.384,
+            "10606576"
+          ],
+          [
+            1784015180.384,
+            "10606816"
+          ],
+          [
+            1784015190.384,
+            "10606816"
+          ],
+          [
+            1784015200.384,
+            "10607502"
+          ],
+          [
+            1784015210.384,
+            "10607766"
+          ],
+          [
+            1784015220.384,
+            "10607766"
+          ],
+          [
+            1784015230.384,
+            "10608030"
+          ],
+          [
+            1784015240.384,
+            "10608228"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_receive_bytes_total",
+          "container": "node-exporter",
+          "device": "lxcb111152091eb",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "1396765598"
+          ],
+          [
+            1784015160.384,
+            "1396765598"
+          ],
+          [
+            1784015170.384,
+            "1397022551"
+          ],
+          [
+            1784015180.384,
+            "1397340029"
+          ],
+          [
+            1784015190.384,
+            "1397340029"
+          ],
+          [
+            1784015200.384,
+            "1397625056"
+          ],
+          [
+            1784015210.384,
+            "1397924325"
+          ],
+          [
+            1784015220.384,
+            "1397924325"
+          ],
+          [
+            1784015230.384,
+            "1398199363"
+          ],
+          [
+            1784015240.384,
+            "1398572095"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_receive_bytes_total",
+          "container": "node-exporter",
+          "device": "lxcf374af54b73b",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015200.384,
+            "586"
+          ],
+          [
+            1784015210.384,
+            "656"
+          ],
+          [
+            1784015220.384,
+            "656"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_receive_bytes_total",
+          "container": "node-exporter",
+          "device": "lxcfd09d413921a",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "6252271"
+          ],
+          [
+            1784015160.384,
+            "6252271"
+          ],
+          [
+            1784015170.384,
+            "6252271"
+          ],
+          [
+            1784015180.384,
+            "6255736"
+          ],
+          [
+            1784015190.384,
+            "6255736"
+          ],
+          [
+            1784015200.384,
+            "6255736"
+          ],
+          [
+            1784015210.384,
+            "6255802"
+          ],
+          [
+            1784015220.384,
+            "6255802"
+          ],
+          [
+            1784015230.384,
+            "6255802"
+          ],
+          [
+            1784015240.384,
+            "6255868"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_receive_drop_total",
+          "container": "node-exporter",
+          "device": "cilium_host",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_receive_drop_total",
+          "container": "node-exporter",
+          "device": "cilium_net",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_receive_drop_total",
+          "container": "node-exporter",
+          "device": "cilium_vxlan",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_receive_drop_total",
+          "container": "node-exporter",
+          "device": "docker0",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_receive_drop_total",
+          "container": "node-exporter",
+          "device": "enp33s0f0",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_receive_drop_total",
+          "container": "node-exporter",
+          "device": "enp33s0f1",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_receive_drop_total",
+          "container": "node-exporter",
+          "device": "lxc16ae34325b7c",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_receive_drop_total",
+          "container": "node-exporter",
+          "device": "lxc36059a57c50a",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_receive_drop_total",
+          "container": "node-exporter",
+          "device": "lxc4a271cda4e2d",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_receive_drop_total",
+          "container": "node-exporter",
+          "device": "lxc_health",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_receive_drop_total",
+          "container": "node-exporter",
+          "device": "lxcb111152091eb",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_receive_drop_total",
+          "container": "node-exporter",
+          "device": "lxcf374af54b73b",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_receive_drop_total",
+          "container": "node-exporter",
+          "device": "lxcfd09d413921a",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_receive_errs_total",
+          "container": "node-exporter",
+          "device": "cilium_host",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_receive_errs_total",
+          "container": "node-exporter",
+          "device": "cilium_net",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_receive_errs_total",
+          "container": "node-exporter",
+          "device": "cilium_vxlan",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_receive_errs_total",
+          "container": "node-exporter",
+          "device": "docker0",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_receive_errs_total",
+          "container": "node-exporter",
+          "device": "enp33s0f0",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_receive_errs_total",
+          "container": "node-exporter",
+          "device": "enp33s0f1",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_receive_errs_total",
+          "container": "node-exporter",
+          "device": "lxc16ae34325b7c",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_receive_errs_total",
+          "container": "node-exporter",
+          "device": "lxc36059a57c50a",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_receive_errs_total",
+          "container": "node-exporter",
+          "device": "lxc4a271cda4e2d",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_receive_errs_total",
+          "container": "node-exporter",
+          "device": "lxc_health",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_receive_errs_total",
+          "container": "node-exporter",
+          "device": "lxcb111152091eb",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_receive_errs_total",
+          "container": "node-exporter",
+          "device": "lxcf374af54b73b",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_receive_errs_total",
+          "container": "node-exporter",
+          "device": "lxcfd09d413921a",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_transmit_bytes_total",
+          "container": "node-exporter",
+          "device": "cilium_host",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "818"
+          ],
+          [
+            1784015160.384,
+            "818"
+          ],
+          [
+            1784015170.384,
+            "818"
+          ],
+          [
+            1784015180.384,
+            "818"
+          ],
+          [
+            1784015190.384,
+            "818"
+          ],
+          [
+            1784015200.384,
+            "818"
+          ],
+          [
+            1784015210.384,
+            "818"
+          ],
+          [
+            1784015220.384,
+            "818"
+          ],
+          [
+            1784015230.384,
+            "818"
+          ],
+          [
+            1784015240.384,
+            "818"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_transmit_bytes_total",
+          "container": "node-exporter",
+          "device": "cilium_net",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "24752340"
+          ],
+          [
+            1784015160.384,
+            "24752340"
+          ],
+          [
+            1784015170.384,
+            "24752406"
+          ],
+          [
+            1784015180.384,
+            "24752472"
+          ],
+          [
+            1784015190.384,
+            "24752472"
+          ],
+          [
+            1784015200.384,
+            "24752472"
+          ],
+          [
+            1784015210.384,
+            "24752819"
+          ],
+          [
+            1784015220.384,
+            "24752819"
+          ],
+          [
+            1784015230.384,
+            "24752885"
+          ],
+          [
+            1784015240.384,
+            "24753364"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_transmit_bytes_total",
+          "container": "node-exporter",
+          "device": "cilium_vxlan",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "345159888"
+          ],
+          [
+            1784015160.384,
+            "345159888"
+          ],
+          [
+            1784015170.384,
+            "345207414"
+          ],
+          [
+            1784015180.384,
+            "345302416"
+          ],
+          [
+            1784015190.384,
+            "345302416"
+          ],
+          [
+            1784015200.384,
+            "345351112"
+          ],
+          [
+            1784015210.384,
+            "345449201"
+          ],
+          [
+            1784015220.384,
+            "345449201"
+          ],
+          [
+            1784015230.384,
+            "345497939"
+          ],
+          [
+            1784015240.384,
+            "345593289"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_transmit_bytes_total",
+          "container": "node-exporter",
+          "device": "docker0",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_transmit_bytes_total",
+          "container": "node-exporter",
+          "device": "enp33s0f0",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "1932774167"
+          ],
+          [
+            1784015160.384,
+            "1932774167"
+          ],
+          [
+            1784015170.384,
+            "1932976324"
+          ],
+          [
+            1784015180.384,
+            "1933299607"
+          ],
+          [
+            1784015190.384,
+            "1933299607"
+          ],
+          [
+            1784015200.384,
+            "1933571293"
+          ],
+          [
+            1784015210.384,
+            "1933903926"
+          ],
+          [
+            1784015220.384,
+            "1933903926"
+          ],
+          [
+            1784015230.384,
+            "1934116046"
+          ],
+          [
+            1784015240.384,
+            "1934439814"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_transmit_bytes_total",
+          "container": "node-exporter",
+          "device": "enp33s0f1",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_transmit_bytes_total",
+          "container": "node-exporter",
+          "device": "lxc16ae34325b7c",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "57578662"
+          ],
+          [
+            1784015160.384,
+            "57578662"
+          ],
+          [
+            1784015170.384,
+            "57579758"
+          ],
+          [
+            1784015180.384,
+            "57580788"
+          ],
+          [
+            1784015190.384,
+            "57580788"
+          ],
+          [
+            1784015200.384,
+            "57581950"
+          ],
+          [
+            1784015210.384,
+            "57583046"
+          ],
+          [
+            1784015220.384,
+            "57583046"
+          ],
+          [
+            1784015230.384,
+            "57584142"
+          ],
+          [
+            1784015240.384,
+            "57585172"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_transmit_bytes_total",
+          "container": "node-exporter",
+          "device": "lxc36059a57c50a",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "990121424"
+          ],
+          [
+            1784015160.384,
+            "990121424"
+          ],
+          [
+            1784015170.384,
+            "990245247"
+          ],
+          [
+            1784015180.384,
+            "990245247"
+          ],
+          [
+            1784015190.384,
+            "990245247"
+          ],
+          [
+            1784015200.384,
+            "990245460"
+          ],
+          [
+            1784015210.384,
+            "990245460"
+          ],
+          [
+            1784015220.384,
+            "990245460"
+          ],
+          [
+            1784015230.384,
+            "990369388"
+          ],
+          [
+            1784015240.384,
+            "990369388"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_transmit_bytes_total",
+          "container": "node-exporter",
+          "device": "lxc4a271cda4e2d",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "806"
+          ],
+          [
+            1784015160.384,
+            "806"
+          ],
+          [
+            1784015170.384,
+            "806"
+          ],
+          [
+            1784015180.384,
+            "806"
+          ],
+          [
+            1784015190.384,
+            "806"
+          ],
+          [
+            1784015200.384,
+            "806"
+          ],
+          [
+            1784015210.384,
+            "806"
+          ],
+          [
+            1784015220.384,
+            "806"
+          ],
+          [
+            1784015230.384,
+            "806"
+          ],
+          [
+            1784015240.384,
+            "806"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_transmit_bytes_total",
+          "container": "node-exporter",
+          "device": "lxc_health",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "12877746"
+          ],
+          [
+            1784015160.384,
+            "12877746"
+          ],
+          [
+            1784015170.384,
+            "12878112"
+          ],
+          [
+            1784015180.384,
+            "12878352"
+          ],
+          [
+            1784015190.384,
+            "12878352"
+          ],
+          [
+            1784015200.384,
+            "12879224"
+          ],
+          [
+            1784015210.384,
+            "12879488"
+          ],
+          [
+            1784015220.384,
+            "12879488"
+          ],
+          [
+            1784015230.384,
+            "12879752"
+          ],
+          [
+            1784015240.384,
+            "12880016"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_transmit_bytes_total",
+          "container": "node-exporter",
+          "device": "lxcb111152091eb",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "39473264165"
+          ],
+          [
+            1784015160.384,
+            "39473264165"
+          ],
+          [
+            1784015170.384,
+            "39480951937"
+          ],
+          [
+            1784015180.384,
+            "39489807061"
+          ],
+          [
+            1784015190.384,
+            "39489807061"
+          ],
+          [
+            1784015200.384,
+            "39499143996"
+          ],
+          [
+            1784015210.384,
+            "39507154739"
+          ],
+          [
+            1784015220.384,
+            "39507154739"
+          ],
+          [
+            1784015230.384,
+            "39515505730"
+          ],
+          [
+            1784015240.384,
+            "39526532818"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_transmit_bytes_total",
+          "container": "node-exporter",
+          "device": "lxcf374af54b73b",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015200.384,
+            "806"
+          ],
+          [
+            1784015210.384,
+            "806"
+          ],
+          [
+            1784015220.384,
+            "806"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_transmit_bytes_total",
+          "container": "node-exporter",
+          "device": "lxcfd09d413921a",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "35925479"
+          ],
+          [
+            1784015160.384,
+            "35925479"
+          ],
+          [
+            1784015170.384,
+            "35925479"
+          ],
+          [
+            1784015180.384,
+            "35948497"
+          ],
+          [
+            1784015190.384,
+            "35948497"
+          ],
+          [
+            1784015200.384,
+            "35948497"
+          ],
+          [
+            1784015210.384,
+            "35948563"
+          ],
+          [
+            1784015220.384,
+            "35948563"
+          ],
+          [
+            1784015230.384,
+            "35948563"
+          ],
+          [
+            1784015240.384,
+            "35948629"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_transmit_drop_total",
+          "container": "node-exporter",
+          "device": "cilium_host",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_transmit_drop_total",
+          "container": "node-exporter",
+          "device": "cilium_net",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_transmit_drop_total",
+          "container": "node-exporter",
+          "device": "cilium_vxlan",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_transmit_drop_total",
+          "container": "node-exporter",
+          "device": "docker0",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "2"
+          ],
+          [
+            1784015160.384,
+            "2"
+          ],
+          [
+            1784015170.384,
+            "2"
+          ],
+          [
+            1784015180.384,
+            "2"
+          ],
+          [
+            1784015190.384,
+            "2"
+          ],
+          [
+            1784015200.384,
+            "2"
+          ],
+          [
+            1784015210.384,
+            "2"
+          ],
+          [
+            1784015220.384,
+            "2"
+          ],
+          [
+            1784015230.384,
+            "2"
+          ],
+          [
+            1784015240.384,
+            "2"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_transmit_drop_total",
+          "container": "node-exporter",
+          "device": "enp33s0f0",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "3"
+          ],
+          [
+            1784015160.384,
+            "3"
+          ],
+          [
+            1784015170.384,
+            "3"
+          ],
+          [
+            1784015180.384,
+            "3"
+          ],
+          [
+            1784015190.384,
+            "3"
+          ],
+          [
+            1784015200.384,
+            "3"
+          ],
+          [
+            1784015210.384,
+            "3"
+          ],
+          [
+            1784015220.384,
+            "3"
+          ],
+          [
+            1784015230.384,
+            "3"
+          ],
+          [
+            1784015240.384,
+            "3"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_transmit_drop_total",
+          "container": "node-exporter",
+          "device": "enp33s0f1",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "2"
+          ],
+          [
+            1784015160.384,
+            "2"
+          ],
+          [
+            1784015170.384,
+            "2"
+          ],
+          [
+            1784015180.384,
+            "2"
+          ],
+          [
+            1784015190.384,
+            "2"
+          ],
+          [
+            1784015200.384,
+            "2"
+          ],
+          [
+            1784015210.384,
+            "2"
+          ],
+          [
+            1784015220.384,
+            "2"
+          ],
+          [
+            1784015230.384,
+            "2"
+          ],
+          [
+            1784015240.384,
+            "2"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_transmit_drop_total",
+          "container": "node-exporter",
+          "device": "lxc16ae34325b7c",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_transmit_drop_total",
+          "container": "node-exporter",
+          "device": "lxc36059a57c50a",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_transmit_drop_total",
+          "container": "node-exporter",
+          "device": "lxc4a271cda4e2d",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_transmit_drop_total",
+          "container": "node-exporter",
+          "device": "lxc_health",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_transmit_drop_total",
+          "container": "node-exporter",
+          "device": "lxcb111152091eb",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_transmit_drop_total",
+          "container": "node-exporter",
+          "device": "lxcf374af54b73b",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_transmit_drop_total",
+          "container": "node-exporter",
+          "device": "lxcfd09d413921a",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_transmit_errs_total",
+          "container": "node-exporter",
+          "device": "cilium_host",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_transmit_errs_total",
+          "container": "node-exporter",
+          "device": "cilium_net",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_transmit_errs_total",
+          "container": "node-exporter",
+          "device": "cilium_vxlan",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_transmit_errs_total",
+          "container": "node-exporter",
+          "device": "docker0",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_transmit_errs_total",
+          "container": "node-exporter",
+          "device": "enp33s0f0",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_transmit_errs_total",
+          "container": "node-exporter",
+          "device": "enp33s0f1",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_transmit_errs_total",
+          "container": "node-exporter",
+          "device": "lxc16ae34325b7c",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_transmit_errs_total",
+          "container": "node-exporter",
+          "device": "lxc36059a57c50a",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_transmit_errs_total",
+          "container": "node-exporter",
+          "device": "lxc4a271cda4e2d",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_transmit_errs_total",
+          "container": "node-exporter",
+          "device": "lxc_health",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_transmit_errs_total",
+          "container": "node-exporter",
+          "device": "lxcb111152091eb",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_transmit_errs_total",
+          "container": "node-exporter",
+          "device": "lxcf374af54b73b",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_network_transmit_errs_total",
+          "container": "node-exporter",
+          "device": "lxcfd09d413921a",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      }
+    ],
+    "resultType": "matrix"
+  },
+  "status": "success"
+}

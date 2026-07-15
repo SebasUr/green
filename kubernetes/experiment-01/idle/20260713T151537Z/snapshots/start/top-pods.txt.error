@@ -1,0 +1,1 @@
+kubectl top pods -A --field-selector spec.nodeName=sebas-green-baremetal-jpmdwiscskyy-node-0: Error from server (BadRequest): "spec.nodeName" is not a known field selector: only "metadata.name", "metadata.namespace"

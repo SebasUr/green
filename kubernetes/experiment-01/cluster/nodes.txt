@@ -1,0 +1,4 @@
+NAME                                        STATUS   ROLES    AGE     VERSION   INTERNAL-IP       EXTERNAL-IP   OS-IMAGE                        KERNEL-VERSION            CONTAINER-RUNTIME
+sebas-green-baremetal-jpmdwiscskyy-node-0   Ready    <none>   4d15h   v1.35.3   188.184.49.170    <none>        Fedora CoreOS 43.20260413.3.2   6.19.12-200.fc43.x86_64   containerd://2.1.4
+sebas-green-cyl76pnkgqu3-master-0           Ready    master   4d18h   v1.35.3   188.185.119.176   <none>        Fedora CoreOS 43.20260413.3.2   6.19.12-200.fc43.x86_64   containerd://2.1.4
+sebas-green-cyl76pnkgqu3-node-0             Ready    <none>   4d18h   v1.35.3   188.185.116.222   <none>        Fedora CoreOS 43.20260413.3.2   6.19.12-200.fc43.x86_64   containerd://2.1.4

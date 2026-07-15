@@ -1,0 +1,136 @@
+{
+  "apiVersion": "batch/v1",
+  "kind": "Job",
+  "metadata": {
+    "annotations": {
+      "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"batch/v1\",\"kind\":\"Job\",\"metadata\":{\"annotations\":{},\"labels\":{\"sustainability.cern.ch/experiment\":\"green-window-01\",\"sustainability.cern.ch/policy\":\"calibration\",\"sustainability.cern.ch/trial\":\"smoke-runner-02\"},\"name\":\"mc-smoke-runner-02\",\"namespace\":\"green-experiment\"},\"spec\":{\"backoffLimit\":0,\"template\":{\"metadata\":{\"labels\":{\"sustainability.cern.ch/experiment\":\"green-window-01\",\"sustainability.cern.ch/policy\":\"calibration\",\"sustainability.cern.ch/trial\":\"smoke-runner-02\"}},\"spec\":{\"containers\":[{\"command\":[\"python\",\"/workload/monte_carlo.py\"],\"env\":[{\"name\":\"WORKERS\",\"value\":\"16\"},{\"name\":\"SAMPLES_PER_WORKER\",\"value\":\"100000000\"},{\"name\":\"BASE_SEED\",\"value\":\"20260713\"}],\"image\":\"python:3.12-slim\",\"imagePullPolicy\":\"IfNotPresent\",\"name\":\"monte-carlo\",\"resources\":{\"limits\":{\"cpu\":\"16\",\"memory\":\"2Gi\"},\"requests\":{\"cpu\":\"16\",\"memory\":\"2Gi\"}},\"volumeMounts\":[{\"mountPath\":\"/workload\",\"name\":\"workload\",\"readOnly\":true}]}],\"nodeSelector\":{\"sustainability.cern.ch/hardware\":\"baremetal\"},\"restartPolicy\":\"Never\",\"volumes\":[{\"configMap\":{\"name\":\"monte-carlo-code\"},\"name\":\"workload\"}]}}}}\n"
+    },
+    "creationTimestamp": "2026-07-14T07:46:20Z",
+    "generation": 1,
+    "labels": {
+      "sustainability.cern.ch/experiment": "green-window-01",
+      "sustainability.cern.ch/policy": "calibration",
+      "sustainability.cern.ch/trial": "smoke-runner-02"
+    },
+    "name": "mc-smoke-runner-02",
+    "namespace": "green-experiment",
+    "resourceVersion": "1957813",
+    "uid": "136fb76a-df6a-4152-b01a-57ef1aac3248"
+  },
+  "spec": {
+    "backoffLimit": 0,
+    "completionMode": "NonIndexed",
+    "completions": 1,
+    "manualSelector": false,
+    "parallelism": 1,
+    "podReplacementPolicy": "TerminatingOrFailed",
+    "selector": {
+      "matchLabels": {
+        "batch.kubernetes.io/controller-uid": "136fb76a-df6a-4152-b01a-57ef1aac3248"
+      }
+    },
+    "suspend": false,
+    "template": {
+      "metadata": {
+        "labels": {
+          "batch.kubernetes.io/controller-uid": "136fb76a-df6a-4152-b01a-57ef1aac3248",
+          "batch.kubernetes.io/job-name": "mc-smoke-runner-02",
+          "controller-uid": "136fb76a-df6a-4152-b01a-57ef1aac3248",
+          "job-name": "mc-smoke-runner-02",
+          "sustainability.cern.ch/experiment": "green-window-01",
+          "sustainability.cern.ch/policy": "calibration",
+          "sustainability.cern.ch/trial": "smoke-runner-02"
+        }
+      },
+      "spec": {
+        "containers": [
+          {
+            "command": [
+              "python",
+              "/workload/monte_carlo.py"
+            ],
+            "env": [
+              {
+                "name": "WORKERS",
+                "value": "16"
+              },
+              {
+                "name": "SAMPLES_PER_WORKER",
+                "value": "100000000"
+              },
+              {
+                "name": "BASE_SEED",
+                "value": "20260713"
+              }
+            ],
+            "image": "python:3.12-slim",
+            "imagePullPolicy": "IfNotPresent",
+            "name": "monte-carlo",
+            "resources": {
+              "limits": {
+                "cpu": "16",
+                "memory": "2Gi"
+              },
+              "requests": {
+                "cpu": "16",
+                "memory": "2Gi"
+              }
+            },
+            "terminationMessagePath": "/dev/termination-log",
+            "terminationMessagePolicy": "File",
+            "volumeMounts": [
+              {
+                "mountPath": "/workload",
+                "name": "workload",
+                "readOnly": true
+              }
+            ]
+          }
+        ],
+        "dnsPolicy": "ClusterFirst",
+        "nodeSelector": {
+          "sustainability.cern.ch/hardware": "baremetal"
+        },
+        "restartPolicy": "Never",
+        "schedulerName": "default-scheduler",
+        "securityContext": {},
+        "terminationGracePeriodSeconds": 30,
+        "volumes": [
+          {
+            "configMap": {
+              "defaultMode": 420,
+              "name": "monte-carlo-code"
+            },
+            "name": "workload"
+          }
+        ]
+      }
+    }
+  },
+  "status": {
+    "completionTime": "2026-07-14T07:46:52Z",
+    "conditions": [
+      {
+        "lastProbeTime": "2026-07-14T07:46:52Z",
+        "lastTransitionTime": "2026-07-14T07:46:52Z",
+        "message": "Reached expected number of succeeded pods",
+        "reason": "CompletionsReached",
+        "status": "True",
+        "type": "SuccessCriteriaMet"
+      },
+      {
+        "lastProbeTime": "2026-07-14T07:46:52Z",
+        "lastTransitionTime": "2026-07-14T07:46:52Z",
+        "message": "Reached expected number of succeeded pods",
+        "reason": "CompletionsReached",
+        "status": "True",
+        "type": "Complete"
+      }
+    ],
+    "ready": 0,
+    "startTime": "2026-07-14T07:46:20Z",
+    "succeeded": 1,
+    "terminating": 0,
+    "uncountedTerminatedPods": {}
+  }
+}

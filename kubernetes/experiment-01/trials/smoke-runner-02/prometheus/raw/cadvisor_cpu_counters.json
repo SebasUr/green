@@ -1,0 +1,1120 @@
+{
+  "data": {
+    "result": [
+      {
+        "metric": {
+          "__name__": "container_cpu_usage_seconds_total",
+          "container": "automount",
+          "cpu": "total",
+          "endpoint": "https-metrics",
+          "id": "/kubepods/besteffort/podc7f0e98b-aa0c-4e75-80f3-6af6627cb930/05ac4abe1451bcaf581cca1faf9dd472236a04e32aba38dc7e7f1c522d5f2ab0",
+          "image": "registry.cern.ch/kubernetes/cvmfs-csi:v2.6.0",
+          "instance": "188.184.49.170:10250",
+          "job": "kubelet",
+          "metrics_path": "/metrics/cadvisor",
+          "name": "05ac4abe1451bcaf581cca1faf9dd472236a04e32aba38dc7e7f1c522d5f2ab0",
+          "namespace": "kube-system",
+          "node": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "cern-magnum-cvmfs-csi-nodeplugin-jsm4k",
+          "service": "monitoring-kube-prometheus-kubelet"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "1.460995"
+          ],
+          [
+            1784015160.384,
+            "1.460995"
+          ],
+          [
+            1784015170.384,
+            "1.460995"
+          ],
+          [
+            1784015180.384,
+            "1.461053"
+          ],
+          [
+            1784015190.384,
+            "1.461053"
+          ],
+          [
+            1784015200.384,
+            "1.461053"
+          ],
+          [
+            1784015210.384,
+            "1.461053"
+          ],
+          [
+            1784015220.384,
+            "1.461053"
+          ],
+          [
+            1784015230.384,
+            "1.461053"
+          ],
+          [
+            1784015240.384,
+            "1.461053"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "container_cpu_usage_seconds_total",
+          "container": "automount",
+          "cpu": "total",
+          "endpoint": "https-metrics",
+          "id": "/kubepods/pode4c9691c-cfcb-41c2-9cf8-2fb6724b6ae5/54725ca2ec05030334979e76a4ee6f413c60e0353fb55d58c2395a9de98ba47f",
+          "image": "registry.cern.ch/kubernetes/eosxd-csi:v1.4.5",
+          "instance": "188.184.49.170:10250",
+          "job": "kubelet",
+          "metrics_path": "/metrics/cadvisor",
+          "name": "54725ca2ec05030334979e76a4ee6f413c60e0353fb55d58c2395a9de98ba47f",
+          "namespace": "kube-system",
+          "node": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "cern-magnum-eosxd-csi-nodeplugin-w9st8",
+          "service": "monitoring-kube-prometheus-kubelet"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0.433713"
+          ],
+          [
+            1784015160.384,
+            "0.433713"
+          ],
+          [
+            1784015170.384,
+            "0.433745"
+          ],
+          [
+            1784015180.384,
+            "0.433745"
+          ],
+          [
+            1784015190.384,
+            "0.433745"
+          ],
+          [
+            1784015200.384,
+            "0.433745"
+          ],
+          [
+            1784015210.384,
+            "0.433745"
+          ],
+          [
+            1784015220.384,
+            "0.433745"
+          ],
+          [
+            1784015230.384,
+            "0.433778"
+          ],
+          [
+            1784015240.384,
+            "0.433778"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "container_cpu_usage_seconds_total",
+          "container": "automount-reconciler",
+          "cpu": "total",
+          "endpoint": "https-metrics",
+          "id": "/kubepods/besteffort/podc7f0e98b-aa0c-4e75-80f3-6af6627cb930/23d614328e496dde0a174c60ecc364ee865b9541ccbf6b043dffb36f85487977",
+          "image": "registry.cern.ch/kubernetes/cvmfs-csi:v2.6.0",
+          "instance": "188.184.49.170:10250",
+          "job": "kubelet",
+          "metrics_path": "/metrics/cadvisor",
+          "name": "23d614328e496dde0a174c60ecc364ee865b9541ccbf6b043dffb36f85487977",
+          "namespace": "kube-system",
+          "node": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "cern-magnum-cvmfs-csi-nodeplugin-jsm4k",
+          "service": "monitoring-kube-prometheus-kubelet"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "17.634487"
+          ],
+          [
+            1784015160.384,
+            "17.634487"
+          ],
+          [
+            1784015170.384,
+            "17.635079"
+          ],
+          [
+            1784015180.384,
+            "17.635079"
+          ],
+          [
+            1784015190.384,
+            "17.635079"
+          ],
+          [
+            1784015200.384,
+            "17.635633"
+          ],
+          [
+            1784015210.384,
+            "17.635633"
+          ],
+          [
+            1784015220.384,
+            "17.635633"
+          ],
+          [
+            1784015230.384,
+            "17.635633"
+          ],
+          [
+            1784015240.384,
+            "17.638156"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "container_cpu_usage_seconds_total",
+          "container": "cilium-agent",
+          "cpu": "total",
+          "endpoint": "https-metrics",
+          "id": "/kubepods/burstable/pod4a5d94d8-5814-4c74-9cb2-21015bf6abd8/51d3d8ea611c47b55368a8e7ae7db169c485eec08c1280472e4e8bd68e0a12ba",
+          "image": "registry.cern.ch/kubernetes/cilium/cilium@sha256:49d87af187eeeb9e9e3ec2bc6bd372261a0b5cb2d845659463ba7cc10fe9e45f",
+          "instance": "188.184.49.170:10250",
+          "job": "kubelet",
+          "metrics_path": "/metrics/cadvisor",
+          "name": "51d3d8ea611c47b55368a8e7ae7db169c485eec08c1280472e4e8bd68e0a12ba",
+          "namespace": "kube-system",
+          "node": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "cilium-fqr2k",
+          "service": "monitoring-kube-prometheus-kubelet"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "14039.469834"
+          ],
+          [
+            1784015160.384,
+            "14039.469834"
+          ],
+          [
+            1784015170.384,
+            "14039.858281"
+          ],
+          [
+            1784015180.384,
+            "14040.215771"
+          ],
+          [
+            1784015190.384,
+            "14041.252602"
+          ],
+          [
+            1784015200.384,
+            "14041.51058"
+          ],
+          [
+            1784015210.384,
+            "14041.51058"
+          ],
+          [
+            1784015220.384,
+            "14042.051705"
+          ],
+          [
+            1784015230.384,
+            "14042.447697"
+          ],
+          [
+            1784015240.384,
+            "14042.447697"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "container_cpu_usage_seconds_total",
+          "container": "cilium-envoy",
+          "cpu": "total",
+          "endpoint": "https-metrics",
+          "id": "/kubepods/besteffort/podafef0d74-cce5-471b-bd41-e38cd116b35a/51f13ae7e1bc677dd2fd5269b2cd638618fbed5e18d872e44a5920a1d3f29ef4",
+          "image": "registry.cern.ch/kubernetes/cilium/cilium-envoy@sha256:1deb6709afcb5523579bf1abbc3255adf9e354565a88c4a9162c8d9cb1d77ab5",
+          "instance": "188.184.49.170:10250",
+          "job": "kubelet",
+          "metrics_path": "/metrics/cadvisor",
+          "name": "51f13ae7e1bc677dd2fd5269b2cd638618fbed5e18d872e44a5920a1d3f29ef4",
+          "namespace": "kube-system",
+          "node": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "cilium-envoy-vzrgm",
+          "service": "monitoring-kube-prometheus-kubelet"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "8660.138045"
+          ],
+          [
+            1784015160.384,
+            "8660.390914"
+          ],
+          [
+            1784015170.384,
+            "8660.64319"
+          ],
+          [
+            1784015180.384,
+            "8660.818167"
+          ],
+          [
+            1784015190.384,
+            "8660.818167"
+          ],
+          [
+            1784015200.384,
+            "8661.059465"
+          ],
+          [
+            1784015210.384,
+            "8661.059465"
+          ],
+          [
+            1784015220.384,
+            "8661.301093"
+          ],
+          [
+            1784015230.384,
+            "8661.301093"
+          ],
+          [
+            1784015240.384,
+            "8661.633523"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "container_cpu_usage_seconds_total",
+          "container": "csi-cephfsplugin",
+          "cpu": "total",
+          "endpoint": "https-metrics",
+          "id": "/kubepods/besteffort/pod2bfefa03-3477-4244-b7f2-85c0c4b2281d/edf9844f030446f0a37814ef3bef37d471d04743c72f346daa33e6bd5c9f75db",
+          "image": "registry.cern.ch/kubernetes/cephcsi/cephcsi:v3.15.1",
+          "instance": "188.184.49.170:10250",
+          "job": "kubelet",
+          "metrics_path": "/metrics/cadvisor",
+          "name": "edf9844f030446f0a37814ef3bef37d471d04743c72f346daa33e6bd5c9f75db",
+          "namespace": "kube-system",
+          "node": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "cern-magnum-ceph-csi-cephfs-nodeplugin-wjmdz",
+          "service": "monitoring-kube-prometheus-kubelet"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "88.043919"
+          ],
+          [
+            1784015160.384,
+            "88.043919"
+          ],
+          [
+            1784015170.384,
+            "88.043919"
+          ],
+          [
+            1784015180.384,
+            "88.043919"
+          ],
+          [
+            1784015190.384,
+            "88.043919"
+          ],
+          [
+            1784015200.384,
+            "88.04396"
+          ],
+          [
+            1784015210.384,
+            "88.04396"
+          ],
+          [
+            1784015220.384,
+            "88.04396"
+          ],
+          [
+            1784015230.384,
+            "88.04396"
+          ],
+          [
+            1784015240.384,
+            "88.04396"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "container_cpu_usage_seconds_total",
+          "container": "driver-registrar",
+          "cpu": "total",
+          "endpoint": "https-metrics",
+          "id": "/kubepods/besteffort/pod2bfefa03-3477-4244-b7f2-85c0c4b2281d/5119ce13442b701e9604988c38c6b237e6c3ffbd5dd85a70b9d8d3621850713b",
+          "image": "registry.cern.ch/kubernetes/sig-storage/csi-node-driver-registrar:v2.13.0",
+          "instance": "188.184.49.170:10250",
+          "job": "kubelet",
+          "metrics_path": "/metrics/cadvisor",
+          "name": "5119ce13442b701e9604988c38c6b237e6c3ffbd5dd85a70b9d8d3621850713b",
+          "namespace": "kube-system",
+          "node": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "cern-magnum-ceph-csi-cephfs-nodeplugin-wjmdz",
+          "service": "monitoring-kube-prometheus-kubelet"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "44.214475"
+          ],
+          [
+            1784015160.384,
+            "44.214977"
+          ],
+          [
+            1784015170.384,
+            "44.214977"
+          ],
+          [
+            1784015180.384,
+            "44.215639"
+          ],
+          [
+            1784015190.384,
+            "44.215639"
+          ],
+          [
+            1784015200.384,
+            "44.222222"
+          ],
+          [
+            1784015210.384,
+            "44.222222"
+          ],
+          [
+            1784015220.384,
+            "44.222616"
+          ],
+          [
+            1784015230.384,
+            "44.223059"
+          ],
+          [
+            1784015240.384,
+            "44.223356"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "container_cpu_usage_seconds_total",
+          "container": "falco",
+          "cpu": "total",
+          "endpoint": "https-metrics",
+          "id": "/kubepods/burstable/pod961bafe2-c865-4f8e-9664-84529957c8ba/705a45dfbae82ce82b04f1d0fe728528ff256879964a95e097cfa138936d79b8",
+          "image": "registry.cern.ch/kubernetes/falcosecurity/falco:43a7c5e",
+          "instance": "188.184.49.170:10250",
+          "job": "kubelet",
+          "metrics_path": "/metrics/cadvisor",
+          "name": "705a45dfbae82ce82b04f1d0fe728528ff256879964a95e097cfa138936d79b8",
+          "namespace": "kube-system",
+          "node": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "cern-magnum-falco-zbjrb",
+          "service": "monitoring-kube-prometheus-kubelet"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "17005.165181"
+          ],
+          [
+            1784015160.384,
+            "17005.971669"
+          ],
+          [
+            1784015170.384,
+            "17006.424593"
+          ],
+          [
+            1784015180.384,
+            "17006.424593"
+          ],
+          [
+            1784015190.384,
+            "17007.292346"
+          ],
+          [
+            1784015200.384,
+            "17007.753287"
+          ],
+          [
+            1784015210.384,
+            "17007.753287"
+          ],
+          [
+            1784015220.384,
+            "17008.428843"
+          ],
+          [
+            1784015230.384,
+            "17008.428843"
+          ],
+          [
+            1784015240.384,
+            "17009.102876"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "container_cpu_usage_seconds_total",
+          "container": "kepler",
+          "cpu": "total",
+          "endpoint": "https-metrics",
+          "id": "/kubepods/burstable/poddf01d1ca-7c4c-4166-8741-737879789523/765b74b2aac7bce2706c66a50ee14bf84cb245d42a6c17f792584273f1e62418",
+          "image": "quay.io/sustainable_computing_io/kepler:v0.11.4",
+          "instance": "188.184.49.170:10250",
+          "job": "kubelet",
+          "metrics_path": "/metrics/cadvisor",
+          "name": "765b74b2aac7bce2706c66a50ee14bf84cb245d42a6c17f792584273f1e62418",
+          "namespace": "kepler",
+          "node": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "service": "monitoring-kube-prometheus-kubelet"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "7424.293581"
+          ],
+          [
+            1784015160.384,
+            "7424.293581"
+          ],
+          [
+            1784015170.384,
+            "7426.046444"
+          ],
+          [
+            1784015180.384,
+            "7427.255188"
+          ],
+          [
+            1784015190.384,
+            "7427.255188"
+          ],
+          [
+            1784015200.384,
+            "7428.667698"
+          ],
+          [
+            1784015210.384,
+            "7430.21624"
+          ],
+          [
+            1784015220.384,
+            "7430.21624"
+          ],
+          [
+            1784015230.384,
+            "7431.443419"
+          ],
+          [
+            1784015240.384,
+            "7432.652811"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "container_cpu_usage_seconds_total",
+          "container": "monte-carlo",
+          "cpu": "total",
+          "endpoint": "https-metrics",
+          "id": "/kubepods/podf93d514a-181e-4ca1-9cb0-3d4dacf0d93d/3bc8029e29400f6a498bf8a59e27fa80f50f83f2de7830a6830654099ffde7ff",
+          "image": "docker.io/library/python:3.12-slim",
+          "instance": "188.184.49.170:10250",
+          "job": "kubelet",
+          "metrics_path": "/metrics/cadvisor",
+          "name": "3bc8029e29400f6a498bf8a59e27fa80f50f83f2de7830a6830654099ffde7ff",
+          "namespace": "green-experiment",
+          "node": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "mc-smoke-runner-02-5wjdt",
+          "service": "monitoring-kube-prometheus-kubelet"
+        },
+        "values": [
+          [
+            1784015190.384,
+            "0.02325"
+          ],
+          [
+            1784015200.384,
+            "210.676605"
+          ],
+          [
+            1784015210.384,
+            "210.676605"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "container_cpu_usage_seconds_total",
+          "container": "mountreconciler",
+          "cpu": "total",
+          "endpoint": "https-metrics",
+          "id": "/kubepods/pode4c9691c-cfcb-41c2-9cf8-2fb6724b6ae5/d33f0f8db2e37a8a764b927c4f76de5e627e42ac1a566dd51fa9cb90e9827f89",
+          "image": "registry.cern.ch/kubernetes/eosxd-csi:v1.4.5",
+          "instance": "188.184.49.170:10250",
+          "job": "kubelet",
+          "metrics_path": "/metrics/cadvisor",
+          "name": "d33f0f8db2e37a8a764b927c4f76de5e627e42ac1a566dd51fa9cb90e9827f89",
+          "namespace": "kube-system",
+          "node": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "cern-magnum-eosxd-csi-nodeplugin-w9st8",
+          "service": "monitoring-kube-prometheus-kubelet"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "533.033085"
+          ],
+          [
+            1784015160.384,
+            "533.033085"
+          ],
+          [
+            1784015170.384,
+            "533.074491"
+          ],
+          [
+            1784015180.384,
+            "533.074491"
+          ],
+          [
+            1784015190.384,
+            "533.074491"
+          ],
+          [
+            1784015200.384,
+            "533.074491"
+          ],
+          [
+            1784015210.384,
+            "533.096563"
+          ],
+          [
+            1784015220.384,
+            "533.096563"
+          ],
+          [
+            1784015230.384,
+            "533.130889"
+          ],
+          [
+            1784015240.384,
+            "533.130889"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "container_cpu_usage_seconds_total",
+          "container": "node-exporter",
+          "cpu": "total",
+          "endpoint": "https-metrics",
+          "id": "/kubepods/besteffort/podc2dbef85-1370-4fea-81c0-3bf01370f482/57f0306768cfabe838f1a120599a9e518f3cc1c958d6ebe458ab3a4409347fc6",
+          "image": "quay.io/prometheus/node-exporter:v1.12.0-distroless",
+          "instance": "188.184.49.170:10250",
+          "job": "kubelet",
+          "metrics_path": "/metrics/cadvisor",
+          "name": "57f0306768cfabe838f1a120599a9e518f3cc1c958d6ebe458ab3a4409347fc6",
+          "namespace": "monitoring",
+          "node": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-kube-prometheus-kubelet"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "738.382326"
+          ],
+          [
+            1784015160.384,
+            "738.382326"
+          ],
+          [
+            1784015170.384,
+            "738.515286"
+          ],
+          [
+            1784015180.384,
+            "738.515286"
+          ],
+          [
+            1784015190.384,
+            "738.67327"
+          ],
+          [
+            1784015200.384,
+            "738.836418"
+          ],
+          [
+            1784015210.384,
+            "738.836418"
+          ],
+          [
+            1784015220.384,
+            "738.976531"
+          ],
+          [
+            1784015230.384,
+            "739.116325"
+          ],
+          [
+            1784015240.384,
+            "739.116325"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "container_cpu_usage_seconds_total",
+          "container": "node-problem-detector",
+          "cpu": "total",
+          "endpoint": "https-metrics",
+          "id": "/kubepods/besteffort/podd5204d36-dc3b-4cd0-a48c-40dcf224bc19/0997de48b4f841f32cf535c3fbcb88b57cf2496e62646b8bd87f30a35c2676f0",
+          "image": "registry.cern.ch/kubernetes/node-problem-detector/node-problem-detector:v0.8.10",
+          "instance": "188.184.49.170:10250",
+          "job": "kubelet",
+          "metrics_path": "/metrics/cadvisor",
+          "name": "0997de48b4f841f32cf535c3fbcb88b57cf2496e62646b8bd87f30a35c2676f0",
+          "namespace": "kube-system",
+          "node": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "cern-magnum-node-problem-detector-pxtnb",
+          "service": "monitoring-kube-prometheus-kubelet"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "264.795744"
+          ],
+          [
+            1784015160.384,
+            "264.805029"
+          ],
+          [
+            1784015170.384,
+            "264.81924"
+          ],
+          [
+            1784015180.384,
+            "264.81924"
+          ],
+          [
+            1784015190.384,
+            "264.83139"
+          ],
+          [
+            1784015200.384,
+            "264.850775"
+          ],
+          [
+            1784015210.384,
+            "264.850775"
+          ],
+          [
+            1784015220.384,
+            "264.859774"
+          ],
+          [
+            1784015230.384,
+            "264.859774"
+          ],
+          [
+            1784015240.384,
+            "264.870382"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "container_cpu_usage_seconds_total",
+          "container": "nodeplugin",
+          "cpu": "total",
+          "endpoint": "https-metrics",
+          "id": "/kubepods/besteffort/podc7f0e98b-aa0c-4e75-80f3-6af6627cb930/6670ef9d2fdeb2f45cabc74d8190b2a36800829f7ab1e935dad27456be4ce578",
+          "image": "registry.cern.ch/kubernetes/cvmfs-csi:v2.6.0",
+          "instance": "188.184.49.170:10250",
+          "job": "kubelet",
+          "metrics_path": "/metrics/cadvisor",
+          "name": "6670ef9d2fdeb2f45cabc74d8190b2a36800829f7ab1e935dad27456be4ce578",
+          "namespace": "kube-system",
+          "node": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "cern-magnum-cvmfs-csi-nodeplugin-jsm4k",
+          "service": "monitoring-kube-prometheus-kubelet"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0.614295"
+          ],
+          [
+            1784015160.384,
+            "0.614295"
+          ],
+          [
+            1784015170.384,
+            "0.614295"
+          ],
+          [
+            1784015180.384,
+            "0.614295"
+          ],
+          [
+            1784015190.384,
+            "0.614358"
+          ],
+          [
+            1784015200.384,
+            "0.614358"
+          ],
+          [
+            1784015210.384,
+            "0.614358"
+          ],
+          [
+            1784015220.384,
+            "0.614358"
+          ],
+          [
+            1784015230.384,
+            "0.614358"
+          ],
+          [
+            1784015240.384,
+            "0.614419"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "container_cpu_usage_seconds_total",
+          "container": "nodeplugin",
+          "cpu": "total",
+          "endpoint": "https-metrics",
+          "id": "/kubepods/pode4c9691c-cfcb-41c2-9cf8-2fb6724b6ae5/6ac97f9db9c9111d351161d7594795ef3314958ffc116f5b869823db0281be28",
+          "image": "registry.cern.ch/kubernetes/eosxd-csi:v1.4.5",
+          "instance": "188.184.49.170:10250",
+          "job": "kubelet",
+          "metrics_path": "/metrics/cadvisor",
+          "name": "6ac97f9db9c9111d351161d7594795ef3314958ffc116f5b869823db0281be28",
+          "namespace": "kube-system",
+          "node": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "cern-magnum-eosxd-csi-nodeplugin-w9st8",
+          "service": "monitoring-kube-prometheus-kubelet"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0.410473"
+          ],
+          [
+            1784015160.384,
+            "0.410473"
+          ],
+          [
+            1784015170.384,
+            "0.410473"
+          ],
+          [
+            1784015180.384,
+            "0.410517"
+          ],
+          [
+            1784015190.384,
+            "0.410517"
+          ],
+          [
+            1784015200.384,
+            "0.410517"
+          ],
+          [
+            1784015210.384,
+            "0.410517"
+          ],
+          [
+            1784015220.384,
+            "0.410517"
+          ],
+          [
+            1784015230.384,
+            "0.41056"
+          ],
+          [
+            1784015240.384,
+            "0.41056"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "container_cpu_usage_seconds_total",
+          "container": "registrar",
+          "cpu": "total",
+          "endpoint": "https-metrics",
+          "id": "/kubepods/besteffort/podc7f0e98b-aa0c-4e75-80f3-6af6627cb930/de71d2b5b44163004556fcc3b96a2d51cc669cfaccfd1768e5e7d1e009c3c0e0",
+          "image": "registry.cern.ch/kubernetes/sig-storage/csi-node-driver-registrar:v2.15.0",
+          "instance": "188.184.49.170:10250",
+          "job": "kubelet",
+          "metrics_path": "/metrics/cadvisor",
+          "name": "de71d2b5b44163004556fcc3b96a2d51cc669cfaccfd1768e5e7d1e009c3c0e0",
+          "namespace": "kube-system",
+          "node": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "cern-magnum-cvmfs-csi-nodeplugin-jsm4k",
+          "service": "monitoring-kube-prometheus-kubelet"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "46.912059"
+          ],
+          [
+            1784015160.384,
+            "46.912059"
+          ],
+          [
+            1784015170.384,
+            "46.912521"
+          ],
+          [
+            1784015180.384,
+            "46.91275"
+          ],
+          [
+            1784015190.384,
+            "46.912972"
+          ],
+          [
+            1784015200.384,
+            "46.913208"
+          ],
+          [
+            1784015210.384,
+            "46.920971"
+          ],
+          [
+            1784015220.384,
+            "46.920971"
+          ],
+          [
+            1784015230.384,
+            "46.921449"
+          ],
+          [
+            1784015240.384,
+            "46.921774"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "container_cpu_usage_seconds_total",
+          "container": "registrar",
+          "cpu": "total",
+          "endpoint": "https-metrics",
+          "id": "/kubepods/pode4c9691c-cfcb-41c2-9cf8-2fb6724b6ae5/c46493f879f1b3acc2c335d296c3b2d00b160fcc8faf385a796575f0326e4304",
+          "image": "registry.cern.ch/kubernetes/sig-storage/csi-node-driver-registrar:v2.8.0",
+          "instance": "188.184.49.170:10250",
+          "job": "kubelet",
+          "metrics_path": "/metrics/cadvisor",
+          "name": "c46493f879f1b3acc2c335d296c3b2d00b160fcc8faf385a796575f0326e4304",
+          "namespace": "kube-system",
+          "node": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "cern-magnum-eosxd-csi-nodeplugin-w9st8",
+          "service": "monitoring-kube-prometheus-kubelet"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "42.460985"
+          ],
+          [
+            1784015160.384,
+            "42.470091"
+          ],
+          [
+            1784015170.384,
+            "42.470091"
+          ],
+          [
+            1784015180.384,
+            "42.470091"
+          ],
+          [
+            1784015190.384,
+            "42.470091"
+          ],
+          [
+            1784015200.384,
+            "42.470091"
+          ],
+          [
+            1784015210.384,
+            "42.470091"
+          ],
+          [
+            1784015220.384,
+            "42.470185"
+          ],
+          [
+            1784015230.384,
+            "42.470185"
+          ],
+          [
+            1784015240.384,
+            "42.470185"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "container_cpu_usage_seconds_total",
+          "container": "singlemount",
+          "cpu": "total",
+          "endpoint": "https-metrics",
+          "id": "/kubepods/besteffort/podc7f0e98b-aa0c-4e75-80f3-6af6627cb930/2f2ffd3ea454169ee7544be74856b7030d7033fbc522fdbff9de12462fc9ed3b",
+          "image": "registry.cern.ch/kubernetes/cvmfs-csi:v2.6.0",
+          "instance": "188.184.49.170:10250",
+          "job": "kubelet",
+          "metrics_path": "/metrics/cadvisor",
+          "name": "2f2ffd3ea454169ee7544be74856b7030d7033fbc522fdbff9de12462fc9ed3b",
+          "namespace": "kube-system",
+          "node": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "cern-magnum-cvmfs-csi-nodeplugin-jsm4k",
+          "service": "monitoring-kube-prometheus-kubelet"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0.544673"
+          ],
+          [
+            1784015160.384,
+            "0.544673"
+          ],
+          [
+            1784015170.384,
+            "0.544673"
+          ],
+          [
+            1784015180.384,
+            "0.544736"
+          ],
+          [
+            1784015190.384,
+            "0.544736"
+          ],
+          [
+            1784015200.384,
+            "0.544736"
+          ],
+          [
+            1784015210.384,
+            "0.544736"
+          ],
+          [
+            1784015220.384,
+            "0.544736"
+          ],
+          [
+            1784015230.384,
+            "0.544736"
+          ],
+          [
+            1784015240.384,
+            "0.544736"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "container_cpu_usage_seconds_total",
+          "container": "worker",
+          "cpu": "total",
+          "endpoint": "https-metrics",
+          "id": "/kubepods/besteffort/pod42f2f47c-e6d9-454a-b88e-caaf52d29f94/43977b3a923beebb70c0487c1b65d4174f6992d6102f6d7429451f71e1b288bf",
+          "image": "registry.cern.ch/kubernetes/nfd/node-feature-discovery:v0.15.4",
+          "instance": "188.184.49.170:10250",
+          "job": "kubelet",
+          "metrics_path": "/metrics/cadvisor",
+          "name": "43977b3a923beebb70c0487c1b65d4174f6992d6102f6d7429451f71e1b288bf",
+          "namespace": "kube-system",
+          "node": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "cern-magnum-node-feature-discovery-worker-5l2g7",
+          "service": "monitoring-kube-prometheus-kubelet"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "2110.236984"
+          ],
+          [
+            1784015160.384,
+            "2110.504698"
+          ],
+          [
+            1784015170.384,
+            "2110.504698"
+          ],
+          [
+            1784015180.384,
+            "2110.504698"
+          ],
+          [
+            1784015190.384,
+            "2110.50508"
+          ],
+          [
+            1784015200.384,
+            "2110.50508"
+          ],
+          [
+            1784015210.384,
+            "2110.50508"
+          ],
+          [
+            1784015220.384,
+            "2110.796044"
+          ],
+          [
+            1784015230.384,
+            "2110.796044"
+          ],
+          [
+            1784015240.384,
+            "2110.796044"
+          ]
+        ]
+      }
+    ],
+    "resultType": "matrix"
+  },
+  "status": "success"
+}

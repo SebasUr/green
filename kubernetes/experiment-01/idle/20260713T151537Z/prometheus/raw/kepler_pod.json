@@ -1,0 +1,1544 @@
+{
+  "data": {
+    "result": [
+      {
+        "metric": {
+          "__name__": "kepler_pod_cpu_joules_total",
+          "container": "kepler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "22e5e40f-97e7-4c24-b802-7326966299b8",
+          "pod_name": "node-debugger-sebas-green-baremetal-jpmdwiscskyy-node-0-jcbg6",
+          "pod_namespace": "default",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1783955738.456,
+            "0.000036"
+          ],
+          [
+            1783955748.456,
+            "0.000036"
+          ],
+          [
+            1783955758.456,
+            "0.000036"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_pod_cpu_joules_total",
+          "container": "kepler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "22e5e40f-97e7-4c24-b802-7326966299b8",
+          "pod_name": "node-debugger-sebas-green-baremetal-jpmdwiscskyy-node-0-jcbg6",
+          "pod_namespace": "default",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1783955738.456,
+            "0.043794"
+          ],
+          [
+            1783955748.456,
+            "0.043794"
+          ],
+          [
+            1783955758.456,
+            "0.043794"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_pod_cpu_joules_total",
+          "container": "kepler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "2bfefa03-3477-4244-b7f2-85c0c4b2281d",
+          "pod_name": "cern-magnum-ceph-csi-cephfs-nodeplugin-wjmdz",
+          "pod_namespace": "kube-system",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1783955738.456,
+            "0.004413"
+          ],
+          [
+            1783955748.456,
+            "0.004413"
+          ],
+          [
+            1783955758.456,
+            "0.004413"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_pod_cpu_joules_total",
+          "container": "kepler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "2bfefa03-3477-4244-b7f2-85c0c4b2281d",
+          "pod_name": "cern-magnum-ceph-csi-cephfs-nodeplugin-wjmdz",
+          "pod_namespace": "kube-system",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1783955738.456,
+            "7.717291"
+          ],
+          [
+            1783955748.456,
+            "7.717291"
+          ],
+          [
+            1783955758.456,
+            "7.717291"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_pod_cpu_joules_total",
+          "container": "kepler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "42f2f47c-e6d9-454a-b88e-caaf52d29f94",
+          "pod_name": "cern-magnum-node-feature-discovery-worker-5l2g7",
+          "pod_namespace": "kube-system",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1783955738.456,
+            "0.075605"
+          ],
+          [
+            1783955748.456,
+            "0.075605"
+          ],
+          [
+            1783955758.456,
+            "0.075747"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_pod_cpu_joules_total",
+          "container": "kepler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "42f2f47c-e6d9-454a-b88e-caaf52d29f94",
+          "pod_name": "cern-magnum-node-feature-discovery-worker-5l2g7",
+          "pod_namespace": "kube-system",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1783955738.456,
+            "152.993722"
+          ],
+          [
+            1783955748.456,
+            "152.993722"
+          ],
+          [
+            1783955758.456,
+            "153.428671"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_pod_cpu_joules_total",
+          "container": "kepler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "4a5d94d8-5814-4c74-9cb2-21015bf6abd8",
+          "pod_name": "cilium-fqr2k",
+          "pod_namespace": "kube-system",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1783955738.456,
+            "0.546024"
+          ],
+          [
+            1783955748.456,
+            "0.546284"
+          ],
+          [
+            1783955758.456,
+            "0.546712"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_pod_cpu_joules_total",
+          "container": "kepler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "4a5d94d8-5814-4c74-9cb2-21015bf6abd8",
+          "pod_name": "cilium-fqr2k",
+          "pod_namespace": "kube-system",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1783955738.456,
+            "992.572843"
+          ],
+          [
+            1783955748.456,
+            "993.228713"
+          ],
+          [
+            1783955758.456,
+            "994.146813"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_pod_cpu_joules_total",
+          "container": "kepler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "961bafe2-c865-4f8e-9664-84529957c8ba",
+          "pod_name": "cern-magnum-falco-zbjrb",
+          "pod_namespace": "kube-system",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1783955738.456,
+            "0.632811"
+          ],
+          [
+            1783955748.456,
+            "0.633161"
+          ],
+          [
+            1783955758.456,
+            "0.633682"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_pod_cpu_joules_total",
+          "container": "kepler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "961bafe2-c865-4f8e-9664-84529957c8ba",
+          "pod_name": "cern-magnum-falco-zbjrb",
+          "pod_namespace": "kube-system",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1783955738.456,
+            "1141.53955"
+          ],
+          [
+            1783955748.456,
+            "1142.423341"
+          ],
+          [
+            1783955758.456,
+            "1143.531526"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_pod_cpu_joules_total",
+          "container": "kepler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "9d78b8c6-c233-4be1-a6a2-e25c077183f8",
+          "pod_name": "cern-magnum-openstack-manila-csi-nodeplugin-th8wh",
+          "pod_namespace": "kube-system",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1783955738.456,
+            "0.004348"
+          ],
+          [
+            1783955748.456,
+            "0.004348"
+          ],
+          [
+            1783955758.456,
+            "0.004348"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_pod_cpu_joules_total",
+          "container": "kepler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "9d78b8c6-c233-4be1-a6a2-e25c077183f8",
+          "pod_name": "cern-magnum-openstack-manila-csi-nodeplugin-th8wh",
+          "pod_namespace": "kube-system",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1783955738.456,
+            "7.66351"
+          ],
+          [
+            1783955748.456,
+            "7.66351"
+          ],
+          [
+            1783955758.456,
+            "7.66351"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_pod_cpu_joules_total",
+          "container": "kepler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "afef0d74-cce5-471b-bd41-e38cd116b35a",
+          "pod_name": "cilium-envoy-vzrgm",
+          "pod_namespace": "kube-system",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1783955738.456,
+            "0.262945"
+          ],
+          [
+            1783955748.456,
+            "0.263107"
+          ],
+          [
+            1783955758.456,
+            "0.263307"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_pod_cpu_joules_total",
+          "container": "kepler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "afef0d74-cce5-471b-bd41-e38cd116b35a",
+          "pod_name": "cilium-envoy-vzrgm",
+          "pod_namespace": "kube-system",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1783955738.456,
+            "488.874671"
+          ],
+          [
+            1783955748.456,
+            "489.28459"
+          ],
+          [
+            1783955758.456,
+            "489.720657"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_pod_cpu_joules_total",
+          "container": "kepler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "c2dbef85-1370-4fea-81c0-3bf01370f482",
+          "pod_name": "monitoring-prometheus-node-exporter-rxjld",
+          "pod_namespace": "monitoring",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1783955738.456,
+            "0.17911"
+          ],
+          [
+            1783955748.456,
+            "0.17911"
+          ],
+          [
+            1783955758.456,
+            "0.179407"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_pod_cpu_joules_total",
+          "container": "kepler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "c2dbef85-1370-4fea-81c0-3bf01370f482",
+          "pod_name": "monitoring-prometheus-node-exporter-rxjld",
+          "pod_namespace": "monitoring",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1783955738.456,
+            "272.176566"
+          ],
+          [
+            1783955748.456,
+            "272.176566"
+          ],
+          [
+            1783955758.456,
+            "272.769514"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_pod_cpu_joules_total",
+          "container": "kepler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "c7f0e98b-aa0c-4e75-80f3-6af6627cb930",
+          "pod_name": "cern-magnum-cvmfs-csi-nodeplugin-jsm4k",
+          "pod_namespace": "kube-system",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1783955738.456,
+            "0.002426"
+          ],
+          [
+            1783955748.456,
+            "0.002426"
+          ],
+          [
+            1783955758.456,
+            "0.002426"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_pod_cpu_joules_total",
+          "container": "kepler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "c7f0e98b-aa0c-4e75-80f3-6af6627cb930",
+          "pod_name": "cern-magnum-cvmfs-csi-nodeplugin-jsm4k",
+          "pod_namespace": "kube-system",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1783955738.456,
+            "4.589308"
+          ],
+          [
+            1783955748.456,
+            "4.589308"
+          ],
+          [
+            1783955758.456,
+            "4.589308"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_pod_cpu_joules_total",
+          "container": "kepler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "d5204d36-dc3b-4cd0-a48c-40dcf224bc19",
+          "pod_name": "cern-magnum-node-problem-detector-pxtnb",
+          "pod_namespace": "kube-system",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1783955738.456,
+            "0.010606"
+          ],
+          [
+            1783955748.456,
+            "0.010623"
+          ],
+          [
+            1783955758.456,
+            "0.010623"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_pod_cpu_joules_total",
+          "container": "kepler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "d5204d36-dc3b-4cd0-a48c-40dcf224bc19",
+          "pod_name": "cern-magnum-node-problem-detector-pxtnb",
+          "pod_namespace": "kube-system",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1783955738.456,
+            "19.214174"
+          ],
+          [
+            1783955748.456,
+            "19.260095"
+          ],
+          [
+            1783955758.456,
+            "19.260095"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_pod_cpu_joules_total",
+          "container": "kepler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "df01d1ca-7c4c-4166-8741-737879789523",
+          "pod_name": "kepler-5k5h5",
+          "pod_namespace": "kepler",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1783955738.456,
+            "1.633144"
+          ],
+          [
+            1783955748.456,
+            "1.633925"
+          ],
+          [
+            1783955758.456,
+            "1.63531"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_pod_cpu_joules_total",
+          "container": "kepler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "df01d1ca-7c4c-4166-8741-737879789523",
+          "pod_name": "kepler-5k5h5",
+          "pod_namespace": "kepler",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1783955738.456,
+            "2709.311252"
+          ],
+          [
+            1783955748.456,
+            "2711.285483"
+          ],
+          [
+            1783955758.456,
+            "2714.083122"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_pod_cpu_joules_total",
+          "container": "kepler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "e4c9691c-cfcb-41c2-9cf8-2fb6724b6ae5",
+          "pod_name": "cern-magnum-eosxd-csi-nodeplugin-w9st8",
+          "pod_namespace": "kube-system",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1783955738.456,
+            "0.013749"
+          ],
+          [
+            1783955748.456,
+            "0.013757"
+          ],
+          [
+            1783955758.456,
+            "0.013757"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_pod_cpu_joules_total",
+          "container": "kepler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "e4c9691c-cfcb-41c2-9cf8-2fb6724b6ae5",
+          "pod_name": "cern-magnum-eosxd-csi-nodeplugin-w9st8",
+          "pod_namespace": "kube-system",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1783955738.456,
+            "21.542861"
+          ],
+          [
+            1783955748.456,
+            "21.565821"
+          ],
+          [
+            1783955758.456,
+            "21.565821"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_pod_cpu_watts",
+          "container": "kepler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "22e5e40f-97e7-4c24-b802-7326966299b8",
+          "pod_name": "node-debugger-sebas-green-baremetal-jpmdwiscskyy-node-0-jcbg6",
+          "pod_namespace": "default",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1783955738.456,
+            "0"
+          ],
+          [
+            1783955748.456,
+            "0"
+          ],
+          [
+            1783955758.456,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_pod_cpu_watts",
+          "container": "kepler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "22e5e40f-97e7-4c24-b802-7326966299b8",
+          "pod_name": "node-debugger-sebas-green-baremetal-jpmdwiscskyy-node-0-jcbg6",
+          "pod_namespace": "default",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1783955738.456,
+            "0"
+          ],
+          [
+            1783955748.456,
+            "0"
+          ],
+          [
+            1783955758.456,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_pod_cpu_watts",
+          "container": "kepler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "2bfefa03-3477-4244-b7f2-85c0c4b2281d",
+          "pod_name": "cern-magnum-ceph-csi-cephfs-nodeplugin-wjmdz",
+          "pod_namespace": "kube-system",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1783955738.456,
+            "0"
+          ],
+          [
+            1783955748.456,
+            "0"
+          ],
+          [
+            1783955758.456,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_pod_cpu_watts",
+          "container": "kepler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "2bfefa03-3477-4244-b7f2-85c0c4b2281d",
+          "pod_name": "cern-magnum-ceph-csi-cephfs-nodeplugin-wjmdz",
+          "pod_namespace": "kube-system",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1783955738.456,
+            "0"
+          ],
+          [
+            1783955748.456,
+            "0"
+          ],
+          [
+            1783955758.456,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_pod_cpu_watts",
+          "container": "kepler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "42f2f47c-e6d9-454a-b88e-caaf52d29f94",
+          "pod_name": "cern-magnum-node-feature-discovery-worker-5l2g7",
+          "pod_namespace": "kube-system",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1783955738.456,
+            "0"
+          ],
+          [
+            1783955748.456,
+            "0"
+          ],
+          [
+            1783955758.456,
+            "0.00003427707413012641"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_pod_cpu_watts",
+          "container": "kepler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "42f2f47c-e6d9-454a-b88e-caaf52d29f94",
+          "pod_name": "cern-magnum-node-feature-discovery-worker-5l2g7",
+          "pod_namespace": "kube-system",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1783955738.456,
+            "0"
+          ],
+          [
+            1783955748.456,
+            "0"
+          ],
+          [
+            1783955758.456,
+            "0.10449227358625382"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_pod_cpu_watts",
+          "container": "kepler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "4a5d94d8-5814-4c74-9cb2-21015bf6abd8",
+          "pod_name": "cilium-fqr2k",
+          "pod_namespace": "kube-system",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1783955738.456,
+            "0.00003450147177697951"
+          ],
+          [
+            1783955748.456,
+            "0.0000216652108147799"
+          ],
+          [
+            1783955758.456,
+            "0.00001919516151279098"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_pod_cpu_watts",
+          "container": "kepler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "4a5d94d8-5814-4c74-9cb2-21015bf6abd8",
+          "pod_name": "cilium-fqr2k",
+          "pod_namespace": "kube-system",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1783955738.456,
+            "0.08767637055286782"
+          ],
+          [
+            1783955748.456,
+            "0.05322384352005869"
+          ],
+          [
+            1783955758.456,
+            "0.058515673208058845"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_pod_cpu_watts",
+          "container": "kepler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "961bafe2-c865-4f8e-9664-84529957c8ba",
+          "pod_name": "cern-magnum-falco-zbjrb",
+          "pod_namespace": "kube-system",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1783955738.456,
+            "0.00004539667339112805"
+          ],
+          [
+            1783955748.456,
+            "0.000028435589194552564"
+          ],
+          [
+            1783955758.456,
+            "0.000023308410408495933"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_pod_cpu_watts",
+          "container": "kepler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "961bafe2-c865-4f8e-9664-84529957c8ba",
+          "pod_name": "cern-magnum-falco-zbjrb",
+          "pod_namespace": "kube-system",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1783955738.456,
+            "0.11536364546522872"
+          ],
+          [
+            1783955748.456,
+            "0.06985629462045521"
+          ],
+          [
+            1783955758.456,
+            "0.071054746038683"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_pod_cpu_watts",
+          "container": "kepler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "9d78b8c6-c233-4be1-a6a2-e25c077183f8",
+          "pod_name": "cern-magnum-openstack-manila-csi-nodeplugin-th8wh",
+          "pod_namespace": "kube-system",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1783955738.456,
+            "0"
+          ],
+          [
+            1783955748.456,
+            "0"
+          ],
+          [
+            1783955758.456,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_pod_cpu_watts",
+          "container": "kepler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "9d78b8c6-c233-4be1-a6a2-e25c077183f8",
+          "pod_name": "cern-magnum-openstack-manila-csi-nodeplugin-th8wh",
+          "pod_namespace": "kube-system",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1783955738.456,
+            "0"
+          ],
+          [
+            1783955748.456,
+            "0"
+          ],
+          [
+            1783955758.456,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_pod_cpu_watts",
+          "container": "kepler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "afef0d74-cce5-471b-bd41-e38cd116b35a",
+          "pod_name": "cilium-envoy-vzrgm",
+          "pod_namespace": "kube-system",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1783955738.456,
+            "0.000018158669356517284"
+          ],
+          [
+            1783955748.456,
+            "0.000013540756759299015"
+          ],
+          [
+            1783955758.456,
+            "0.00000959758075652019"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_pod_cpu_watts",
+          "container": "kepler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "afef0d74-cce5-471b-bd41-e38cd116b35a",
+          "pod_name": "cilium-envoy-vzrgm",
+          "pod_namespace": "kube-system",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1783955738.456,
+            "0.04614545818625936"
+          ],
+          [
+            1783955748.456,
+            "0.033264902200187955"
+          ],
+          [
+            1783955758.456,
+            "0.029257836604409566"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_pod_cpu_watts",
+          "container": "kepler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "c2dbef85-1370-4fea-81c0-3bf01370f482",
+          "pod_name": "monitoring-prometheus-node-exporter-rxjld",
+          "pod_namespace": "monitoring",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1783955738.456,
+            "0.00001997453629209882"
+          ],
+          [
+            1783955748.456,
+            "0"
+          ],
+          [
+            1783955758.456,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_pod_cpu_watts",
+          "container": "kepler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "c2dbef85-1370-4fea-81c0-3bf01370f482",
+          "pod_name": "monitoring-prometheus-node-exporter-rxjld",
+          "pod_namespace": "monitoring",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1783955738.456,
+            "0.05076000400470693"
+          ],
+          [
+            1783955748.456,
+            "0"
+          ],
+          [
+            1783955758.456,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_pod_cpu_watts",
+          "container": "kepler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "c7f0e98b-aa0c-4e75-80f3-6af6627cb930",
+          "pod_name": "cern-magnum-cvmfs-csi-nodeplugin-jsm4k",
+          "pod_namespace": "kube-system",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1783955738.456,
+            "0"
+          ],
+          [
+            1783955748.456,
+            "0"
+          ],
+          [
+            1783955758.456,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_pod_cpu_watts",
+          "container": "kepler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "c7f0e98b-aa0c-4e75-80f3-6af6627cb930",
+          "pod_name": "cern-magnum-cvmfs-csi-nodeplugin-jsm4k",
+          "pod_namespace": "kube-system",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1783955738.456,
+            "0"
+          ],
+          [
+            1783955748.456,
+            "0"
+          ],
+          [
+            1783955758.456,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_pod_cpu_watts",
+          "container": "kepler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "d5204d36-dc3b-4cd0-a48c-40dcf224bc19",
+          "pod_name": "cern-magnum-node-problem-detector-pxtnb",
+          "pod_namespace": "kube-system",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1783955738.456,
+            "0"
+          ],
+          [
+            1783955748.456,
+            "0"
+          ],
+          [
+            1783955758.456,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_pod_cpu_watts",
+          "container": "kepler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "d5204d36-dc3b-4cd0-a48c-40dcf224bc19",
+          "pod_name": "cern-magnum-node-problem-detector-pxtnb",
+          "pod_namespace": "kube-system",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1783955738.456,
+            "0"
+          ],
+          [
+            1783955748.456,
+            "0"
+          ],
+          [
+            1783955758.456,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_pod_cpu_watts",
+          "container": "kepler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "df01d1ca-7c4c-4166-8741-737879789523",
+          "pod_name": "kepler-5k5h5",
+          "pod_namespace": "kepler",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1783955738.456,
+            "0.00008352987903964094"
+          ],
+          [
+            1783955748.456,
+            "0.00005687117838882803"
+          ],
+          [
+            1783955758.456,
+            "0.000057585484538622345"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_pod_cpu_watts",
+          "container": "kepler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "df01d1ca-7c4c-4166-8741-737879789523",
+          "pod_name": "kepler-5k5h5",
+          "pod_namespace": "kepler",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1783955738.456,
+            "0.2122691076559327"
+          ],
+          [
+            1783955748.456,
+            "0.13971258924022972"
+          ],
+          [
+            1783955758.456,
+            "0.17554701962493682"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_pod_cpu_watts",
+          "container": "kepler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "e4c9691c-cfcb-41c2-9cf8-2fb6724b6ae5",
+          "pod_name": "cern-magnum-eosxd-csi-nodeplugin-w9st8",
+          "pod_namespace": "kube-system",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1783955738.456,
+            "0.000005447600806940734"
+          ],
+          [
+            1783955748.456,
+            "0"
+          ],
+          [
+            1783955758.456,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_pod_cpu_watts",
+          "container": "kepler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "e4c9691c-cfcb-41c2-9cf8-2fb6724b6ae5",
+          "pod_name": "cern-magnum-eosxd-csi-nodeplugin-w9st8",
+          "pod_namespace": "kube-system",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1783955738.456,
+            "0.013843637455841084"
+          ],
+          [
+            1783955748.456,
+            "0"
+          ],
+          [
+            1783955758.456,
+            "0"
+          ]
+        ]
+      }
+    ],
+    "resultType": "matrix"
+  },
+  "status": "success"
+}

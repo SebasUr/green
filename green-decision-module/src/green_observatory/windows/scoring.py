@@ -95,6 +95,57 @@ def _merge_runs(
     return runs
 
 
+def _hysteresis_runs(series, enter_thr, exit_thr, floor, ceiling):
+    """Detect green runs with hysteresis.
+
+    A run opens when intensity drops to ``<= enter_thr`` and stays open while it
+    remains ``<= exit_thr`` (a looser bar), so windows are stable across brief
+    upticks. ``floor`` (if set) makes an hour green regardless of the percentile;
+    ``ceiling`` (if set) forbids any hour above it from being green.
+    """
+    times = list(series.index)
+    vals = series.to_numpy()
+
+    def blocked(v):
+        return ceiling is not None and v > ceiling
+
+    def can_enter(v):
+        return not blocked(v) and (v <= enter_thr or (floor is not None and v <= floor))
+
+    def can_stay(v):
+        return not blocked(v) and (v <= exit_thr or (floor is not None and v <= floor))
+
+    runs: list[tuple[pd.Timestamp, pd.Timestamp]] = []
+    start = prev = None
+    for t, v in zip(times, vals):
+        if start is None:
+            if can_enter(v):
+                start = prev = t
+        elif can_stay(v):
+            prev = t
+        else:
+            runs.append((start, prev))
+            start = prev = None
+    if start is not None:
+        runs.append((start, prev))
+    return runs
+
+
+def _merge_runs_by_gap(runs, step_hours, merge_gap_hours):
+    """Merge runs whose time gap is ``<= merge_gap_hours``."""
+    if not runs:
+        return runs
+    tol = pd.Timedelta(hours=step_hours + merge_gap_hours)
+    merged = [runs[0]]
+    for s, last in runs[1:]:
+        ps, pl = merged[-1]
+        if s - pl <= tol:
+            merged[-1] = (ps, last)
+        else:
+            merged.append((s, last))
+    return merged
+
+
 def _best_subwindow(carbon: pd.Series, max_len: int) -> pd.Series:
     """Return the length-``max_len`` contiguous slice with the lowest mean."""
     if len(carbon) <= max_len:
@@ -112,6 +163,12 @@ def compute_low_carbon_windows(
     carbon: pd.Series,
     *,
     percentile: float = 0.25,
+    enter_percentile: float | None = None,
+    exit_percentile: float | None = None,
+    enter_gco2: float | None = None,
+    exit_gco2: float | None = None,
+    absolute_green_gco2: float | None = None,
+    absolute_dirty_gco2: float | None = None,
     min_duration_hours: float = 1.0,
     max_duration_hours: float = 6.0,
     merge_gap_hours: float = 1.0,
@@ -126,18 +183,33 @@ def compute_low_carbon_windows(
     """Detect low-carbon windows in a (hourly) carbon Series over a horizon.
 
     ``carbon`` may be actual history (→ ``low_carbon_window``) or a forecast
-    (→ ``predicted_low_carbon_window``). The percentile threshold and the
-    green-score reference are computed on ``carbon`` itself unless a separate
-    ``reference`` distribution is provided.
+    (→ ``predicted_low_carbon_window``). Thresholds are quantiles of ``reference``
+    (defaults to ``carbon`` itself, i.e. relative to the horizon); passing a
+    historical distribution as ``reference`` anchors them to the grid's typical
+    level, so a uniformly green or dirty horizon is handled correctly.
+
+    Detection uses hysteresis: a window opens at ``enter_percentile`` and stays
+    open while intensity remains under ``exit_percentile`` (a looser bar). Optional
+    absolute guard-rails ``absolute_green_gco2`` (always green below it) and
+    ``absolute_dirty_gco2`` (never green above it) can be combined with the
+    percentile logic. Defaults (no enter/exit, no guard-rails) reduce to a single
+    ``percentile`` threshold with gap-merging.
     """
     series = pd.to_numeric(carbon, errors="coerce").dropna().sort_index()
     if series.empty:
         return []
 
     ref = series.to_numpy() if reference is None else np.asarray(reference, dtype=float)
-    threshold = float(np.quantile(ref, percentile))
-    below = series[series <= threshold]
-    runs = _merge_runs(list(below.index), step_hours, merge_gap_hours)
+    ref = ref[np.isfinite(ref)]
+    enter_p = percentile if enter_percentile is None else enter_percentile
+    exit_p = enter_p if exit_percentile is None else exit_percentile
+    # Thresholds are absolute gCO2 if given, else quantiles of the reference.
+    enter_thr = enter_gco2 if enter_gco2 is not None else float(np.quantile(ref, enter_p))
+    exit_thr = exit_gco2 if exit_gco2 is not None else float(np.quantile(ref, max(exit_p, enter_p)))
+    exit_thr = max(exit_thr, enter_thr)  # exit bar must be at least as loose as enter
+    threshold = enter_thr
+    runs = _hysteresis_runs(series, enter_thr, exit_thr, absolute_green_gco2, absolute_dirty_gco2)
+    runs = _merge_runs_by_gap(runs, step_hours, merge_gap_hours)
 
     windows: list[GreenWindow] = []
     for run_start, run_last in runs:
@@ -161,8 +233,8 @@ def compute_low_carbon_windows(
         confidence = float(np.clip(0.5 * below_frac + 0.5 * (1.0 - min(rel_spread, 1.0)), 0.0, 1.0))
 
         reasons = [
-            f"Mean intensity {mean_intensity:.0f} gCO2/kWh, "
-            f"below horizon p{int(round(percentile * 100))} ({threshold:.0f}).",
+            f"Mean intensity {mean_intensity:.0f} gCO2/kWh "
+            f"(enter <= {enter_thr:.0f}, stay <= {exit_thr:.0f} gCO2/kWh).",
             f"Green score {carbon_score:.2f} (higher is greener).",
             f"{int(round(duration))}h window; internal variability "
             f"{'low' if rel_spread < 0.5 else 'moderate'}.",
@@ -190,16 +262,28 @@ def compute_low_carbon_windows(
 
 
 def low_carbon_windows_from_config(
-    carbon: pd.Series, window_cfg: dict, **overrides
+    carbon: pd.Series, window_cfg: dict, *, reference: Sequence[float] | None = None, **overrides
 ) -> list[GreenWindow]:
-    """Compute low-carbon windows using a ``window_scoring.yaml`` config dict."""
+    """Compute low-carbon windows using a ``window_scoring.yaml`` config dict.
+
+    ``reference`` (e.g. a historical carbon distribution) anchors the percentile
+    thresholds; ``overrides`` take precedence over the config values.
+    """
     w = window_cfg.get("windows", {})
     params = dict(
         percentile=w.get("percentile", 0.25),
+        enter_percentile=w.get("enter_percentile"),
+        exit_percentile=w.get("exit_percentile"),
+        enter_gco2=w.get("enter_gco2"),
+        exit_gco2=w.get("exit_gco2"),
+        absolute_green_gco2=w.get("absolute_green_gco2"),
+        absolute_dirty_gco2=w.get("absolute_dirty_gco2"),
         min_duration_hours=w.get("min_duration_hours", 1.0),
         max_duration_hours=w.get("max_duration_hours", 6.0),
         merge_gap_hours=w.get("merge_gap_hours", 1.0),
         max_windows=w.get("max_windows", 10),
     )
+    if reference is not None:
+        params["reference"] = reference
     params.update(overrides)
     return compute_low_carbon_windows(carbon, **params)

@@ -1,0 +1,176 @@
+Name:               sebas-green-baremetal-jpmdwiscskyy-node-0
+Roles:              <none>
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/os=linux
+                    feature.node.kubernetes.io/cpu-cpuid.ADX=true
+                    feature.node.kubernetes.io/cpu-cpuid.AESNI=true
+                    feature.node.kubernetes.io/cpu-cpuid.AVX=true
+                    feature.node.kubernetes.io/cpu-cpuid.AVX2=true
+                    feature.node.kubernetes.io/cpu-cpuid.CLZERO=true
+                    feature.node.kubernetes.io/cpu-cpuid.CMPXCHG8=true
+                    feature.node.kubernetes.io/cpu-cpuid.CPBOOST=true
+                    feature.node.kubernetes.io/cpu-cpuid.FMA3=true
+                    feature.node.kubernetes.io/cpu-cpuid.FP256=true
+                    feature.node.kubernetes.io/cpu-cpuid.FXSR=true
+                    feature.node.kubernetes.io/cpu-cpuid.FXSROPT=true
+                    feature.node.kubernetes.io/cpu-cpuid.IBPB=true
+                    feature.node.kubernetes.io/cpu-cpuid.IBRS=true
+                    feature.node.kubernetes.io/cpu-cpuid.IBRS_PREFERRED=true
+                    feature.node.kubernetes.io/cpu-cpuid.IBRS_PROVIDES_SMP=true
+                    feature.node.kubernetes.io/cpu-cpuid.IBS=true
+                    feature.node.kubernetes.io/cpu-cpuid.IBSBRNTRGT=true
+                    feature.node.kubernetes.io/cpu-cpuid.IBSFETCHSAM=true
+                    feature.node.kubernetes.io/cpu-cpuid.IBSFFV=true
+                    feature.node.kubernetes.io/cpu-cpuid.IBSOPCNT=true
+                    feature.node.kubernetes.io/cpu-cpuid.IBSOPCNTEXT=true
+                    feature.node.kubernetes.io/cpu-cpuid.IBSOPSAM=true
+                    feature.node.kubernetes.io/cpu-cpuid.IBSRDWROPCNT=true
+                    feature.node.kubernetes.io/cpu-cpuid.IBSRIPINVALIDCHK=true
+                    feature.node.kubernetes.io/cpu-cpuid.IBS_FETCH_CTLX=true
+                    feature.node.kubernetes.io/cpu-cpuid.IBS_OPFUSE=true
+                    feature.node.kubernetes.io/cpu-cpuid.INT_WBINVD=true
+                    feature.node.kubernetes.io/cpu-cpuid.LAHF=true
+                    feature.node.kubernetes.io/cpu-cpuid.LBRVIRT=true
+                    feature.node.kubernetes.io/cpu-cpuid.MCAOVERFLOW=true
+                    feature.node.kubernetes.io/cpu-cpuid.MCOMMIT=true
+                    feature.node.kubernetes.io/cpu-cpuid.MOVBE=true
+                    feature.node.kubernetes.io/cpu-cpuid.MOVU=true
+                    feature.node.kubernetes.io/cpu-cpuid.MSRIRC=true
+                    feature.node.kubernetes.io/cpu-cpuid.MSR_PAGEFLUSH=true
+                    feature.node.kubernetes.io/cpu-cpuid.NRIPS=true
+                    feature.node.kubernetes.io/cpu-cpuid.OSXSAVE=true
+                    feature.node.kubernetes.io/cpu-cpuid.PPIN=true
+                    feature.node.kubernetes.io/cpu-cpuid.RDPRU=true
+                    feature.node.kubernetes.io/cpu-cpuid.SEV=true
+                    feature.node.kubernetes.io/cpu-cpuid.SEV_ES=true
+                    feature.node.kubernetes.io/cpu-cpuid.SHA=true
+                    feature.node.kubernetes.io/cpu-cpuid.SME=true
+                    feature.node.kubernetes.io/cpu-cpuid.SPEC_CTRL_SSBD=true
+                    feature.node.kubernetes.io/cpu-cpuid.SSE4A=true
+                    feature.node.kubernetes.io/cpu-cpuid.STIBP=true
+                    feature.node.kubernetes.io/cpu-cpuid.SUCCOR=true
+                    feature.node.kubernetes.io/cpu-cpuid.SVM=true
+                    feature.node.kubernetes.io/cpu-cpuid.SVMDA=true
+                    feature.node.kubernetes.io/cpu-cpuid.SVMFBASID=true
+                    feature.node.kubernetes.io/cpu-cpuid.SVML=true
+                    feature.node.kubernetes.io/cpu-cpuid.SVMNP=true
+                    feature.node.kubernetes.io/cpu-cpuid.SVMPF=true
+                    feature.node.kubernetes.io/cpu-cpuid.SVMPFT=true
+                    feature.node.kubernetes.io/cpu-cpuid.SYSCALL=true
+                    feature.node.kubernetes.io/cpu-cpuid.SYSEE=true
+                    feature.node.kubernetes.io/cpu-cpuid.TOPEXT=true
+                    feature.node.kubernetes.io/cpu-cpuid.TSCRATEMSR=true
+                    feature.node.kubernetes.io/cpu-cpuid.VMCBCLEAN=true
+                    feature.node.kubernetes.io/cpu-cpuid.VTE=true
+                    feature.node.kubernetes.io/cpu-cpuid.WBNOINVD=true
+                    feature.node.kubernetes.io/cpu-cpuid.X87=true
+                    feature.node.kubernetes.io/cpu-cpuid.XGETBV1=true
+                    feature.node.kubernetes.io/cpu-cpuid.XSAVE=true
+                    feature.node.kubernetes.io/cpu-cpuid.XSAVEC=true
+                    feature.node.kubernetes.io/cpu-cpuid.XSAVEOPT=true
+                    feature.node.kubernetes.io/cpu-cpuid.XSAVES=true
+                    feature.node.kubernetes.io/cpu-hardware_multithreading=true
+                    feature.node.kubernetes.io/cpu-model.family=23
+                    feature.node.kubernetes.io/cpu-model.id=49
+                    feature.node.kubernetes.io/cpu-model.vendor_id=AMD
+                    feature.node.kubernetes.io/cpu-rdt.RDTCMT=true
+                    feature.node.kubernetes.io/cpu-rdt.RDTL3CA=true
+                    feature.node.kubernetes.io/cpu-rdt.RDTMBM=true
+                    feature.node.kubernetes.io/cpu-rdt.RDTMON=true
+                    feature.node.kubernetes.io/cpu-security.sev.enabled=true
+                    feature.node.kubernetes.io/kernel-config.NO_HZ=true
+                    feature.node.kubernetes.io/kernel-config.NO_HZ_FULL=true
+                    feature.node.kubernetes.io/kernel-selinux.enabled=true
+                    feature.node.kubernetes.io/kernel-version.full=6.19.12-200.fc43.x86_64
+                    feature.node.kubernetes.io/kernel-version.major=6
+                    feature.node.kubernetes.io/kernel-version.minor=19
+                    feature.node.kubernetes.io/kernel-version.revision=12
+                    feature.node.kubernetes.io/memory-numa=true
+                    feature.node.kubernetes.io/network-sriov.capable=true
+                    feature.node.kubernetes.io/pci-0300_1a03.present=true
+                    feature.node.kubernetes.io/storage-nonrotationaldisk=true
+                    feature.node.kubernetes.io/system-os_release.ID=fedora
+                    feature.node.kubernetes.io/system-os_release.VERSION_ID=43
+                    feature.node.kubernetes.io/system-os_release.VERSION_ID.major=43
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=sebas-green-baremetal-jpmdwiscskyy-node-0
+                    kubernetes.io/os=linux
+                    magnum.openstack.org/nodegroup=baremetal
+                    magnum.openstack.org/role=worker
+                    sustainability.cern.ch/experiment-node=true
+                    sustainability.cern.ch/hardware=baremetal
+Annotations:        csi.volume.kubernetes.io/nodeid:
+                      {"cephfs.csi.ceph.com":"sebas-green-baremetal-jpmdwiscskyy-node-0","cvmfs.csi.cern.ch":"sebas-green-baremetal-jpmdwiscskyy-node-0","eosxd....
+                    nfd.node.kubernetes.io/feature-labels:
+                      cpu-cpuid.ADX,cpu-cpuid.AESNI,cpu-cpuid.AVX,cpu-cpuid.AVX2,cpu-cpuid.CLZERO,cpu-cpuid.CMPXCHG8,cpu-cpuid.CPBOOST,cpu-cpuid.FMA3,cpu-cpuid....
+                    node.alpha.kubernetes.io/ttl: 0
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Wed, 08 Jul 2026 20:44:37 +0200
+Taints:             <none>
+Unschedulable:      false
+Lease:
+  HolderIdentity:  sebas-green-baremetal-jpmdwiscskyy-node-0
+  AcquireTime:     <unset>
+  RenewTime:       Mon, 13 Jul 2026 11:45:16 +0200
+Conditions:
+  Type                    Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----                    ------  -----------------                 ------------------                ------                       -------
+  KernelDeadlock          False   Mon, 13 Jul 2026 11:43:39 +0200   Wed, 08 Jul 2026 20:45:50 +0200   KernelHasNoDeadlock          kernel has no deadlock
+  ReadonlyFilesystem      False   Mon, 13 Jul 2026 11:43:39 +0200   Wed, 08 Jul 2026 20:45:50 +0200   FilesystemIsNotReadOnly      Filesystem is not read-only
+  CorruptDockerOverlay2   False   Mon, 13 Jul 2026 11:43:39 +0200   Wed, 08 Jul 2026 20:45:50 +0200   NoCorruptDockerOverlay2      docker overlay2 is functioning properly
+  NetworkUnavailable      False   Wed, 08 Jul 2026 20:45:22 +0200   Wed, 08 Jul 2026 20:45:22 +0200   CiliumIsUp                   Cilium is running on this node
+  MemoryPressure          False   Mon, 13 Jul 2026 11:44:30 +0200   Wed, 08 Jul 2026 20:44:37 +0200   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure            False   Mon, 13 Jul 2026 11:44:30 +0200   Wed, 08 Jul 2026 20:44:37 +0200   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure             False   Mon, 13 Jul 2026 11:44:30 +0200   Wed, 08 Jul 2026 20:44:37 +0200   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready                   True    Mon, 13 Jul 2026 11:44:30 +0200   Wed, 08 Jul 2026 20:45:18 +0200   KubeletReady                 kubelet is posting ready status
+Addresses:
+  InternalIP:  188.184.49.170
+  Hostname:    sebas-green-baremetal-jpmdwiscskyy-node-0
+Capacity:
+  cpu:                64
+  ephemeral-storage:  1873866788Ki
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             263950104Ki
+  pods:               110
+Allocatable:
+  cpu:                64
+  ephemeral-storage:  1873866788Ki
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             263438104Ki
+  pods:               110
+System Info:
+  Machine ID:                 2e956539af804f789d018c65edebc48f
+  System UUID:                00000000-0000-0000-0000-3cecef0de66e
+  Boot ID:                    41c857dc-1980-41b5-91ad-b661263f83de
+  Kernel Version:             6.19.12-200.fc43.x86_64
+  OS Image:                   Fedora CoreOS 43.20260413.3.2
+  Operating System:           linux
+  Architecture:               amd64
+  Container Runtime Version:  containerd://2.1.4
+  Kubelet Version:            v1.35.3
+PodCIDR:                      10.100.2.0/24
+PodCIDRs:                     10.100.2.0/24
+Non-terminated Pods:          (9 in total)
+  Namespace                   Name                                                 CPU Requests  CPU Limits  Memory Requests  Memory Limits  Age
+  ---------                   ----                                                 ------------  ----------  ---------------  -------------  ---
+  kube-system                 cern-magnum-ceph-csi-cephfs-nodeplugin-wjmdz         0 (0%)        0 (0%)      0 (0%)           0 (0%)         4d15h
+  kube-system                 cern-magnum-cvmfs-csi-nodeplugin-jsm4k               0 (0%)        0 (0%)      0 (0%)           0 (0%)         4d15h
+  kube-system                 cern-magnum-eosxd-csi-nodeplugin-w9st8               350m (0%)     350m (0%)   1216Mi (0%)      1216Mi (0%)    4d15h
+  kube-system                 cern-magnum-falco-zbjrb                              100m (0%)     1 (1%)      512Mi (0%)       1Gi (0%)       4d15h
+  kube-system                 cern-magnum-node-feature-discovery-worker-5l2g7      0 (0%)        0 (0%)      0 (0%)           0 (0%)         4d15h
+  kube-system                 cern-magnum-node-problem-detector-pxtnb              0 (0%)        0 (0%)      0 (0%)           0 (0%)         4d15h
+  kube-system                 cern-magnum-openstack-manila-csi-nodeplugin-th8wh    0 (0%)        0 (0%)      0 (0%)           0 (0%)         4d15h
+  kube-system                 cilium-envoy-vzrgm                                   0 (0%)        0 (0%)      0 (0%)           0 (0%)         4d15h
+  kube-system                 cilium-fqr2k                                         100m (0%)     0 (0%)      10Mi (0%)        0 (0%)         4d15h
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource           Requests     Limits
+  --------           --------     ------
+  cpu                550m (0%)    1350m (2%)
+  memory             1738Mi (0%)  2240Mi (0%)
+  ephemeral-storage  0 (0%)       0 (0%)
+  hugepages-1Gi      0 (0%)       0 (0%)
+  hugepages-2Mi      0 (0%)       0 (0%)
+Events:              <none>

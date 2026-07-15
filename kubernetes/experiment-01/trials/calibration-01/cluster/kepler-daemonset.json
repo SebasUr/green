@@ -1,0 +1,187 @@
+{
+    "apiVersion": "apps/v1",
+    "kind": "DaemonSet",
+    "metadata": {
+        "annotations": {
+            "deprecated.daemonset.template.generation": "1",
+            "meta.helm.sh/release-name": "kepler",
+            "meta.helm.sh/release-namespace": "kepler"
+        },
+        "creationTimestamp": "2026-07-13T12:13:46Z",
+        "generation": 1,
+        "labels": {
+            "app.kubernetes.io/instance": "kepler",
+            "app.kubernetes.io/managed-by": "Helm",
+            "app.kubernetes.io/name": "kepler",
+            "app.kubernetes.io/part-of": "kepler",
+            "app.kubernetes.io/version": "v0.11.4",
+            "helm.sh/chart": "kepler-0.11.4"
+        },
+        "name": "kepler",
+        "namespace": "kepler",
+        "resourceVersion": "1676174",
+        "uid": "a45d7771-9309-4731-ab7d-9f928c206f2c"
+    },
+    "spec": {
+        "revisionHistoryLimit": 10,
+        "selector": {
+            "matchLabels": {
+                "app.kubernetes.io/instance": "kepler",
+                "app.kubernetes.io/name": "kepler"
+            }
+        },
+        "template": {
+            "metadata": {
+                "annotations": {
+                    "checksum/config": "97125083925f79ca8645962df27182e788a662a76d06ebcf1e71d3f19025dc2a"
+                },
+                "labels": {
+                    "app.kubernetes.io/instance": "kepler",
+                    "app.kubernetes.io/name": "kepler"
+                }
+            },
+            "spec": {
+                "containers": [
+                    {
+                        "args": [
+                            "--config.file=/etc/kepler/config.yaml",
+                            "--kube.enable",
+                            "--kube.node-name=$(NODE_NAME)"
+                        ],
+                        "command": [
+                            "/usr/bin/kepler"
+                        ],
+                        "env": [
+                            {
+                                "name": "NODE_NAME",
+                                "valueFrom": {
+                                    "fieldRef": {
+                                        "apiVersion": "v1",
+                                        "fieldPath": "spec.nodeName"
+                                    }
+                                }
+                            }
+                        ],
+                        "image": "quay.io/sustainable_computing_io/kepler:v0.11.4",
+                        "imagePullPolicy": "IfNotPresent",
+                        "livenessProbe": {
+                            "failureThreshold": 3,
+                            "httpGet": {
+                                "path": "/metrics",
+                                "port": "http",
+                                "scheme": "HTTP"
+                            },
+                            "initialDelaySeconds": 10,
+                            "periodSeconds": 60,
+                            "successThreshold": 1,
+                            "timeoutSeconds": 1
+                        },
+                        "name": "kepler",
+                        "ports": [
+                            {
+                                "containerPort": 28282,
+                                "name": "http",
+                                "protocol": "TCP"
+                            }
+                        ],
+                        "resources": {
+                            "limits": {
+                                "cpu": "500m",
+                                "memory": "512Mi"
+                            },
+                            "requests": {
+                                "cpu": "50m",
+                                "memory": "128Mi"
+                            }
+                        },
+                        "securityContext": {
+                            "privileged": true,
+                            "runAsNonRoot": false
+                        },
+                        "terminationMessagePath": "/dev/termination-log",
+                        "terminationMessagePolicy": "File",
+                        "volumeMounts": [
+                            {
+                                "mountPath": "/host/sys",
+                                "name": "sysfs",
+                                "readOnly": true
+                            },
+                            {
+                                "mountPath": "/host/proc",
+                                "name": "procfs",
+                                "readOnly": true
+                            },
+                            {
+                                "mountPath": "/etc/kepler",
+                                "name": "cfm"
+                            }
+                        ]
+                    }
+                ],
+                "dnsPolicy": "ClusterFirst",
+                "hostPID": true,
+                "hostUsers": true,
+                "nodeSelector": {
+                    "sustainability.cern.ch/hardware": "baremetal"
+                },
+                "restartPolicy": "Always",
+                "schedulerName": "default-scheduler",
+                "securityContext": {},
+                "serviceAccount": "kepler",
+                "serviceAccountName": "kepler",
+                "terminationGracePeriodSeconds": 30,
+                "tolerations": [
+                    {
+                        "effect": "NoSchedule",
+                        "key": "node-role.kubernetes.io/control-plane",
+                        "operator": "Exists"
+                    },
+                    {
+                        "effect": "NoSchedule",
+                        "key": "node-role.kubernetes.io/master",
+                        "operator": "Exists"
+                    }
+                ],
+                "volumes": [
+                    {
+                        "hostPath": {
+                            "path": "/sys",
+                            "type": ""
+                        },
+                        "name": "sysfs"
+                    },
+                    {
+                        "hostPath": {
+                            "path": "/proc",
+                            "type": ""
+                        },
+                        "name": "procfs"
+                    },
+                    {
+                        "configMap": {
+                            "defaultMode": 420,
+                            "name": "kepler"
+                        },
+                        "name": "cfm"
+                    }
+                ]
+            }
+        },
+        "updateStrategy": {
+            "rollingUpdate": {
+                "maxSurge": 0,
+                "maxUnavailable": 1
+            },
+            "type": "RollingUpdate"
+        }
+    },
+    "status": {
+        "currentNumberScheduled": 1,
+        "desiredNumberScheduled": 1,
+        "numberAvailable": 1,
+        "numberMisscheduled": 0,
+        "numberReady": 1,
+        "observedGeneration": 1,
+        "updatedNumberScheduled": 1
+    }
+}

@@ -1,0 +1,200 @@
+time=2026-07-14T08:02:58.132Z level=DEBUG source=internal/monitor/node.go:142 msg="Active and idle power/energy" service=monitor active_power=0.00W idle_power=0.03W active_energy=0.00J idle_energy=0.08J
+time=2026-07-14T08:02:58.270Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:02:58.301Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:02:58.333Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:02:58.418Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:02:58.449Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:02:58.482Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:02:58.514Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:02:58.545Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:02:58.576Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:02:58.635Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:02:58.665Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:02:58.696Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:02:58.736Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:02:58.736Z level=DEBUG source=internal/resource/informer.go:397 msg="Resource information collected" service=resource-informer process.running=884 process.terminated=0 container.running=31 container.terminated=0 vm.running=0 vm.terminated=0 pod.running=10 pod.terminated=0 container.no-pod=13 duration=604.046618ms
+time=2026-07-14T08:02:58.736Z level=DEBUG source=internal/monitor/process.go:117 msg="Clearing terminated processes after export" service=monitor
+time=2026-07-14T08:02:58.736Z level=DEBUG source=internal/monitor/process.go:171 msg="Processing terminated processes" service=monitor terminated=0
+time=2026-07-14T08:02:58.736Z level=DEBUG source=internal/monitor/process.go:188 msg="Calculating Process power" service=monitor node.cpu.time=1.129999999996926 running=884
+time=2026-07-14T08:02:58.738Z level=DEBUG source=internal/monitor/process.go:254 msg="snapshot updated for process" service=monitor running=884 terminated=0
+time=2026-07-14T08:02:58.738Z level=DEBUG source=internal/monitor/container.go:85 msg="Clearing terminated containers after export" service=monitor
+time=2026-07-14T08:02:58.738Z level=DEBUG source=internal/monitor/container.go:92 msg="Processing terminated containers" service=monitor terminated=0
+time=2026-07-14T08:02:58.738Z level=DEBUG source=internal/monitor/container.go:109 msg="Calculating container power" service=monitor node.cpu.time=1.129999999996926 running=31
+time=2026-07-14T08:02:58.738Z level=DEBUG source=internal/monitor/container.go:169 msg="snapshot updated for containers" service=monitor running=31 terminated=0
+time=2026-07-14T08:02:58.738Z level=DEBUG source=internal/monitor/vm.go:49 msg="Clearing terminated VMs after export" service=monitor
+time=2026-07-14T08:02:58.738Z level=DEBUG source=internal/monitor/vm.go:56 msg="Processing terminated VMs" service=monitor terminated=0
+time=2026-07-14T08:02:58.738Z level=DEBUG source=internal/monitor/vm.go:69 msg="Calculating VM power" service=monitor node.cpu.time=1.129999999996926 running=0
+time=2026-07-14T08:02:58.738Z level=DEBUG source=internal/monitor/vm.go:115 msg="snapshot updated for VMs" service=monitor running=0 terminated=0
+time=2026-07-14T08:02:58.738Z level=DEBUG source=internal/monitor/pod.go:60 msg="Clearing terminated pods after export" service=monitor
+time=2026-07-14T08:02:58.738Z level=DEBUG source=internal/monitor/pod.go:68 msg="Processing terminated pods" service=monitor terminated=0
+time=2026-07-14T08:02:58.738Z level=DEBUG source=internal/monitor/pod.go:89 msg="Calculating pod power" service=monitor node-cputime=1.129999999996926 running=10
+time=2026-07-14T08:02:58.738Z level=DEBUG source=internal/monitor/pod.go:147 msg="snapshot updated for pods" service=monitor running=10 terminated=0
+time=2026-07-14T08:02:58.738Z level=DEBUG source=internal/monitor/monitor.go:171 msg="Data channel is full" service=monitor
+time=2026-07-14T08:02:58.738Z level=DEBUG source=internal/monitor/monitor.go:362 msg=refreshSnapshot service=monitor processes=884 containers=31 vms=0 pods=10 terminated_processes=0 terminated_containers=0 terminated_vms=0 terminated_pods=0
+time=2026-07-14T08:02:58.738Z level=INFO source=internal/monitor/monitor.go:338 msg="Computed power" service=monitor duration=607.62881ms
+time=2026-07-14T08:03:02.569Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:03:03.740Z level=DEBUG source=internal/monitor/node.go:28 msg="Calculating Node power" service=monitor node.process-cpu.time=1.129999999996926 node.cpu.usage-ratio=0.008334304697483896
+time=2026-07-14T08:03:03.740Z level=DEBUG source=internal/monitor/node.go:61 msg="Processing energy zone" service=monitor zone=package type=energy abs_energy=53386.90J max_energy=131065.22J
+time=2026-07-14T08:03:03.740Z level=DEBUG source=internal/monitor/node.go:105 msg="Energy zone delta calculation" service=monitor zone=package current=53386.90J previous=52825.18J delta_energy=561.72J time_diff=5.608785319 power=100.15W
+time=2026-07-14T08:03:03.740Z level=DEBUG source=internal/monitor/node.go:142 msg="Active and idle power/energy" service=monitor active_power=0.83W idle_power=99.32W active_energy=4.68J idle_energy=557.04J
+time=2026-07-14T08:03:03.740Z level=DEBUG source=internal/monitor/node.go:61 msg="Processing energy zone" service=monitor zone=core type=energy abs_energy=13455.64J max_energy=131065.22J
+time=2026-07-14T08:03:03.740Z level=DEBUG source=internal/monitor/node.go:105 msg="Energy zone delta calculation" service=monitor zone=core current=13455.64J previous=13455.30J delta_energy=0.35J time_diff=5.608785319 power=0.06W
+time=2026-07-14T08:03:03.740Z level=DEBUG source=internal/monitor/node.go:142 msg="Active and idle power/energy" service=monitor active_power=0.00W idle_power=0.06W active_energy=0.00J idle_energy=0.34J
+time=2026-07-14T08:03:03.876Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:03:03.936Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:03:03.970Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:03:04.036Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:03:04.070Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:03:04.100Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:03:04.141Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:03:04.234Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:03:04.264Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:03:04.294Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:03:04.334Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:03:04.364Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:03:04.394Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:03:04.395Z level=DEBUG source=internal/resource/informer.go:397 msg="Resource information collected" service=resource-informer process.running=884 process.terminated=0 container.running=31 container.terminated=0 vm.running=0 vm.terminated=0 pod.running=10 pod.terminated=0 container.no-pod=13 duration=654.065698ms
+time=2026-07-14T08:03:04.395Z level=DEBUG source=internal/monitor/process.go:171 msg="Processing terminated processes" service=monitor terminated=0
+time=2026-07-14T08:03:04.395Z level=DEBUG source=internal/monitor/process.go:188 msg="Calculating Process power" service=monitor node.cpu.time=2.2599999999994944 running=884
+time=2026-07-14T08:03:04.398Z level=DEBUG source=internal/monitor/process.go:254 msg="snapshot updated for process" service=monitor running=884 terminated=0
+time=2026-07-14T08:03:04.398Z level=DEBUG source=internal/monitor/container.go:92 msg="Processing terminated containers" service=monitor terminated=0
+time=2026-07-14T08:03:04.398Z level=DEBUG source=internal/monitor/container.go:109 msg="Calculating container power" service=monitor node.cpu.time=2.2599999999994944 running=31
+time=2026-07-14T08:03:04.399Z level=DEBUG source=internal/monitor/container.go:169 msg="snapshot updated for containers" service=monitor running=31 terminated=0
+time=2026-07-14T08:03:04.399Z level=DEBUG source=internal/monitor/vm.go:56 msg="Processing terminated VMs" service=monitor terminated=0
+time=2026-07-14T08:03:04.399Z level=DEBUG source=internal/monitor/vm.go:69 msg="Calculating VM power" service=monitor node.cpu.time=2.2599999999994944 running=0
+time=2026-07-14T08:03:04.399Z level=DEBUG source=internal/monitor/vm.go:115 msg="snapshot updated for VMs" service=monitor running=0 terminated=0
+time=2026-07-14T08:03:04.399Z level=DEBUG source=internal/monitor/pod.go:68 msg="Processing terminated pods" service=monitor terminated=0
+time=2026-07-14T08:03:04.399Z level=DEBUG source=internal/monitor/pod.go:89 msg="Calculating pod power" service=monitor node-cputime=2.2599999999994944 running=10
+time=2026-07-14T08:03:04.399Z level=DEBUG source=internal/monitor/pod.go:147 msg="snapshot updated for pods" service=monitor running=10 terminated=0
+time=2026-07-14T08:03:04.399Z level=DEBUG source=internal/monitor/monitor.go:171 msg="Data channel is full" service=monitor
+time=2026-07-14T08:03:04.399Z level=DEBUG source=internal/monitor/monitor.go:362 msg=refreshSnapshot service=monitor processes=884 containers=31 vms=0 pods=10 terminated_processes=0 terminated_containers=0 terminated_vms=0 terminated_pods=0
+time=2026-07-14T08:03:04.399Z level=INFO source=internal/monitor/monitor.go:338 msg="Computed power" service=monitor duration=659.321063ms
+time=2026-07-14T08:03:05.418Z level=DEBUG source=internal/monitor/node.go:28 msg="Calculating Node power" service=monitor node.process-cpu.time=2.2599999999994944 node.cpu.usage-ratio=0.007394798526595335
+time=2026-07-14T08:03:05.418Z level=INFO source=prometheus/collector/power_collector.go:263 msg="Collecting unified power data" collector=power
+time=2026-07-14T08:03:05.419Z level=DEBUG source=internal/monitor/node.go:61 msg="Processing energy zone" service=monitor zone=package type=energy abs_energy=53559.63J max_energy=131065.22J
+time=2026-07-14T08:03:05.419Z level=DEBUG source=internal/monitor/node.go:105 msg="Energy zone delta calculation" service=monitor zone=package current=53559.63J previous=53386.90J delta_energy=172.73J time_diff=1.678396408 power=102.91W
+time=2026-07-14T08:03:05.419Z level=DEBUG source=internal/monitor/node.go:142 msg="Active and idle power/energy" service=monitor active_power=0.76W idle_power=102.15W active_energy=1.28J idle_energy=171.45J
+time=2026-07-14T08:03:05.419Z level=DEBUG source=internal/monitor/node.go:61 msg="Processing energy zone" service=monitor zone=core type=energy abs_energy=13455.78J max_energy=131065.22J
+time=2026-07-14T08:03:05.419Z level=DEBUG source=internal/monitor/node.go:105 msg="Energy zone delta calculation" service=monitor zone=core current=13455.78J previous=13455.64J delta_energy=0.14J time_diff=1.678396408 power=0.08W
+time=2026-07-14T08:03:05.419Z level=DEBUG source=internal/monitor/node.go:142 msg="Active and idle power/energy" service=monitor active_power=0.00W idle_power=0.08W active_energy=0.00J idle_energy=0.14J
+time=2026-07-14T08:03:05.631Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:03:05.666Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:03:05.696Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:03:05.732Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:03:05.821Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:03:05.852Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:03:05.932Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:03:05.962Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:03:05.992Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:03:06.033Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:03:06.065Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:03:06.132Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:03:06.163Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:03:06.163Z level=DEBUG source=internal/resource/informer.go:397 msg="Resource information collected" service=resource-informer process.running=884 process.terminated=0 container.running=31 container.terminated=0 vm.running=0 vm.terminated=0 pod.running=10 pod.terminated=0 container.no-pod=13 duration=743.718227ms
+time=2026-07-14T08:03:06.163Z level=DEBUG source=internal/monitor/process.go:171 msg="Processing terminated processes" service=monitor terminated=0
+time=2026-07-14T08:03:06.163Z level=DEBUG source=internal/monitor/process.go:188 msg="Calculating Process power" service=monitor node.cpu.time=1.0100000000047749 running=884
+time=2026-07-14T08:03:06.165Z level=DEBUG source=internal/monitor/process.go:254 msg="snapshot updated for process" service=monitor running=884 terminated=0
+time=2026-07-14T08:03:06.165Z level=DEBUG source=internal/monitor/container.go:92 msg="Processing terminated containers" service=monitor terminated=0
+time=2026-07-14T08:03:06.165Z level=DEBUG source=internal/monitor/container.go:109 msg="Calculating container power" service=monitor node.cpu.time=1.0100000000047749 running=31
+time=2026-07-14T08:03:06.165Z level=DEBUG source=internal/monitor/container.go:169 msg="snapshot updated for containers" service=monitor running=31 terminated=0
+time=2026-07-14T08:03:06.165Z level=DEBUG source=internal/monitor/vm.go:56 msg="Processing terminated VMs" service=monitor terminated=0
+time=2026-07-14T08:03:06.165Z level=DEBUG source=internal/monitor/vm.go:69 msg="Calculating VM power" service=monitor node.cpu.time=1.0100000000047749 running=0
+time=2026-07-14T08:03:06.165Z level=DEBUG source=internal/monitor/vm.go:115 msg="snapshot updated for VMs" service=monitor running=0 terminated=0
+time=2026-07-14T08:03:06.165Z level=DEBUG source=internal/monitor/pod.go:68 msg="Processing terminated pods" service=monitor terminated=0
+time=2026-07-14T08:03:06.165Z level=DEBUG source=internal/monitor/pod.go:89 msg="Calculating pod power" service=monitor node-cputime=1.0100000000047749 running=10
+time=2026-07-14T08:03:06.165Z level=DEBUG source=internal/monitor/pod.go:147 msg="snapshot updated for pods" service=monitor running=10 terminated=0
+time=2026-07-14T08:03:06.165Z level=DEBUG source=internal/monitor/monitor.go:171 msg="Data channel is full" service=monitor
+time=2026-07-14T08:03:06.165Z level=DEBUG source=internal/monitor/monitor.go:362 msg=refreshSnapshot service=monitor processes=884 containers=31 vms=0 pods=10 terminated_processes=0 terminated_containers=0 terminated_vms=0 terminated_pods=0
+time=2026-07-14T08:03:06.165Z level=INFO source=internal/monitor/monitor.go:338 msg="Computed power" service=monitor duration=747.465631ms
+time=2026-07-14T08:03:06.433Z level=DEBUG source=prometheus/collector/power_collector.go:366 msg="No processes to export metrics" collector=power state=terminated
+time=2026-07-14T08:03:06.434Z level=DEBUG source=prometheus/collector/power_collector.go:429 msg="No containers to export metrics for" collector=power state=terminated
+time=2026-07-14T08:03:06.434Z level=DEBUG source=prometheus/collector/power_collector.go:484 msg="No vms to export metrics for" collector=power state=running
+time=2026-07-14T08:03:06.434Z level=DEBUG source=prometheus/collector/power_collector.go:484 msg="No vms to export metrics for" collector=power state=terminated
+time=2026-07-14T08:03:06.434Z level=DEBUG source=prometheus/collector/power_collector.go:513 msg="No pods to export metrics" collector=power state=terminated
+time=2026-07-14T08:03:06.434Z level=DEBUG source=prometheus/collector/power_collector.go:563 msg="No GPU stats to export" collector=power
+time=2026-07-14T08:03:06.434Z level=INFO source=prometheus/collector/power_collector.go:265 msg="Collected unified power data" collector=power duration=1.016064624s
+time=2026-07-14T08:03:09.401Z level=DEBUG source=internal/monitor/node.go:28 msg="Calculating Node power" service=monitor node.process-cpu.time=1.0100000000047749 node.cpu.usage-ratio=0.011569788967244834
+time=2026-07-14T08:03:09.402Z level=DEBUG source=internal/monitor/node.go:61 msg="Processing energy zone" service=monitor zone=package type=energy abs_energy=53964.86J max_energy=131065.22J
+time=2026-07-14T08:03:09.402Z level=DEBUG source=internal/monitor/node.go:105 msg="Energy zone delta calculation" service=monitor zone=package current=53964.86J previous=53559.63J delta_energy=405.23J time_diff=3.9833707069999997 power=101.73W
+time=2026-07-14T08:03:09.402Z level=DEBUG source=internal/monitor/node.go:142 msg="Active and idle power/energy" service=monitor active_power=1.18W idle_power=100.55W active_energy=4.69J idle_energy=400.54J
+time=2026-07-14T08:03:09.402Z level=DEBUG source=internal/monitor/node.go:61 msg="Processing energy zone" service=monitor zone=core type=energy abs_energy=13455.94J max_energy=131065.22J
+time=2026-07-14T08:03:09.402Z level=DEBUG source=internal/monitor/node.go:105 msg="Energy zone delta calculation" service=monitor zone=core current=13455.94J previous=13455.78J delta_energy=0.16J time_diff=3.9833707069999997 power=0.04W
+time=2026-07-14T08:03:09.402Z level=DEBUG source=internal/monitor/node.go:142 msg="Active and idle power/energy" service=monitor active_power=0.00W idle_power=0.04W active_energy=0.00J idle_energy=0.16J
+time=2026-07-14T08:03:09.485Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:03:09.524Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:03:09.558Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:03:09.588Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:03:09.619Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:03:09.652Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:03:09.722Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:03:09.756Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:03:09.823Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:03:09.853Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:03:09.918Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:03:09.948Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:03:09.978Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:03:09.978Z level=DEBUG source=internal/resource/informer.go:397 msg="Resource information collected" service=resource-informer process.running=884 process.terminated=1 container.running=31 container.terminated=0 vm.running=0 vm.terminated=0 pod.running=10 pod.terminated=0 container.no-pod=13 duration=575.6922ms
+time=2026-07-14T08:03:09.978Z level=DEBUG source=internal/monitor/process.go:117 msg="Clearing terminated processes after export" service=monitor
+time=2026-07-14T08:03:09.978Z level=DEBUG source=internal/monitor/process.go:171 msg="Processing terminated processes" service=monitor terminated=1
+time=2026-07-14T08:03:09.978Z level=DEBUG source=internal/monitor/terminated_resource_tracker.go:103 msg="Filtering out terminated resource with low energy" service=monitor service=terminated-resource-tracker resource=Process id=216660 energy=0.07J threshold=10.00J
+time=2026-07-14T08:03:09.978Z level=DEBUG source=internal/monitor/process.go:188 msg="Calculating Process power" service=monitor node.cpu.time=1.599999999996131 running=884
+time=2026-07-14T08:03:09.980Z level=DEBUG source=internal/monitor/process.go:254 msg="snapshot updated for process" service=monitor running=884 terminated=0
+time=2026-07-14T08:03:09.980Z level=DEBUG source=internal/monitor/container.go:85 msg="Clearing terminated containers after export" service=monitor
+time=2026-07-14T08:03:09.980Z level=DEBUG source=internal/monitor/container.go:92 msg="Processing terminated containers" service=monitor terminated=0
+time=2026-07-14T08:03:09.980Z level=DEBUG source=internal/monitor/container.go:109 msg="Calculating container power" service=monitor node.cpu.time=1.599999999996131 running=31
+time=2026-07-14T08:03:09.981Z level=DEBUG source=internal/monitor/container.go:169 msg="snapshot updated for containers" service=monitor running=31 terminated=0
+time=2026-07-14T08:03:09.981Z level=DEBUG source=internal/monitor/vm.go:49 msg="Clearing terminated VMs after export" service=monitor
+time=2026-07-14T08:03:09.981Z level=DEBUG source=internal/monitor/vm.go:56 msg="Processing terminated VMs" service=monitor terminated=0
+time=2026-07-14T08:03:09.981Z level=DEBUG source=internal/monitor/vm.go:69 msg="Calculating VM power" service=monitor node.cpu.time=1.599999999996131 running=0
+time=2026-07-14T08:03:09.981Z level=DEBUG source=internal/monitor/vm.go:115 msg="snapshot updated for VMs" service=monitor running=0 terminated=0
+time=2026-07-14T08:03:09.981Z level=DEBUG source=internal/monitor/pod.go:60 msg="Clearing terminated pods after export" service=monitor
+time=2026-07-14T08:03:09.981Z level=DEBUG source=internal/monitor/pod.go:68 msg="Processing terminated pods" service=monitor terminated=0
+time=2026-07-14T08:03:09.981Z level=DEBUG source=internal/monitor/pod.go:89 msg="Calculating pod power" service=monitor node-cputime=1.599999999996131 running=10
+time=2026-07-14T08:03:09.981Z level=DEBUG source=internal/monitor/pod.go:147 msg="snapshot updated for pods" service=monitor running=10 terminated=0
+time=2026-07-14T08:03:09.981Z level=DEBUG source=internal/monitor/monitor.go:171 msg="Data channel is full" service=monitor
+time=2026-07-14T08:03:09.981Z level=DEBUG source=internal/monitor/monitor.go:362 msg=refreshSnapshot service=monitor processes=884 containers=31 vms=0 pods=10 terminated_processes=0 terminated_containers=0 terminated_vms=0 terminated_pods=0
+time=2026-07-14T08:03:09.981Z level=INFO source=internal/monitor/monitor.go:338 msg="Computed power" service=monitor duration=579.500704ms
+time=2026-07-14T08:03:14.982Z level=DEBUG source=internal/monitor/node.go:28 msg="Calculating Node power" service=monitor node.process-cpu.time=1.599999999996131 node.cpu.usage-ratio=0.007735555644106099
+time=2026-07-14T08:03:14.983Z level=DEBUG source=internal/monitor/node.go:61 msg="Processing energy zone" service=monitor zone=package type=energy abs_energy=54529.51J max_energy=131065.22J
+time=2026-07-14T08:03:14.983Z level=DEBUG source=internal/monitor/node.go:105 msg="Energy zone delta calculation" service=monitor zone=package current=54529.51J previous=53964.86J delta_energy=564.65J time_diff=5.580706381 power=101.18W
+time=2026-07-14T08:03:14.983Z level=DEBUG source=internal/monitor/node.go:142 msg="Active and idle power/energy" service=monitor active_power=0.78W idle_power=100.40W active_energy=4.37J idle_energy=560.28J
+time=2026-07-14T08:03:14.983Z level=DEBUG source=internal/monitor/node.go:61 msg="Processing energy zone" service=monitor zone=core type=energy abs_energy=13456.05J max_energy=131065.22J
+time=2026-07-14T08:03:14.983Z level=DEBUG source=internal/monitor/node.go:105 msg="Energy zone delta calculation" service=monitor zone=core current=13456.05J previous=13455.94J delta_energy=0.11J time_diff=5.580706381 power=0.02W
+time=2026-07-14T08:03:14.983Z level=DEBUG source=internal/monitor/node.go:142 msg="Active and idle power/energy" service=monitor active_power=0.00W idle_power=0.02W active_energy=0.00J idle_energy=0.11J
+time=2026-07-14T08:03:15.137Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:03:15.169Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:03:15.236Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:03:15.266Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:03:15.331Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:03:15.363Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:03:15.393Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:03:15.418Z level=INFO source=prometheus/collector/power_collector.go:263 msg="Collecting unified power data" collector=power
+time=2026-07-14T08:03:15.438Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:03:15.469Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:03:15.550Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:03:15.581Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:03:15.631Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:03:15.662Z level=DEBUG source=k8s/pod/kubelet.go:245 msg="refreshed pod cache from kubelet" service=kubeletPodInformer podCount=12 containerCount=28
+time=2026-07-14T08:03:15.663Z level=DEBUG source=internal/resource/informer.go:397 msg="Resource information collected" service=resource-informer process.running=884 process.terminated=0 container.running=31 container.terminated=0 vm.running=0 vm.terminated=0 pod.running=10 pod.terminated=0 container.no-pod=13 duration=679.573064ms
+time=2026-07-14T08:03:15.663Z level=DEBUG source=internal/monitor/process.go:171 msg="Processing terminated processes" service=monitor terminated=0
+time=2026-07-14T08:03:15.663Z level=DEBUG source=internal/monitor/process.go:188 msg="Calculating Process power" service=monitor node.cpu.time=2.110000000002016 running=884
+time=2026-07-14T08:03:15.666Z level=DEBUG source=internal/monitor/process.go:254 msg="snapshot updated for process" service=monitor running=884 terminated=0
+time=2026-07-14T08:03:15.666Z level=DEBUG source=internal/monitor/container.go:92 msg="Processing terminated containers" service=monitor terminated=0
+time=2026-07-14T08:03:15.666Z level=DEBUG source=internal/monitor/container.go:109 msg="Calculating container power" service=monitor node.cpu.time=2.110000000002016 running=31
+time=2026-07-14T08:03:15.666Z level=DEBUG source=internal/monitor/container.go:169 msg="snapshot updated for containers" service=monitor running=31 terminated=0
+time=2026-07-14T08:03:15.666Z level=DEBUG source=internal/monitor/vm.go:56 msg="Processing terminated VMs" service=monitor terminated=0
+time=2026-07-14T08:03:15.666Z level=DEBUG source=internal/monitor/vm.go:69 msg="Calculating VM power" service=monitor node.cpu.time=2.110000000002016 running=0
+time=2026-07-14T08:03:15.666Z level=DEBUG source=internal/monitor/vm.go:115 msg="snapshot updated for VMs" service=monitor running=0 terminated=0
+time=2026-07-14T08:03:15.666Z level=DEBUG source=internal/monitor/pod.go:68 msg="Processing terminated pods" service=monitor terminated=0
+time=2026-07-14T08:03:15.666Z level=DEBUG source=internal/monitor/pod.go:89 msg="Calculating pod power" service=monitor node-cputime=2.110000000002016 running=10
+time=2026-07-14T08:03:15.666Z level=DEBUG source=internal/monitor/pod.go:147 msg="snapshot updated for pods" service=monitor running=10 terminated=0
+time=2026-07-14T08:03:15.666Z level=DEBUG source=internal/monitor/monitor.go:171 msg="Data channel is full" service=monitor
+time=2026-07-14T08:03:15.666Z level=DEBUG source=internal/monitor/monitor.go:362 msg=refreshSnapshot service=monitor processes=884 containers=31 vms=0 pods=10 terminated_processes=0 terminated_containers=0 terminated_vms=0 terminated_pods=0
+time=2026-07-14T08:03:15.666Z level=INFO source=internal/monitor/monitor.go:338 msg="Computed power" service=monitor duration=684.264882ms
+time=2026-07-14T08:03:15.836Z level=DEBUG source=prometheus/collector/power_collector.go:366 msg="No processes to export metrics" collector=power state=terminated
+time=2026-07-14T08:03:15.837Z level=DEBUG source=prometheus/collector/power_collector.go:429 msg="No containers to export metrics for" collector=power state=terminated
+time=2026-07-14T08:03:15.837Z level=DEBUG source=prometheus/collector/power_collector.go:484 msg="No vms to export metrics for" collector=power state=running
+time=2026-07-14T08:03:15.838Z level=DEBUG source=prometheus/collector/power_collector.go:484 msg="No vms to export metrics for" collector=power state=terminated
+time=2026-07-14T08:03:15.930Z level=DEBUG source=prometheus/collector/power_collector.go:513 msg="No pods to export metrics" collector=power state=terminated
+time=2026-07-14T08:03:15.930Z level=DEBUG source=prometheus/collector/power_collector.go:563 msg="No GPU stats to export" collector=power
+time=2026-07-14T08:03:15.930Z level=INFO source=prometheus/collector/power_collector.go:265 msg="Collected unified power data" collector=power duration=512.574261ms

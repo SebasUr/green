@@ -1,4 +1,4 @@
-"""Oracle windows and green-window *selection* metrics.
+"""Perfect-foresight windows and green-window selection metrics.
 
 Point error (MAE/RMSE) is necessary but not sufficient: a forecast is only
 useful here if it **ranks** future hours by greenness correctly. These metrics
@@ -7,16 +7,19 @@ in the horizon; pick the greenest"* - and score each strategy by the carbon it
 would actually incur, against two references:
 
 * **run-now**: run immediately at the origin (no shifting);
-* **oracle**: pick the truly greenest candidate using known actuals (an upper
-  bound, not deployable).
+* **perfect foresight**: pick the truly greenest candidate using known actuals
+  (an upper bound, not deployable).
 
 Reported per strategy:
 
-* ``mean_realized_gco2`` - average actual intensity you'd run at;
-* ``mean_regret`` - realized minus oracle (0 = perfect selection);
-* ``pct_oracle_potential`` - share of the run-now → oracle savings captured;
+* ``mean_realized_gco2`` - average realized intensity at the selected hour;
+* ``mean_regret`` - realized minus perfect foresight (0 = perfect selection);
+* ``pct_oracle_potential`` - share of the run-now to perfect-foresight savings captured;
 * ``spearman`` - rank correlation of predicted vs actual candidate intensity;
 * ``top1_accuracy`` - how often the picked hour is the truly greenest one.
+
+The internal model/window identifier remains ``oracle`` for compatibility with
+existing outputs.
 """
 
 from __future__ import annotations
@@ -31,7 +34,7 @@ from green_observatory.windows.scoring import compute_low_carbon_windows
 
 
 def oracle_windows(actual_carbon: pd.Series, **kwargs) -> list[GreenWindow]:
-    """Best-possible low-carbon windows using known actuals (upper bound)."""
+    """Perfect-foresight low-carbon windows using known actuals."""
     kwargs.setdefault("window_type", WindowType.oracle_window)
     kwargs.setdefault("source_model", ModelName.oracle)
     return compute_low_carbon_windows(actual_carbon, **kwargs)
@@ -82,7 +85,7 @@ def _select_metrics_for_model(g: pd.DataFrame, now_by_origin: pd.Series) -> dict
 
 
 def window_selection_metrics(pred_df: pd.DataFrame, df: pd.DataFrame) -> pd.DataFrame:
-    """Green-window selection metrics per strategy, plus run-now / oracle rows.
+    """Green-window selection metrics per strategy, plus run-now / perfect-foresight rows.
 
     ``pred_df`` is the tidy backtest frame from
     :func:`green_observatory.carbon.evaluation.backtest_predictions`; ``df`` is

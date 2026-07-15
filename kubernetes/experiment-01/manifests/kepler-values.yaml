@@ -1,0 +1,18 @@
+daemonset:
+  nodeSelector:
+    sustainability.cern.ch/hardware: baremetal
+
+  resources:
+    requests:
+      cpu: 50m
+      memory: 128Mi
+    limits:
+      cpu: 500m
+      memory: 512Mi
+
+serviceMonitor:
+  enabled: true
+  interval: 10s
+  path: /metrics
+  labels:
+    release: monitoring

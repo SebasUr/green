@@ -1,0 +1,10 @@
+{
+  "hostname": "mc-smoke-runner-02-5wjdt",
+  "workers": 16,
+  "samples_per_worker": 100000000,
+  "total_samples": 1600000000,
+  "pi_estimate": 3.14159542,
+  "elapsed_seconds": 28.435640459007118,
+  "started_at": "2026-07-14T07:46:21.512682+00:00",
+  "finished_at": "2026-07-14T07:46:49.948344+00:00"
+}

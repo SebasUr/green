@@ -1,0 +1,9 @@
+{
+  "data": {
+    "result": [],
+    "resultType": "matrix"
+  },
+  "error": "no se pudo consultar Prometheus: http://127.0.0.1:54030/api/v1/query_range?query=sum%28max+without%28state%29%28kepler_pod_cpu_joules_total%7Bnode_name%3D%22sebas-green-baremetal-jpmdwiscskyy-node-0%22%2Cpod_namespace%3D%22green-experiment%22%2Cpod_name%3D%22mc-smoke-runner-01-j89ns%22%2Czone%3D%22package%22%7D%29%29&start=1784014792.387&end=1784014868.095&step=10: timed out",
+  "errorType": "collection_error",
+  "status": "error"
+}

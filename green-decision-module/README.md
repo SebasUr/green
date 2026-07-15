@@ -1,26 +1,79 @@
-# Green Window Observatory (V1.0)
+# Green Window Observatory
 
-Carbon temporal intelligence for **when-to-run** decisions on the French grid.
-Part of the CERN Green Decision Module. V1.0 answers *"when is it greener to
-run?"* using open French electricity/carbon data; workload-specific decisions
-(*"should this job run now?"*) are the later V1.1 Green Decision Module.
+Carbon-intensity forecasting and low-carbon window selection for carbon-aware
+workload scheduling on the French electricity grid.
 
-> **Scope note.** Milestones 0-2 (the carbon track) are the current focus. The
-> CERN CDC facility track (M3-4), simulation (M6), exporters (M7) and API (M8)
-> are scaffolded but not yet built. See [`IMPLEMENTATION_PLAN_V1.md`](IMPLEMENTATION_PLAN_V1.md).
+This repository contains the carbon forecasting track of the CERN Green Decision
+Module. It answers a bounded operational question:
 
-## Locked V1.0 conventions
+> Given the next 1-48 hours, when is the lowest-carbon time to run a deferrable
+> workload?
 
-| Decision | Choice |
-|---|---|
-| Carbon ground truth | RTE `taux_co2` (production-based gCO2/kWh) from ODRE/eCO2mix |
-| Score | `green_score` in `[0, 1]`, **higher = greener**; raw gCO2/kWh kept separately |
-| Green window | contiguous block below the **p25 of the forecast horizon** (configurable) |
-| Climatology grouping | `Europe/Paris` local time (instants stored in UTC) |
-| Evaluation | rolling-origin backtest, no look-ahead leakage |
-| Electricity Maps | optional comparison only, needs `ELECTRICITYMAPS_API_TOKEN` |
+The current version produces hourly carbon-intensity forecasts for the French
+bidding zone and ranks future low-carbon windows. It does not yet perform
+workload-level actions such as suspending jobs, applying power caps, or mutating
+Kubernetes resources.
 
-## Setup (conda)
+## Summary
+
+- **Ground truth:** RTE/ODRE eCO2mix `taux_co2`, production-based
+  gCO2/kWh, aggregated to hourly UTC.
+- **Model:** direct multi-horizon gradient-boosted tree regressors for
+  1, 3, 6, 12, 24, and 48 hour horizons.
+- **Forecast features:** Open-Meteo wind speed and solar irradiance, plus RTE
+  day-ahead consumption forecast where available.
+- **Evaluation:** leakage-free rolling-origin backtest over Feb-Apr 2026.
+- **Primary decision metric:** share of savings captured relative to
+  run-now and perfect foresight.
+
+In the reference backtest, the ML model captures **67.0%** of the
+perfect-foresight saving potential over a 48 hour decision horizon and **73%**
+over the primary 24 hour horizon.
+
+## Method
+
+The model is trained on approximately five years of historical French grid data.
+For each forecast origin `t0`, all features are restricted to information known
+at or before `t0`, except target-time weather and consumption forecasts that are
+published before the target time and are therefore available to an operational
+system. The realized carbon value at `t0 + h` is used only as the supervised
+label.
+
+Low-carbon windows are derived from the forecast by ranking candidate hours
+within the forecast horizon. A green score in `[0, 1]` is computed by inverting
+the empirical CDF of forecasted carbon intensity within the horizon; higher
+scores correspond to lower carbon intensity.
+
+## Results
+
+Rolling-origin backtest, training on data before `2026-02-01` and evaluating
+348 forecast origins from Feb-Apr 2026:
+
+| Strategy | Realized gCO2/kWh | Regret | % of perfect foresight | Spearman | Top-1 |
+|---|---:|---:|---:|---:|---:|
+| Run-now | 14.91 | 3.16 | 0.0 | -- | -- |
+| Persistence | 15.04 | 3.29 | -4.1 | -- | 0.24 |
+| Climatology | 13.85 | 2.09 | 33.7 | 0.05 | 0.20 |
+| Corrected climatology | 13.36 | 1.61 | 49.1 | 0.05 | 0.26 |
+| SARIMAX | 13.36 | 1.60 | 49.2 | 0.16 | 0.25 |
+| LSTM | 12.90 | 1.14 | 63.9 | 0.28 | 0.37 |
+| **ML model** | **12.80** | **1.04** | **67.0** | **0.34** | **0.41** |
+| Perfect foresight | 11.76 | 0.00 | 100.0 | 1.00 | 1.00 |
+
+Relative point error for the ML model is 5.5% WAPE at 1 hour, 18.5% at 6 hours,
+24.0% at 24 hours, and 30.3% at 48 hours. The operational metric is the ranking
+quality of candidate windows, because scheduling decisions depend on selecting
+the lowest-carbon future hour rather than only minimizing point forecast error.
+
+The wind and solar forecast features are the main driver of the ML model, raising
+Spearman from 0.23 to 0.34 and reducing 48-hour WAPE from 37.7% to 30.3%. SARIMAX
+and LSTM are optional comparison experiments; neither outperforms the
+gradient-boosting model, which indicates the model is close to the ceiling set by
+the available forecast information rather than by the model architecture. See
+[REPORT.md](REPORT.md) for the full methodology and [CLAUDE.md](CLAUDE.md) for a
+developer-oriented overview.
+
+## Installation
 
 ```bash
 conda create -y --override-channels -c conda-forge -n green-observatory \
@@ -30,63 +83,96 @@ conda activate green-observatory
 pip install -e .
 ```
 
-## CLI (`greenctl`)
+Optional dependencies:
+
+```bash
+pip install -e ".[viz,stats]"
+```
+
+## Reproduction
+
+Run commands from the `green-decision-module` directory so that the relative
+data, model, and figure paths resolve consistently.
+
+```bash
+# Import historical carbon and generation-mix data.
+greenctl carbon import
+
+# Import forecast features used by the ML model.
+greenctl carbon fetch-forecast
+
+# Train a deployable model on all available data.
+greenctl carbon train
+
+# Reproduce the leakage-free rolling-origin backtest.
+greenctl carbon compare --test-start 2026-02-01 --output runs/compare_metrics.json
+
+# Generate figures for the report.
+greenctl figures --examples 4
+```
+
+The `carbon train` and `carbon compare` commands use forecast-feature snapshots
+by default when they are present. Pass `--no-forecast-features` to disable them.
+
+## Command Reference
 
 ```bash
 greenctl version
-greenctl carbon import   --output data/carbon_fr.parquet      # fetch ODRE snapshot
-greenctl carbon train    --config configs/carbon_model.yaml   # train project model
+greenctl carbon import
+greenctl carbon fetch-forecast
+greenctl carbon train
 greenctl carbon forecast --horizon-hours 48
-greenctl carbon compare  --strategies persistence,climatology,corrected,project-model,oracle
-greenctl windows analyze --carbon data/carbon_fr.parquet
+greenctl carbon compare --test-start 2026-02-01
+greenctl carbon compare-live
+greenctl windows analyze --horizon-hours 48
+greenctl figures --examples 4
+greenctl jobs report JOB_NAME --namespace NAMESPACE
+greenctl jobs observe --namespace NAMESPACE
+greenctl jobs summarize
 ```
 
-## Layout
+`compare-live` optionally compares the current forecast ranking with Electricity
+Maps when `ELECTRICITYMAPS_API_TOKEN` is configured. This comparison is live-only:
+historical commercial forecasts are not available for replay, and Electricity
+Maps reports consumption-based intensity while this model is trained on
+production-based RTE intensity.
 
-```
+## Repository Layout
+
+```text
 src/green_observatory/
-  models.py            typed contracts (pydantic v2)
-  config.py            YAML config loading
-  cli.py               greenctl
-  providers/           odre (primary), electricity_maps (optional), cdc (M3+)
-  carbon/              features, climatology, corrected_climatology, model, evaluation
-  windows/             scoring, oracle, combine
-  facility/            deferred (M3-4)
-  simulation/          deferred (M6)
-  exporters/           deferred (M7)
-configs/               carbon_model.yaml, window_scoring.yaml, simulation.yaml
-data/                  ODRE snapshots + CDC exports (CDC not used in M0-2)
-tests/
+  cli.py                         Typer command-line interface
+  config.py                      YAML configuration loading
+  models.py                      Pydantic data contracts
+  providers/                     ODRE, Open-Meteo, Electricity Maps adapters
+  carbon/                        feature engineering, models, evaluation
+  windows/                       window scoring and perfect-foresight metrics
+  observability/                 Kepler/RTE accounting for Kubernetes Jobs
+  exporters/                     report figures
+configs/                         model and window-scoring configuration
+tests/                           unit tests
+runs/                            generated metrics and figures
+report/                          LaTeX technical note
 ```
 
-## Results (illustrative backtest)
+## Scope
 
-Rolling-origin backtest on the open French signal, training `< 2026-02-01`,
-testing on 348 origins (Feb–Apr 2026, a persistently low-carbon regime):
+The current release combines the carbon-signal module with opt-in, read-only
+Kubernetes Job observability. Facility telemetry, workload simulation, API
+serving, and Kubernetes scheduling or mutation remain downstream components and
+are not required to reproduce the carbon forecasting results.
 
-**Green-window selection** — *"pick the greenest of the forecasted horizon hours"*:
+## Per-Job energy and carbon observability
 
-| strategy | realized gCO₂/kWh | regret | % oracle potential | Spearman | top-1 |
-|---|---|---|---|---|---|
-| run-now | 14.91 | 3.16 | 0% | — | — |
-| persistence | 15.04 | 3.29 | −4.1% | — | 0.24 |
-| climatology | 13.85 | 2.09 | 33.7% | 0.05 | 0.20 |
-| corrected | 13.36 | 1.61 | 49.1% | 0.05 | 0.26 |
-| **project** | **12.96** | **1.21** | **61.8%** | **0.23** | **0.35** |
-| oracle | 11.76 | 0.00 | 100% | 1.00 | 1.00 |
+The repository now includes an opt-in Kubernetes Job observer. A Job labelled
+`sustainability.cern.ch/track=true` receives a JSON report after termination
+with reset-aware Kepler CPU energy, energy-weighted realized RTE intensity,
+operational emissions without PUE, and explicit measurement-quality fields.
 
-The project model captures **61.8% of the oracle's best-window potential** and
-gives the lowest ranking regret. Note the headline lesson: **persistence has the
-best point MAE at 24/48 h yet is useless for window selection** (it forecasts a
-flat line and cannot rank future hours), which is exactly why ranking metrics —
-not MAE alone — decide the "when to run" question. Reproduce with
-`greenctl carbon compare --test-start 2026-02-01`.
+```bash
+export KUBECONFIG=~/config
+greenctl jobs observe --namespace green-experiment --output runs/job-reports
+```
 
-## Scientific notes
-
-- **No leakage.** Every forecast records its `issued_at`; features are built
-  strictly as-of that instant, and the backtest advances a rolling origin.
-- **Honest baselines.** The project model is only meaningful relative to
-  persistence, climatology and corrected climatology, with an *oracle* upper
-  bound. Green-window *ranking* quality matters as much as point MAE/RMSE.
-- **Reproducible.** Fixed seeds, cached data snapshots and YAML-driven configs.
+See [docs/JOB_OBSERVABILITY.md](docs/JOB_OBSERVABILITY.md) for labels, one-shot
+reporting, Prometheus configuration, the JSON schema, and accounting limits.

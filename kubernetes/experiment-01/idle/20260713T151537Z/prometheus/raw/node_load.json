@@ -1,0 +1,86 @@
+{
+  "data": {
+    "result": [
+      {
+        "metric": {
+          "__name__": "node_load1",
+          "container": "node-exporter",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1783955738.456,
+            "0.55"
+          ],
+          [
+            1783955748.456,
+            "0.43"
+          ],
+          [
+            1783955758.456,
+            "0.43"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_load15",
+          "container": "node-exporter",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1783955738.456,
+            "0.54"
+          ],
+          [
+            1783955748.456,
+            "0.54"
+          ],
+          [
+            1783955758.456,
+            "0.54"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "node_load5",
+          "container": "node-exporter",
+          "endpoint": "http-metrics",
+          "instance": "188.184.49.170:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "monitoring-prometheus-node-exporter-rxjld",
+          "service": "monitoring-prometheus-node-exporter"
+        },
+        "values": [
+          [
+            1783955738.456,
+            "0.47"
+          ],
+          [
+            1783955748.456,
+            "0.45"
+          ],
+          [
+            1783955758.456,
+            "0.45"
+          ]
+        ]
+      }
+    ],
+    "resultType": "matrix"
+  },
+  "status": "success"
+}

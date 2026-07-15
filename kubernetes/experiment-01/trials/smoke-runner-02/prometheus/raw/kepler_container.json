@@ -1,0 +1,7836 @@
+{
+  "data": {
+    "result": [
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "05ac4abe1451bcaf581cca1faf9dd472236a04e32aba38dc7e7f1c522d5f2ab0",
+          "container_name": "automount",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "c7f0e98b-aa0c-4e75-80f3-6af6627cb930",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0.000073"
+          ],
+          [
+            1784015160.384,
+            "0.000073"
+          ],
+          [
+            1784015170.384,
+            "0.000073"
+          ],
+          [
+            1784015180.384,
+            "0.000073"
+          ],
+          [
+            1784015190.384,
+            "0.000073"
+          ],
+          [
+            1784015200.384,
+            "0.000073"
+          ],
+          [
+            1784015210.384,
+            "0.000073"
+          ],
+          [
+            1784015220.384,
+            "0.000073"
+          ],
+          [
+            1784015230.384,
+            "0.000073"
+          ],
+          [
+            1784015240.384,
+            "0.000073"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "05ac4abe1451bcaf581cca1faf9dd472236a04e32aba38dc7e7f1c522d5f2ab0",
+          "container_name": "automount",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "c7f0e98b-aa0c-4e75-80f3-6af6627cb930",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0.126018"
+          ],
+          [
+            1784015160.384,
+            "0.126018"
+          ],
+          [
+            1784015170.384,
+            "0.126018"
+          ],
+          [
+            1784015180.384,
+            "0.126018"
+          ],
+          [
+            1784015190.384,
+            "0.126018"
+          ],
+          [
+            1784015200.384,
+            "0.126018"
+          ],
+          [
+            1784015210.384,
+            "0.126018"
+          ],
+          [
+            1784015220.384,
+            "0.126018"
+          ],
+          [
+            1784015230.384,
+            "0.126018"
+          ],
+          [
+            1784015240.384,
+            "0.126018"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "0997de48b4f841f32cf535c3fbcb88b57cf2496e62646b8bd87f30a35c2676f0",
+          "container_name": "node-problem-detector",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "d5204d36-dc3b-4cd0-a48c-40dcf224bc19",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0.053786"
+          ],
+          [
+            1784015160.384,
+            "0.053786"
+          ],
+          [
+            1784015170.384,
+            "0.05379"
+          ],
+          [
+            1784015180.384,
+            "0.053819"
+          ],
+          [
+            1784015190.384,
+            "0.053853"
+          ],
+          [
+            1784015200.384,
+            "0.053853"
+          ],
+          [
+            1784015210.384,
+            "0.055235"
+          ],
+          [
+            1784015220.384,
+            "0.065921"
+          ],
+          [
+            1784015230.384,
+            "0.065921"
+          ],
+          [
+            1784015240.384,
+            "0.065937"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "0997de48b4f841f32cf535c3fbcb88b57cf2496e62646b8bd87f30a35c2676f0",
+          "container_name": "node-problem-detector",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "d5204d36-dc3b-4cd0-a48c-40dcf224bc19",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "115.067243"
+          ],
+          [
+            1784015160.384,
+            "115.067243"
+          ],
+          [
+            1784015170.384,
+            "115.078087"
+          ],
+          [
+            1784015180.384,
+            "115.131355"
+          ],
+          [
+            1784015190.384,
+            "115.133855"
+          ],
+          [
+            1784015200.384,
+            "115.133855"
+          ],
+          [
+            1784015210.384,
+            "115.191182"
+          ],
+          [
+            1784015220.384,
+            "116.22227"
+          ],
+          [
+            1784015230.384,
+            "116.22227"
+          ],
+          [
+            1784015240.384,
+            "116.246679"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "0d75b4342ccc362d9959c613fa0db9f50800a47c1e80fe38e0e62bc9b026a653",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "0d75b4342ccc362d9959c613fa0db9f50800a47c1e80fe38e0e62bc9b026a653",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "13c32c598f97bb47314807140069a29d99491fd275c54e619d273efbd7d07afc",
+          "container_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "runtime": "podman",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "12.896209"
+          ],
+          [
+            1784015160.384,
+            "12.897832"
+          ],
+          [
+            1784015170.384,
+            "12.898605"
+          ],
+          [
+            1784015180.384,
+            "12.901088"
+          ],
+          [
+            1784015190.384,
+            "12.918664"
+          ],
+          [
+            1784015200.384,
+            "13.004518"
+          ],
+          [
+            1784015210.384,
+            "13.082018"
+          ],
+          [
+            1784015220.384,
+            "13.734865"
+          ],
+          [
+            1784015230.384,
+            "13.73753"
+          ],
+          [
+            1784015240.384,
+            "13.73948"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "13c32c598f97bb47314807140069a29d99491fd275c54e619d273efbd7d07afc",
+          "container_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "runtime": "podman",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "25548.17741"
+          ],
+          [
+            1784015160.384,
+            "25552.605329"
+          ],
+          [
+            1784015170.384,
+            "25555.068966"
+          ],
+          [
+            1784015180.384,
+            "25559.649152"
+          ],
+          [
+            1784015190.384,
+            "25561.206111"
+          ],
+          [
+            1784015200.384,
+            "25564.676643"
+          ],
+          [
+            1784015210.384,
+            "25567.814592"
+          ],
+          [
+            1784015220.384,
+            "25649.94636"
+          ],
+          [
+            1784015230.384,
+            "25654.164534"
+          ],
+          [
+            1784015240.384,
+            "25657.864766"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "23d614328e496dde0a174c60ecc364ee865b9541ccbf6b043dffb36f85487977",
+          "container_name": "automount-reconciler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "c7f0e98b-aa0c-4e75-80f3-6af6627cb930",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0.003875"
+          ],
+          [
+            1784015160.384,
+            "0.003879"
+          ],
+          [
+            1784015170.384,
+            "0.003879"
+          ],
+          [
+            1784015180.384,
+            "0.003879"
+          ],
+          [
+            1784015190.384,
+            "0.003879"
+          ],
+          [
+            1784015200.384,
+            "0.003879"
+          ],
+          [
+            1784015210.384,
+            "0.003879"
+          ],
+          [
+            1784015220.384,
+            "0.014565"
+          ],
+          [
+            1784015230.384,
+            "0.014565"
+          ],
+          [
+            1784015240.384,
+            "0.014565"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "23d614328e496dde0a174c60ecc364ee865b9541ccbf6b043dffb36f85487977",
+          "container_name": "automount-reconciler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "c7f0e98b-aa0c-4e75-80f3-6af6627cb930",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "8.344098"
+          ],
+          [
+            1784015160.384,
+            "8.366031"
+          ],
+          [
+            1784015170.384,
+            "8.366031"
+          ],
+          [
+            1784015180.384,
+            "8.366031"
+          ],
+          [
+            1784015190.384,
+            "8.366031"
+          ],
+          [
+            1784015200.384,
+            "8.366031"
+          ],
+          [
+            1784015210.384,
+            "8.366031"
+          ],
+          [
+            1784015220.384,
+            "9.397119"
+          ],
+          [
+            1784015230.384,
+            "9.397119"
+          ],
+          [
+            1784015240.384,
+            "9.397119"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "2f2ffd3ea454169ee7544be74856b7030d7033fbc522fdbff9de12462fc9ed3b",
+          "container_name": "singlemount",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "c7f0e98b-aa0c-4e75-80f3-6af6627cb930",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0.000108"
+          ],
+          [
+            1784015160.384,
+            "0.000108"
+          ],
+          [
+            1784015170.384,
+            "0.000108"
+          ],
+          [
+            1784015180.384,
+            "0.000108"
+          ],
+          [
+            1784015190.384,
+            "0.000108"
+          ],
+          [
+            1784015200.384,
+            "0.000108"
+          ],
+          [
+            1784015210.384,
+            "0.000108"
+          ],
+          [
+            1784015220.384,
+            "0.000108"
+          ],
+          [
+            1784015230.384,
+            "0.000108"
+          ],
+          [
+            1784015240.384,
+            "0.000108"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "2f2ffd3ea454169ee7544be74856b7030d7033fbc522fdbff9de12462fc9ed3b",
+          "container_name": "singlemount",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "c7f0e98b-aa0c-4e75-80f3-6af6627cb930",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0.217846"
+          ],
+          [
+            1784015160.384,
+            "0.217846"
+          ],
+          [
+            1784015170.384,
+            "0.217846"
+          ],
+          [
+            1784015180.384,
+            "0.217846"
+          ],
+          [
+            1784015190.384,
+            "0.217846"
+          ],
+          [
+            1784015200.384,
+            "0.217846"
+          ],
+          [
+            1784015210.384,
+            "0.217846"
+          ],
+          [
+            1784015220.384,
+            "0.217846"
+          ],
+          [
+            1784015230.384,
+            "0.217846"
+          ],
+          [
+            1784015240.384,
+            "0.217846"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "31085c7830ff181ae020f2e7cb1ef3a5c9e05ab628ae7a1b826322610e5b76b5",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "31085c7830ff181ae020f2e7cb1ef3a5c9e05ab628ae7a1b826322610e5b76b5",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "31d74fe72d5ce21d997eaad2bf2391f33334cff0edab51975d567221b668cbb5",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "31d74fe72d5ce21d997eaad2bf2391f33334cff0edab51975d567221b668cbb5",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "3bc8029e29400f6a498bf8a59e27fa80f50f83f2de7830a6830654099ffde7ff",
+          "container_name": "monte-carlo",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "f93d514a-181e-4ca1-9cb0-3d4dacf0d93d",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015190.384,
+            "0.933178"
+          ],
+          [
+            1784015200.384,
+            "12.074058"
+          ],
+          [
+            1784015210.384,
+            "23.546521"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "3bc8029e29400f6a498bf8a59e27fa80f50f83f2de7830a6830654099ffde7ff",
+          "container_name": "monte-carlo",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "f93d514a-181e-4ca1-9cb0-3d4dacf0d93d",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015190.384,
+            "42.212727"
+          ],
+          [
+            1784015200.384,
+            "492.022724"
+          ],
+          [
+            1784015210.384,
+            "957.705632"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "3bc8029e29400f6a498bf8a59e27fa80f50f83f2de7830a6830654099ffde7ff",
+          "container_name": "monte-carlo",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "f93d514a-181e-4ca1-9cb0-3d4dacf0d93d",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "terminated",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015220.384,
+            "24.979102"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "3bc8029e29400f6a498bf8a59e27fa80f50f83f2de7830a6830654099ffde7ff",
+          "container_name": "monte-carlo",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "f93d514a-181e-4ca1-9cb0-3d4dacf0d93d",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "terminated",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015220.384,
+            "1017.085119"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "43977b3a923beebb70c0487c1b65d4174f6992d6102f6d7429451f71e1b288bf",
+          "container_name": "worker",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "42f2f47c-e6d9-454a-b88e-caaf52d29f94",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0.432955"
+          ],
+          [
+            1784015160.384,
+            "0.433075"
+          ],
+          [
+            1784015170.384,
+            "0.433075"
+          ],
+          [
+            1784015180.384,
+            "0.433075"
+          ],
+          [
+            1784015190.384,
+            "0.433075"
+          ],
+          [
+            1784015200.384,
+            "0.433075"
+          ],
+          [
+            1784015210.384,
+            "0.433075"
+          ],
+          [
+            1784015220.384,
+            "0.440644"
+          ],
+          [
+            1784015230.384,
+            "0.440644"
+          ],
+          [
+            1784015240.384,
+            "0.440644"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "43977b3a923beebb70c0487c1b65d4174f6992d6102f6d7429451f71e1b288bf",
+          "container_name": "worker",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "42f2f47c-e6d9-454a-b88e-caaf52d29f94",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "955.808633"
+          ],
+          [
+            1784015160.384,
+            "956.400827"
+          ],
+          [
+            1784015170.384,
+            "956.400827"
+          ],
+          [
+            1784015180.384,
+            "956.400827"
+          ],
+          [
+            1784015190.384,
+            "956.400827"
+          ],
+          [
+            1784015200.384,
+            "956.400827"
+          ],
+          [
+            1784015210.384,
+            "956.400827"
+          ],
+          [
+            1784015220.384,
+            "965.159091"
+          ],
+          [
+            1784015230.384,
+            "965.159091"
+          ],
+          [
+            1784015240.384,
+            "965.159091"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "452e9385d3dae8d437a16682f6017029241f3768bdc2b26cbc801b3c1b461ee7",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "452e9385d3dae8d437a16682f6017029241f3768bdc2b26cbc801b3c1b461ee7",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "5119ce13442b701e9604988c38c6b237e6c3ffbd5dd85a70b9d8d3621850713b",
+          "container_name": "driver-registrar",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "2bfefa03-3477-4244-b7f2-85c0c4b2281d",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0.007827"
+          ],
+          [
+            1784015160.384,
+            "0.007827"
+          ],
+          [
+            1784015170.384,
+            "0.007827"
+          ],
+          [
+            1784015180.384,
+            "0.007827"
+          ],
+          [
+            1784015190.384,
+            "0.007827"
+          ],
+          [
+            1784015200.384,
+            "0.008547"
+          ],
+          [
+            1784015210.384,
+            "0.008547"
+          ],
+          [
+            1784015220.384,
+            "0.008547"
+          ],
+          [
+            1784015230.384,
+            "0.008578"
+          ],
+          [
+            1784015240.384,
+            "0.008578"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "5119ce13442b701e9604988c38c6b237e6c3ffbd5dd85a70b9d8d3621850713b",
+          "container_name": "driver-registrar",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "2bfefa03-3477-4244-b7f2-85c0c4b2281d",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "17.225059"
+          ],
+          [
+            1784015160.384,
+            "17.225059"
+          ],
+          [
+            1784015170.384,
+            "17.225059"
+          ],
+          [
+            1784015180.384,
+            "17.225059"
+          ],
+          [
+            1784015190.384,
+            "17.225059"
+          ],
+          [
+            1784015200.384,
+            "17.253888"
+          ],
+          [
+            1784015210.384,
+            "17.253888"
+          ],
+          [
+            1784015220.384,
+            "17.253888"
+          ],
+          [
+            1784015230.384,
+            "17.31631"
+          ],
+          [
+            1784015240.384,
+            "17.31631"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "51d3d8ea611c47b55368a8e7ae7db169c485eec08c1280472e4e8bd68e0a12ba",
+          "container_name": "cilium-agent",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "4a5d94d8-5814-4c74-9cb2-21015bf6abd8",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "2.907604"
+          ],
+          [
+            1784015160.384,
+            "2.907896"
+          ],
+          [
+            1784015170.384,
+            "2.908042"
+          ],
+          [
+            1784015180.384,
+            "2.908583"
+          ],
+          [
+            1784015190.384,
+            "2.912762"
+          ],
+          [
+            1784015200.384,
+            "2.927085"
+          ],
+          [
+            1784015210.384,
+            "2.941145"
+          ],
+          [
+            1784015220.384,
+            "3.151265"
+          ],
+          [
+            1784015230.384,
+            "3.151872"
+          ],
+          [
+            1784015240.384,
+            "3.152239"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "51d3d8ea611c47b55368a8e7ae7db169c485eec08c1280472e4e8bd68e0a12ba",
+          "container_name": "cilium-agent",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "4a5d94d8-5814-4c74-9cb2-21015bf6abd8",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "5965.538821"
+          ],
+          [
+            1784015160.384,
+            "5966.43537"
+          ],
+          [
+            1784015170.384,
+            "5966.986956"
+          ],
+          [
+            1784015180.384,
+            "5967.976097"
+          ],
+          [
+            1784015190.384,
+            "5968.342839"
+          ],
+          [
+            1784015200.384,
+            "5968.920978"
+          ],
+          [
+            1784015210.384,
+            "5969.491832"
+          ],
+          [
+            1784015220.384,
+            "5994.325967"
+          ],
+          [
+            1784015230.384,
+            "5995.413347"
+          ],
+          [
+            1784015240.384,
+            "5996.094481"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "51f13ae7e1bc677dd2fd5269b2cd638618fbed5e18d872e44a5920a1d3f29ef4",
+          "container_name": "cilium-envoy",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "afef0d74-cce5-471b-bd41-e38cd116b35a",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "1.442022"
+          ],
+          [
+            1784015160.384,
+            "1.442176"
+          ],
+          [
+            1784015170.384,
+            "1.442269"
+          ],
+          [
+            1784015180.384,
+            "1.442617"
+          ],
+          [
+            1784015190.384,
+            "1.443345"
+          ],
+          [
+            1784015200.384,
+            "1.451936"
+          ],
+          [
+            1784015210.384,
+            "1.45967"
+          ],
+          [
+            1784015220.384,
+            "1.526935"
+          ],
+          [
+            1784015230.384,
+            "1.527316"
+          ],
+          [
+            1784015240.384,
+            "1.527544"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "51f13ae7e1bc677dd2fd5269b2cd638618fbed5e18d872e44a5920a1d3f29ef4",
+          "container_name": "cilium-envoy",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "afef0d74-cce5-471b-bd41-e38cd116b35a",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "3040.791724"
+          ],
+          [
+            1784015160.384,
+            "3041.204757"
+          ],
+          [
+            1784015170.384,
+            "3041.561636"
+          ],
+          [
+            1784015180.384,
+            "3042.196252"
+          ],
+          [
+            1784015190.384,
+            "3042.286152"
+          ],
+          [
+            1784015200.384,
+            "3042.633091"
+          ],
+          [
+            1784015210.384,
+            "3042.947046"
+          ],
+          [
+            1784015220.384,
+            "3051.30229"
+          ],
+          [
+            1784015230.384,
+            "3052.002036"
+          ],
+          [
+            1784015240.384,
+            "3052.418113"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "54725ca2ec05030334979e76a4ee6f413c60e0353fb55d58c2395a9de98ba47f",
+          "container_name": "automount",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "e4c9691c-cfcb-41c2-9cf8-2fb6724b6ae5",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0.000047"
+          ],
+          [
+            1784015160.384,
+            "0.000047"
+          ],
+          [
+            1784015170.384,
+            "0.000047"
+          ],
+          [
+            1784015180.384,
+            "0.000047"
+          ],
+          [
+            1784015190.384,
+            "0.000047"
+          ],
+          [
+            1784015200.384,
+            "0.000047"
+          ],
+          [
+            1784015210.384,
+            "0.000047"
+          ],
+          [
+            1784015220.384,
+            "0.000047"
+          ],
+          [
+            1784015230.384,
+            "0.000047"
+          ],
+          [
+            1784015240.384,
+            "0.000047"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "54725ca2ec05030334979e76a4ee6f413c60e0353fb55d58c2395a9de98ba47f",
+          "container_name": "automount",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "e4c9691c-cfcb-41c2-9cf8-2fb6724b6ae5",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0.128318"
+          ],
+          [
+            1784015160.384,
+            "0.128318"
+          ],
+          [
+            1784015170.384,
+            "0.128318"
+          ],
+          [
+            1784015180.384,
+            "0.128318"
+          ],
+          [
+            1784015190.384,
+            "0.128318"
+          ],
+          [
+            1784015200.384,
+            "0.128318"
+          ],
+          [
+            1784015210.384,
+            "0.128318"
+          ],
+          [
+            1784015220.384,
+            "0.128318"
+          ],
+          [
+            1784015230.384,
+            "0.128318"
+          ],
+          [
+            1784015240.384,
+            "0.128318"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "57f0306768cfabe838f1a120599a9e518f3cc1c958d6ebe458ab3a4409347fc6",
+          "container_name": "node-exporter",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "c2dbef85-1370-4fea-81c0-3bf01370f482",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0.964892"
+          ],
+          [
+            1784015160.384,
+            "0.965048"
+          ],
+          [
+            1784015170.384,
+            "0.965106"
+          ],
+          [
+            1784015180.384,
+            "0.965106"
+          ],
+          [
+            1784015190.384,
+            "0.96524"
+          ],
+          [
+            1784015200.384,
+            "0.976645"
+          ],
+          [
+            1784015210.384,
+            "0.977336"
+          ],
+          [
+            1784015220.384,
+            "1.116262"
+          ],
+          [
+            1784015230.384,
+            "1.116698"
+          ],
+          [
+            1784015240.384,
+            "1.116698"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "57f0306768cfabe838f1a120599a9e518f3cc1c958d6ebe458ab3a4409347fc6",
+          "container_name": "node-exporter",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "c2dbef85-1370-4fea-81c0-3bf01370f482",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "1621.229356"
+          ],
+          [
+            1784015160.384,
+            "1621.645441"
+          ],
+          [
+            1784015170.384,
+            "1621.786415"
+          ],
+          [
+            1784015180.384,
+            "1621.786415"
+          ],
+          [
+            1784015190.384,
+            "1621.988483"
+          ],
+          [
+            1784015200.384,
+            "1622.452009"
+          ],
+          [
+            1784015210.384,
+            "1622.480672"
+          ],
+          [
+            1784015220.384,
+            "1635.884819"
+          ],
+          [
+            1784015230.384,
+            "1636.758737"
+          ],
+          [
+            1784015240.384,
+            "1636.758737"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "5de9dcf233043144fa2ff07b93e1e7f3fd71bb7c7b27d9660b729b4d3588a5b0",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015190.384,
+            "0.000068"
+          ],
+          [
+            1784015200.384,
+            "0.000068"
+          ],
+          [
+            1784015210.384,
+            "0.000068"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "5de9dcf233043144fa2ff07b93e1e7f3fd71bb7c7b27d9660b729b4d3588a5b0",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015190.384,
+            "0.005001"
+          ],
+          [
+            1784015200.384,
+            "0.005001"
+          ],
+          [
+            1784015210.384,
+            "0.005001"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "61b0241c65c2e557894dec8ff6dbdb762d6942bc58b887c79c5400cc5b0187e5",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "61b0241c65c2e557894dec8ff6dbdb762d6942bc58b887c79c5400cc5b0187e5",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "6670ef9d2fdeb2f45cabc74d8190b2a36800829f7ab1e935dad27456be4ce578",
+          "container_name": "nodeplugin",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "c7f0e98b-aa0c-4e75-80f3-6af6627cb930",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0.00012"
+          ],
+          [
+            1784015160.384,
+            "0.00012"
+          ],
+          [
+            1784015170.384,
+            "0.00012"
+          ],
+          [
+            1784015180.384,
+            "0.00012"
+          ],
+          [
+            1784015190.384,
+            "0.00012"
+          ],
+          [
+            1784015200.384,
+            "0.00012"
+          ],
+          [
+            1784015210.384,
+            "0.00012"
+          ],
+          [
+            1784015220.384,
+            "0.00012"
+          ],
+          [
+            1784015230.384,
+            "0.00012"
+          ],
+          [
+            1784015240.384,
+            "0.00012"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "6670ef9d2fdeb2f45cabc74d8190b2a36800829f7ab1e935dad27456be4ce578",
+          "container_name": "nodeplugin",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "c7f0e98b-aa0c-4e75-80f3-6af6627cb930",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0.142434"
+          ],
+          [
+            1784015160.384,
+            "0.142434"
+          ],
+          [
+            1784015170.384,
+            "0.142434"
+          ],
+          [
+            1784015180.384,
+            "0.142434"
+          ],
+          [
+            1784015190.384,
+            "0.142434"
+          ],
+          [
+            1784015200.384,
+            "0.142434"
+          ],
+          [
+            1784015210.384,
+            "0.142434"
+          ],
+          [
+            1784015220.384,
+            "0.142434"
+          ],
+          [
+            1784015230.384,
+            "0.142434"
+          ],
+          [
+            1784015240.384,
+            "0.142434"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "6ac97f9db9c9111d351161d7594795ef3314958ffc116f5b869823db0281be28",
+          "container_name": "nodeplugin",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "e4c9691c-cfcb-41c2-9cf8-2fb6724b6ae5",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0.00006"
+          ],
+          [
+            1784015160.384,
+            "0.00006"
+          ],
+          [
+            1784015170.384,
+            "0.00006"
+          ],
+          [
+            1784015180.384,
+            "0.00006"
+          ],
+          [
+            1784015190.384,
+            "0.00006"
+          ],
+          [
+            1784015200.384,
+            "0.00006"
+          ],
+          [
+            1784015210.384,
+            "0.00006"
+          ],
+          [
+            1784015220.384,
+            "0.00006"
+          ],
+          [
+            1784015230.384,
+            "0.00006"
+          ],
+          [
+            1784015240.384,
+            "0.00006"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "6ac97f9db9c9111d351161d7594795ef3314958ffc116f5b869823db0281be28",
+          "container_name": "nodeplugin",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "e4c9691c-cfcb-41c2-9cf8-2fb6724b6ae5",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0.152001"
+          ],
+          [
+            1784015160.384,
+            "0.152001"
+          ],
+          [
+            1784015170.384,
+            "0.152001"
+          ],
+          [
+            1784015180.384,
+            "0.152001"
+          ],
+          [
+            1784015190.384,
+            "0.152001"
+          ],
+          [
+            1784015200.384,
+            "0.152001"
+          ],
+          [
+            1784015210.384,
+            "0.152001"
+          ],
+          [
+            1784015220.384,
+            "0.152001"
+          ],
+          [
+            1784015230.384,
+            "0.152001"
+          ],
+          [
+            1784015240.384,
+            "0.152001"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "6d5a84e77a16086bdbe9c76fbc05278c51e0866dbf76b801f3632139d86d4e99",
+          "container_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "runtime": "podman",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0.049849"
+          ],
+          [
+            1784015160.384,
+            "0.049853"
+          ],
+          [
+            1784015170.384,
+            "0.049861"
+          ],
+          [
+            1784015180.384,
+            "0.049861"
+          ],
+          [
+            1784015190.384,
+            "0.049861"
+          ],
+          [
+            1784015200.384,
+            "0.050573"
+          ],
+          [
+            1784015210.384,
+            "0.051264"
+          ],
+          [
+            1784015220.384,
+            "0.051264"
+          ],
+          [
+            1784015230.384,
+            "0.051264"
+          ],
+          [
+            1784015240.384,
+            "0.051275"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "6d5a84e77a16086bdbe9c76fbc05278c51e0866dbf76b801f3632139d86d4e99",
+          "container_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "runtime": "podman",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "110.8761"
+          ],
+          [
+            1784015160.384,
+            "110.898033"
+          ],
+          [
+            1784015170.384,
+            "110.919721"
+          ],
+          [
+            1784015180.384,
+            "110.919721"
+          ],
+          [
+            1784015190.384,
+            "110.919721"
+          ],
+          [
+            1784015200.384,
+            "110.948691"
+          ],
+          [
+            1784015210.384,
+            "110.977354"
+          ],
+          [
+            1784015220.384,
+            "110.977354"
+          ],
+          [
+            1784015230.384,
+            "110.977354"
+          ],
+          [
+            1784015240.384,
+            "111.002842"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "705a45dfbae82ce82b04f1d0fe728528ff256879964a95e097cfa138936d79b8",
+          "container_name": "falco",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "961bafe2-c865-4f8e-9664-84529957c8ba",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "3.452556"
+          ],
+          [
+            1784015160.384,
+            "3.452939"
+          ],
+          [
+            1784015170.384,
+            "3.45317"
+          ],
+          [
+            1784015180.384,
+            "3.453915"
+          ],
+          [
+            1784015190.384,
+            "3.457772"
+          ],
+          [
+            1784015200.384,
+            "3.480679"
+          ],
+          [
+            1784015210.384,
+            "3.500373"
+          ],
+          [
+            1784015220.384,
+            "3.703996"
+          ],
+          [
+            1784015230.384,
+            "3.70489"
+          ],
+          [
+            1784015240.384,
+            "3.705365"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "705a45dfbae82ce82b04f1d0fe728528ff256879964a95e097cfa138936d79b8",
+          "container_name": "falco",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "961bafe2-c865-4f8e-9664-84529957c8ba",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "7019.287929"
+          ],
+          [
+            1784015160.384,
+            "7020.381076"
+          ],
+          [
+            1784015170.384,
+            "7021.226938"
+          ],
+          [
+            1784015180.384,
+            "7022.587463"
+          ],
+          [
+            1784015190.384,
+            "7022.980692"
+          ],
+          [
+            1784015200.384,
+            "7023.905913"
+          ],
+          [
+            1784015210.384,
+            "7024.705001"
+          ],
+          [
+            1784015220.384,
+            "7051.8848"
+          ],
+          [
+            1784015230.384,
+            "7053.490936"
+          ],
+          [
+            1784015240.384,
+            "7054.375147"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "723145abaa024262de8de8a031cc9d1f37285f0be90fe34fbf6e1d284cc0546f",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "723145abaa024262de8de8a031cc9d1f37285f0be90fe34fbf6e1d284cc0546f",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "7284d5744de3b7443a14f5eed1557c87c21c0aaa1d4ae7a7005eeac134efdf5e",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "7284d5744de3b7443a14f5eed1557c87c21c0aaa1d4ae7a7005eeac134efdf5e",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "765b74b2aac7bce2706c66a50ee14bf84cb245d42a6c17f792584273f1e62418",
+          "container_name": "kepler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "df01d1ca-7c4c-4166-8741-737879789523",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "8.464479"
+          ],
+          [
+            1784015160.384,
+            "8.465939"
+          ],
+          [
+            1784015170.384,
+            "8.46639"
+          ],
+          [
+            1784015180.384,
+            "8.467939"
+          ],
+          [
+            1784015190.384,
+            "8.483058"
+          ],
+          [
+            1784015200.384,
+            "8.538979"
+          ],
+          [
+            1784015210.384,
+            "8.59089"
+          ],
+          [
+            1784015220.384,
+            "9.065456"
+          ],
+          [
+            1784015230.384,
+            "9.067537"
+          ],
+          [
+            1784015240.384,
+            "9.068988"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "765b74b2aac7bce2706c66a50ee14bf84cb245d42a6c17f792584273f1e62418",
+          "container_name": "kepler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "df01d1ca-7c4c-4166-8741-737879789523",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "15873.233818"
+          ],
+          [
+            1784015160.384,
+            "15876.232508"
+          ],
+          [
+            1784015170.384,
+            "15877.932617"
+          ],
+          [
+            1784015180.384,
+            "15880.778472"
+          ],
+          [
+            1784015190.384,
+            "15882.048694"
+          ],
+          [
+            1784015200.384,
+            "15884.302328"
+          ],
+          [
+            1784015210.384,
+            "15886.415648"
+          ],
+          [
+            1784015220.384,
+            "15942.138356"
+          ],
+          [
+            1784015230.384,
+            "15945.336059"
+          ],
+          [
+            1784015240.384,
+            "15947.817852"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "76e897708fb77db0908d049e2dafdea30316a37a6147720cab8cbdb78f34d99c",
+          "container_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "runtime": "podman",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0.158963"
+          ],
+          [
+            1784015160.384,
+            "0.158963"
+          ],
+          [
+            1784015170.384,
+            "0.158989"
+          ],
+          [
+            1784015180.384,
+            "0.158989"
+          ],
+          [
+            1784015190.384,
+            "0.158989"
+          ],
+          [
+            1784015200.384,
+            "0.162553"
+          ],
+          [
+            1784015210.384,
+            "0.162553"
+          ],
+          [
+            1784015220.384,
+            "0.162553"
+          ],
+          [
+            1784015230.384,
+            "0.162598"
+          ],
+          [
+            1784015240.384,
+            "0.162598"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "76e897708fb77db0908d049e2dafdea30316a37a6147720cab8cbdb78f34d99c",
+          "container_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "runtime": "podman",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "323.101724"
+          ],
+          [
+            1784015160.384,
+            "323.101724"
+          ],
+          [
+            1784015170.384,
+            "323.166789"
+          ],
+          [
+            1784015180.384,
+            "323.166789"
+          ],
+          [
+            1784015190.384,
+            "323.166789"
+          ],
+          [
+            1784015200.384,
+            "323.311641"
+          ],
+          [
+            1784015210.384,
+            "323.311641"
+          ],
+          [
+            1784015220.384,
+            "323.311641"
+          ],
+          [
+            1784015230.384,
+            "323.377681"
+          ],
+          [
+            1784015240.384,
+            "323.377681"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "b19251ac9f963dae4dfc949638a1d59e9469d1949e35d98af658e21b4a163388",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "b19251ac9f963dae4dfc949638a1d59e9469d1949e35d98af658e21b4a163388",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "c402d2bcffb875ba7f75cd4da984873e0a26967c99fd3c3d32cf1633f92966d4",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "c402d2bcffb875ba7f75cd4da984873e0a26967c99fd3c3d32cf1633f92966d4",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "c46493f879f1b3acc2c335d296c3b2d00b160fcc8faf385a796575f0326e4304",
+          "container_name": "registrar",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "e4c9691c-cfcb-41c2-9cf8-2fb6724b6ae5",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0.007248"
+          ],
+          [
+            1784015160.384,
+            "0.007248"
+          ],
+          [
+            1784015170.384,
+            "0.007248"
+          ],
+          [
+            1784015180.384,
+            "0.007248"
+          ],
+          [
+            1784015190.384,
+            "0.007248"
+          ],
+          [
+            1784015200.384,
+            "0.007248"
+          ],
+          [
+            1784015210.384,
+            "0.007248"
+          ],
+          [
+            1784015220.384,
+            "0.007248"
+          ],
+          [
+            1784015230.384,
+            "0.007248"
+          ],
+          [
+            1784015240.384,
+            "0.007248"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "c46493f879f1b3acc2c335d296c3b2d00b160fcc8faf385a796575f0326e4304",
+          "container_name": "registrar",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "e4c9691c-cfcb-41c2-9cf8-2fb6724b6ae5",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "14.197721"
+          ],
+          [
+            1784015160.384,
+            "14.197721"
+          ],
+          [
+            1784015170.384,
+            "14.197721"
+          ],
+          [
+            1784015180.384,
+            "14.197721"
+          ],
+          [
+            1784015190.384,
+            "14.197721"
+          ],
+          [
+            1784015200.384,
+            "14.197721"
+          ],
+          [
+            1784015210.384,
+            "14.197721"
+          ],
+          [
+            1784015220.384,
+            "14.197721"
+          ],
+          [
+            1784015230.384,
+            "14.197721"
+          ],
+          [
+            1784015240.384,
+            "14.197721"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "d33f0f8db2e37a8a764b927c4f76de5e627e42ac1a566dd51fa9cb90e9827f89",
+          "container_name": "mountreconciler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "e4c9691c-cfcb-41c2-9cf8-2fb6724b6ae5",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0.069235"
+          ],
+          [
+            1784015160.384,
+            "0.069235"
+          ],
+          [
+            1784015170.384,
+            "0.069252"
+          ],
+          [
+            1784015180.384,
+            "0.069252"
+          ],
+          [
+            1784015190.384,
+            "0.069252"
+          ],
+          [
+            1784015200.384,
+            "0.070677"
+          ],
+          [
+            1784015210.384,
+            "0.070677"
+          ],
+          [
+            1784015220.384,
+            "0.070677"
+          ],
+          [
+            1784015230.384,
+            "0.070703"
+          ],
+          [
+            1784015240.384,
+            "0.070703"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "d33f0f8db2e37a8a764b927c4f76de5e627e42ac1a566dd51fa9cb90e9827f89",
+          "container_name": "mountreconciler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "e4c9691c-cfcb-41c2-9cf8-2fb6724b6ae5",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "116.563175"
+          ],
+          [
+            1784015160.384,
+            "116.563175"
+          ],
+          [
+            1784015170.384,
+            "116.606551"
+          ],
+          [
+            1784015180.384,
+            "116.606551"
+          ],
+          [
+            1784015190.384,
+            "116.606551"
+          ],
+          [
+            1784015200.384,
+            "116.664491"
+          ],
+          [
+            1784015210.384,
+            "116.664491"
+          ],
+          [
+            1784015220.384,
+            "116.664491"
+          ],
+          [
+            1784015230.384,
+            "116.702228"
+          ],
+          [
+            1784015240.384,
+            "116.702228"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "de71d2b5b44163004556fcc3b96a2d51cc669cfaccfd1768e5e7d1e009c3c0e0",
+          "container_name": "registrar",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "c7f0e98b-aa0c-4e75-80f3-6af6627cb930",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0.00853"
+          ],
+          [
+            1784015160.384,
+            "0.00853"
+          ],
+          [
+            1784015170.384,
+            "0.00853"
+          ],
+          [
+            1784015180.384,
+            "0.00853"
+          ],
+          [
+            1784015190.384,
+            "0.00853"
+          ],
+          [
+            1784015200.384,
+            "0.00853"
+          ],
+          [
+            1784015210.384,
+            "0.009247"
+          ],
+          [
+            1784015220.384,
+            "0.009247"
+          ],
+          [
+            1784015230.384,
+            "0.009247"
+          ],
+          [
+            1784015240.384,
+            "0.009247"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "de71d2b5b44163004556fcc3b96a2d51cc669cfaccfd1768e5e7d1e009c3c0e0",
+          "container_name": "registrar",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "c7f0e98b-aa0c-4e75-80f3-6af6627cb930",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "18.382425"
+          ],
+          [
+            1784015160.384,
+            "18.382425"
+          ],
+          [
+            1784015170.384,
+            "18.382425"
+          ],
+          [
+            1784015180.384,
+            "18.382425"
+          ],
+          [
+            1784015190.384,
+            "18.382425"
+          ],
+          [
+            1784015200.384,
+            "18.382425"
+          ],
+          [
+            1784015210.384,
+            "18.410819"
+          ],
+          [
+            1784015220.384,
+            "18.410819"
+          ],
+          [
+            1784015230.384,
+            "18.410819"
+          ],
+          [
+            1784015240.384,
+            "18.410819"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "edf9844f030446f0a37814ef3bef37d471d04743c72f346daa33e6bd5c9f75db",
+          "container_name": "csi-cephfsplugin",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "2bfefa03-3477-4244-b7f2-85c0c4b2281d",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0.015417"
+          ],
+          [
+            1784015160.384,
+            "0.015417"
+          ],
+          [
+            1784015170.384,
+            "0.015417"
+          ],
+          [
+            1784015180.384,
+            "0.015417"
+          ],
+          [
+            1784015190.384,
+            "0.015417"
+          ],
+          [
+            1784015200.384,
+            "0.015417"
+          ],
+          [
+            1784015210.384,
+            "0.015417"
+          ],
+          [
+            1784015220.384,
+            "0.015417"
+          ],
+          [
+            1784015230.384,
+            "0.015417"
+          ],
+          [
+            1784015240.384,
+            "0.015417"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "edf9844f030446f0a37814ef3bef37d471d04743c72f346daa33e6bd5c9f75db",
+          "container_name": "csi-cephfsplugin",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "2bfefa03-3477-4244-b7f2-85c0c4b2281d",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "30.016691"
+          ],
+          [
+            1784015160.384,
+            "30.016691"
+          ],
+          [
+            1784015170.384,
+            "30.016691"
+          ],
+          [
+            1784015180.384,
+            "30.016691"
+          ],
+          [
+            1784015190.384,
+            "30.016691"
+          ],
+          [
+            1784015200.384,
+            "30.016691"
+          ],
+          [
+            1784015210.384,
+            "30.016691"
+          ],
+          [
+            1784015220.384,
+            "30.016691"
+          ],
+          [
+            1784015230.384,
+            "30.016691"
+          ],
+          [
+            1784015240.384,
+            "30.016691"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "f0ff05da8e58ee8b094b7bf0fbdf9617a167444a66a83c336f18d11350578890",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_joules_total",
+          "container": "kepler",
+          "container_id": "f0ff05da8e58ee8b094b7bf0fbdf9617a167444a66a83c336f18d11350578890",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "05ac4abe1451bcaf581cca1faf9dd472236a04e32aba38dc7e7f1c522d5f2ab0",
+          "container_name": "automount",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "c7f0e98b-aa0c-4e75-80f3-6af6627cb930",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "05ac4abe1451bcaf581cca1faf9dd472236a04e32aba38dc7e7f1c522d5f2ab0",
+          "container_name": "automount",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "c7f0e98b-aa0c-4e75-80f3-6af6627cb930",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "0997de48b4f841f32cf535c3fbcb88b57cf2496e62646b8bd87f30a35c2676f0",
+          "container_name": "node-problem-detector",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "d5204d36-dc3b-4cd0-a48c-40dcf224bc19",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0.0000010506012556764222"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "0997de48b4f841f32cf535c3fbcb88b57cf2496e62646b8bd87f30a35c2676f0",
+          "container_name": "node-problem-detector",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "d5204d36-dc3b-4cd0-a48c-40dcf224bc19",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0.0025323145797967127"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "0d75b4342ccc362d9959c613fa0db9f50800a47c1e80fe38e0e62bc9b026a653",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "0d75b4342ccc362d9959c613fa0db9f50800a47c1e80fe38e0e62bc9b026a653",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "13c32c598f97bb47314807140069a29d99491fd275c54e619d273efbd7d07afc",
+          "container_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "runtime": "podman",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0.00011594772087152598"
+          ],
+          [
+            1784015160.384,
+            "0.00007540161057034024"
+          ],
+          [
+            1784015170.384,
+            "0.00011346493561334026"
+          ],
+          [
+            1784015180.384,
+            "0.00013456061127618487"
+          ],
+          [
+            1784015190.384,
+            "0.008242319314775983"
+          ],
+          [
+            1784015200.384,
+            "0.009812561774326505"
+          ],
+          [
+            1784015210.384,
+            "0.008677544172640736"
+          ],
+          [
+            1784015220.384,
+            "0.004691107865938898"
+          ],
+          [
+            1784015230.384,
+            "0.00017388514449368758"
+          ],
+          [
+            1784015240.384,
+            "0.0001518084964938364"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "13c32c598f97bb47314807140069a29d99491fd275c54e619d273efbd7d07afc",
+          "container_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "runtime": "podman",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0.26005742153898076"
+          ],
+          [
+            1784015160.384,
+            "0.3713628813754351"
+          ],
+          [
+            1784015170.384,
+            "0.2734899746187359"
+          ],
+          [
+            1784015180.384,
+            "0.28138237437890967"
+          ],
+          [
+            1784015190.384,
+            "0.3352460700120876"
+          ],
+          [
+            1784015200.384,
+            "0.398778577478532"
+          ],
+          [
+            1784015210.384,
+            "0.3435361954514721"
+          ],
+          [
+            1784015220.384,
+            "5.427602392635784"
+          ],
+          [
+            1784015230.384,
+            "0.2517792576516183"
+          ],
+          [
+            1784015240.384,
+            "0.2709065858786633"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "23d614328e496dde0a174c60ecc364ee865b9541ccbf6b043dffb36f85487977",
+          "container_name": "automount-reconciler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "c7f0e98b-aa0c-4e75-80f3-6af6627cb930",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "8.021447933027348e-07"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "23d614328e496dde0a174c60ecc364ee865b9541ccbf6b043dffb36f85487977",
+          "container_name": "automount-reconciler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "c7f0e98b-aa0c-4e75-80f3-6af6627cb930",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0.003950668950808623"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "2f2ffd3ea454169ee7544be74856b7030d7033fbc522fdbff9de12462fc9ed3b",
+          "container_name": "singlemount",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "c7f0e98b-aa0c-4e75-80f3-6af6627cb930",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "2f2ffd3ea454169ee7544be74856b7030d7033fbc522fdbff9de12462fc9ed3b",
+          "container_name": "singlemount",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "c7f0e98b-aa0c-4e75-80f3-6af6627cb930",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "31085c7830ff181ae020f2e7cb1ef3a5c9e05ab628ae7a1b826322610e5b76b5",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "31085c7830ff181ae020f2e7cb1ef3a5c9e05ab628ae7a1b826322610e5b76b5",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "31d74fe72d5ce21d997eaad2bf2391f33334cff0edab51975d567221b668cbb5",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "31d74fe72d5ce21d997eaad2bf2391f33334cff0edab51975d567221b668cbb5",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "3bc8029e29400f6a498bf8a59e27fa80f50f83f2de7830a6830654099ffde7ff",
+          "container_name": "monte-carlo",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "f93d514a-181e-4ca1-9cb0-3d4dacf0d93d",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015190.384,
+            "0.5050091320715837"
+          ],
+          [
+            1784015200.384,
+            "1.1173740215345906"
+          ],
+          [
+            1784015210.384,
+            "1.1494646905877968"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "3bc8029e29400f6a498bf8a59e27fa80f50f83f2de7830a6830654099ffde7ff",
+          "container_name": "monte-carlo",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "f93d514a-181e-4ca1-9cb0-3d4dacf0d93d",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015190.384,
+            "20.54061731674311"
+          ],
+          [
+            1784015200.384,
+            "45.40963237396932"
+          ],
+          [
+            1784015210.384,
+            "45.506276747671706"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "3bc8029e29400f6a498bf8a59e27fa80f50f83f2de7830a6830654099ffde7ff",
+          "container_name": "monte-carlo",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "f93d514a-181e-4ca1-9cb0-3d4dacf0d93d",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "terminated",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015220.384,
+            "1.0699539538473728"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "3bc8029e29400f6a498bf8a59e27fa80f50f83f2de7830a6830654099ffde7ff",
+          "container_name": "monte-carlo",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "f93d514a-181e-4ca1-9cb0-3d4dacf0d93d",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "terminated",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015220.384,
+            "44.348840563982534"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "43977b3a923beebb70c0487c1b65d4174f6992d6102f6d7429451f71e1b288bf",
+          "container_name": "worker",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "42f2f47c-e6d9-454a-b88e-caaf52d29f94",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0.000021657909419169"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0.0018384071366594435"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "43977b3a923beebb70c0487c1b65d4174f6992d6102f6d7429451f71e1b288bf",
+          "container_name": "worker",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "42f2f47c-e6d9-454a-b88e-caaf52d29f94",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0.10666806167180896"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "2.1270333700959205"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "452e9385d3dae8d437a16682f6017029241f3768bdc2b26cbc801b3c1b461ee7",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "452e9385d3dae8d437a16682f6017029241f3768bdc2b26cbc801b3c1b461ee7",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "5119ce13442b701e9604988c38c6b237e6c3ffbd5dd85a70b9d8d3621850713b",
+          "container_name": "driver-registrar",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "2bfefa03-3477-4244-b7f2-85c0c4b2281d",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "5119ce13442b701e9604988c38c6b237e6c3ffbd5dd85a70b9d8d3621850713b",
+          "container_name": "driver-registrar",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "2bfefa03-3477-4244-b7f2-85c0c4b2281d",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "51d3d8ea611c47b55368a8e7ae7db169c485eec08c1280472e4e8bd68e0a12ba",
+          "container_name": "cilium-agent",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "4a5d94d8-5814-4c74-9cb2-21015bf6abd8",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0.000018701245302188233"
+          ],
+          [
+            1784015160.384,
+            "0.00001925147503924512"
+          ],
+          [
+            1784015170.384,
+            "0.000012607215068212618"
+          ],
+          [
+            1784015180.384,
+            "0.000019222944467726703"
+          ],
+          [
+            1784015190.384,
+            "0.0006682961606334188"
+          ],
+          [
+            1784015200.384,
+            "0.0013838228143347583"
+          ],
+          [
+            1784015210.384,
+            "0.0013946053134681715"
+          ],
+          [
+            1784015220.384,
+            "0.0010776869421785802"
+          ],
+          [
+            1784015230.384,
+            "0.000018303699420322454"
+          ],
+          [
+            1784015240.384,
+            "0.000020241132866090307"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "51d3d8ea611c47b55368a8e7ae7db169c485eec08c1280472e4e8bd68e0a12ba",
+          "container_name": "cilium-agent",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "4a5d94d8-5814-4c74-9cb2-21015bf6abd8",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0.04194474541025139"
+          ],
+          [
+            1784015160.384,
+            "0.0948160548193059"
+          ],
+          [
+            1784015170.384,
+            "0.030387774957790867"
+          ],
+          [
+            1784015180.384,
+            "0.040197482053503215"
+          ],
+          [
+            1784015190.384,
+            "0.027182113783783893"
+          ],
+          [
+            1784015200.384,
+            "0.056238004516473955"
+          ],
+          [
+            1784015210.384,
+            "0.05521117426930541"
+          ],
+          [
+            1784015220.384,
+            "1.2468816307446196"
+          ],
+          [
+            1784015230.384,
+            "0.026503079752706778"
+          ],
+          [
+            1784015240.384,
+            "0.036120878117593125"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "51f13ae7e1bc677dd2fd5269b2cd638618fbed5e18d872e44a5920a1d3f29ef4",
+          "container_name": "cilium-envoy",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "afef0d74-cce5-471b-bd41-e38cd116b35a",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0.0000037402490604376465"
+          ],
+          [
+            1784015160.384,
+            "0.000008021447933055277"
+          ],
+          [
+            1784015170.384,
+            "0.000007354208789711068"
+          ],
+          [
+            1784015180.384,
+            "0.000009611472234213014"
+          ],
+          [
+            1784015190.384,
+            "0.00022276538689131316"
+          ],
+          [
+            1784015200.384,
+            "0.0008806145182064419"
+          ],
+          [
+            1784015210.384,
+            "0.0007747807296920125"
+          ],
+          [
+            1784015220.384,
+            "0.00044375344677738046"
+          ],
+          [
+            1784015230.384,
+            "0.000009151849709953138"
+          ],
+          [
+            1784015240.384,
+            "0.000015180849649567734"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "51f13ae7e1bc677dd2fd5269b2cd638618fbed5e18d872e44a5920a1d3f29ef4",
+          "container_name": "cilium-envoy",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "afef0d74-cce5-471b-bd41-e38cd116b35a",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0.008388949082050278"
+          ],
+          [
+            1784015160.384,
+            "0.03950668950822377"
+          ],
+          [
+            1784015170.384,
+            "0.01772620205851941"
+          ],
+          [
+            1784015180.384,
+            "0.020098741027482797"
+          ],
+          [
+            1784015190.384,
+            "0.009060704595144008"
+          ],
+          [
+            1784015200.384,
+            "0.03578782105567031"
+          ],
+          [
+            1784015210.384,
+            "0.030672874593562622"
+          ],
+          [
+            1784015220.384,
+            "0.5134218479513124"
+          ],
+          [
+            1784015230.384,
+            "0.013251539876052085"
+          ],
+          [
+            1784015240.384,
+            "0.027090658588194844"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "54725ca2ec05030334979e76a4ee6f413c60e0353fb55d58c2395a9de98ba47f",
+          "container_name": "automount",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "e4c9691c-cfcb-41c2-9cf8-2fb6724b6ae5",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "54725ca2ec05030334979e76a4ee6f413c60e0353fb55d58c2395a9de98ba47f",
+          "container_name": "automount",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "e4c9691c-cfcb-41c2-9cf8-2fb6724b6ae5",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "57f0306768cfabe838f1a120599a9e518f3cc1c958d6ebe458ab3a4409347fc6",
+          "container_name": "node-exporter",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "c2dbef85-1370-4fea-81c0-3bf01370f482",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0.000013657816323805434"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0.0020128331844812657"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "57f0306768cfabe838f1a120599a9e518f3cc1c958d6ebe458ab3a4409347fc6",
+          "container_name": "node-exporter",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "c2dbef85-1370-4fea-81c0-3bf01370f482",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0.03292008953738605"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0.08180073384191408"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "5de9dcf233043144fa2ff07b93e1e7f3fd71bb7c7b27d9660b729b4d3588a5b0",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "5de9dcf233043144fa2ff07b93e1e7f3fd71bb7c7b27d9660b729b4d3588a5b0",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "61b0241c65c2e557894dec8ff6dbdb762d6942bc58b887c79c5400cc5b0187e5",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "61b0241c65c2e557894dec8ff6dbdb762d6942bc58b887c79c5400cc5b0187e5",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "6670ef9d2fdeb2f45cabc74d8190b2a36800829f7ab1e935dad27456be4ce578",
+          "container_name": "nodeplugin",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "c7f0e98b-aa0c-4e75-80f3-6af6627cb930",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "6670ef9d2fdeb2f45cabc74d8190b2a36800829f7ab1e935dad27456be4ce578",
+          "container_name": "nodeplugin",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "c7f0e98b-aa0c-4e75-80f3-6af6627cb930",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "6ac97f9db9c9111d351161d7594795ef3314958ffc116f5b869823db0281be28",
+          "container_name": "nodeplugin",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "e4c9691c-cfcb-41c2-9cf8-2fb6724b6ae5",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "6ac97f9db9c9111d351161d7594795ef3314958ffc116f5b869823db0281be28",
+          "container_name": "nodeplugin",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "e4c9691c-cfcb-41c2-9cf8-2fb6724b6ae5",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "6d5a84e77a16086bdbe9c76fbc05278c51e0866dbf76b801f3632139d86d4e99",
+          "container_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "runtime": "podman",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "8.0214479330188e-07"
+          ],
+          [
+            1784015170.384,
+            "0.0000021012025113528445"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0.00012580207402990032"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "6d5a84e77a16086bdbe9c76fbc05278c51e0866dbf76b801f3632139d86d4e99",
+          "container_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "runtime": "podman",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0.003950668950804412"
+          ],
+          [
+            1784015170.384,
+            "0.0050646291595934255"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0.005112545865112366"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "705a45dfbae82ce82b04f1d0fe728528ff256879964a95e097cfa138936d79b8",
+          "container_name": "falco",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "961bafe2-c865-4f8e-9664-84529957c8ba",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0.000022441494361265185"
+          ],
+          [
+            1784015160.384,
+            "0.00001764718545275079"
+          ],
+          [
+            1784015170.384,
+            "0.00002206262636951541"
+          ],
+          [
+            1784015180.384,
+            "0.00002306753336141191"
+          ],
+          [
+            1784015190.384,
+            "0.0013365923213478788"
+          ],
+          [
+            1784015200.384,
+            "0.002390239406553804"
+          ],
+          [
+            1784015210.384,
+            "0.002014429897187958"
+          ],
+          [
+            1784015220.384,
+            "0.0017750137871095219"
+          ],
+          [
+            1784015230.384,
+            "0.000032031473985460255"
+          ],
+          [
+            1784015240.384,
+            "0.000030361699297294546"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "705a45dfbae82ce82b04f1d0fe728528ff256879964a95e097cfa138936d79b8",
+          "container_name": "falco",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "961bafe2-c865-4f8e-9664-84529957c8ba",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0.05033369448924979"
+          ],
+          [
+            1784015160.384,
+            "0.08691471691823603"
+          ],
+          [
+            1784015170.384,
+            "0.05317860617647949"
+          ],
+          [
+            1784015180.384,
+            "0.04823697846449634"
+          ],
+          [
+            1784015190.384,
+            "0.054364227570864045"
+          ],
+          [
+            1784015200.384,
+            "0.09713837143655371"
+          ],
+          [
+            1784015210.384,
+            "0.07974947394281647"
+          ],
+          [
+            1784015220.384,
+            "2.0536873918052496"
+          ],
+          [
+            1784015230.384,
+            "0.046380389567086205"
+          ],
+          [
+            1784015240.384,
+            "0.054181317173104517"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "723145abaa024262de8de8a031cc9d1f37285f0be90fe34fbf6e1d284cc0546f",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "723145abaa024262de8de8a031cc9d1f37285f0be90fe34fbf6e1d284cc0546f",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "7284d5744de3b7443a14f5eed1557c87c21c0aaa1d4ae7a7005eeac134efdf5e",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "7284d5744de3b7443a14f5eed1557c87c21c0aaa1d4ae7a7005eeac134efdf5e",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "765b74b2aac7bce2706c66a50ee14bf84cb245d42a6c17f792584273f1e62418",
+          "container_name": "kepler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "df01d1ca-7c4c-4166-8741-737879789523",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0.00013090871711225605"
+          ],
+          [
+            1784015160.384,
+            "0.00003048150214550792"
+          ],
+          [
+            1784015170.384,
+            "0.00003677104394874645"
+          ],
+          [
+            1784015180.384,
+            "0.00006343571674440724"
+          ],
+          [
+            1784015190.384,
+            "0.008465084701687558"
+          ],
+          [
+            1784015200.384,
+            "0.004403072591055093"
+          ],
+          [
+            1784015210.384,
+            "0.0044937282322785"
+          ],
+          [
+            1784015220.384,
+            "0.0025991273311345413"
+          ],
+          [
+            1784015230.384,
+            "0.0000777907225362664"
+          ],
+          [
+            1784015240.384,
+            "0.0001669893461415632"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "765b74b2aac7bce2706c66a50ee14bf84cb245d42a6c17f792584273f1e62418",
+          "container_name": "kepler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "df01d1ca-7c4c-4166-8741-737879789523",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0.29361321786489303"
+          ],
+          [
+            1784015160.384,
+            "0.15012542013074734"
+          ],
+          [
+            1784015170.384,
+            "0.08863101029305769"
+          ],
+          [
+            1784015180.384,
+            "0.1326516907784617"
+          ],
+          [
+            1784015190.384,
+            "0.3443067746080557"
+          ],
+          [
+            1784015200.384,
+            "0.17893910527928153"
+          ],
+          [
+            1784015210.384,
+            "0.1779026726452297"
+          ],
+          [
+            1784015220.384,
+            "3.007185109440551"
+          ],
+          [
+            1784015230.384,
+            "0.11263808894885316"
+          ],
+          [
+            1784015240.384,
+            "0.2979972444635729"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "76e897708fb77db0908d049e2dafdea30316a37a6147720cab8cbdb78f34d99c",
+          "container_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "runtime": "podman",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0.000006303607534070478"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0.0006290103701495017"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0.000016015736992808163"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "76e897708fb77db0908d049e2dafdea30316a37a6147720cab8cbdb78f34d99c",
+          "container_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "runtime": "podman",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0.015193887478809067"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0.025562729325561827"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0.0231901947836561"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "b19251ac9f963dae4dfc949638a1d59e9469d1949e35d98af658e21b4a163388",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "b19251ac9f963dae4dfc949638a1d59e9469d1949e35d98af658e21b4a163388",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "c402d2bcffb875ba7f75cd4da984873e0a26967c99fd3c3d32cf1633f92966d4",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "c402d2bcffb875ba7f75cd4da984873e0a26967c99fd3c3d32cf1633f92966d4",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "c46493f879f1b3acc2c335d296c3b2d00b160fcc8faf385a796575f0326e4304",
+          "container_name": "registrar",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "e4c9691c-cfcb-41c2-9cf8-2fb6724b6ae5",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0.0000037402490603552607"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "c46493f879f1b3acc2c335d296c3b2d00b160fcc8faf385a796575f0326e4304",
+          "container_name": "registrar",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "e4c9691c-cfcb-41c2-9cf8-2fb6724b6ae5",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0.008388949081865495"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "d33f0f8db2e37a8a764b927c4f76de5e627e42ac1a566dd51fa9cb90e9827f89",
+          "container_name": "mountreconciler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "e4c9691c-cfcb-41c2-9cf8-2fb6724b6ae5",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0.000004202405022705689"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0.00025160414806123086"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0.000009151849710161227"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "d33f0f8db2e37a8a764b927c4f76de5e627e42ac1a566dd51fa9cb90e9827f89",
+          "container_name": "mountreconciler",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "e4c9691c-cfcb-41c2-9cf8-2fb6724b6ae5",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0.010129258319186851"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0.010225091730282855"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0.013251539876353389"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "de71d2b5b44163004556fcc3b96a2d51cc669cfaccfd1768e5e7d1e009c3c0e0",
+          "container_name": "registrar",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "c7f0e98b-aa0c-4e75-80f3-6af6627cb930",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0.0001549561459406266"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "de71d2b5b44163004556fcc3b96a2d51cc669cfaccfd1768e5e7d1e009c3c0e0",
+          "container_name": "registrar",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "c7f0e98b-aa0c-4e75-80f3-6af6627cb930",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0.006134574918800573"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "edf9844f030446f0a37814ef3bef37d471d04743c72f346daa33e6bd5c9f75db",
+          "container_name": "csi-cephfsplugin",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "2bfefa03-3477-4244-b7f2-85c0c4b2281d",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "edf9844f030446f0a37814ef3bef37d471d04743c72f346daa33e6bd5c9f75db",
+          "container_name": "csi-cephfsplugin",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "pod_id": "2bfefa03-3477-4244-b7f2-85c0c4b2281d",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "f0ff05da8e58ee8b094b7bf0fbdf9617a167444a66a83c336f18d11350578890",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "core"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "kepler_container_cpu_watts",
+          "container": "kepler",
+          "container_id": "f0ff05da8e58ee8b094b7bf0fbdf9617a167444a66a83c336f18d11350578890",
+          "endpoint": "http",
+          "instance": "10.100.2.41:28282",
+          "job": "kepler",
+          "namespace": "kepler",
+          "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+          "pod": "kepler-5k5h5",
+          "runtime": "kubernetes",
+          "service": "kepler",
+          "state": "running",
+          "zone": "package"
+        },
+        "values": [
+          [
+            1784015150.384,
+            "0"
+          ],
+          [
+            1784015160.384,
+            "0"
+          ],
+          [
+            1784015170.384,
+            "0"
+          ],
+          [
+            1784015180.384,
+            "0"
+          ],
+          [
+            1784015190.384,
+            "0"
+          ],
+          [
+            1784015200.384,
+            "0"
+          ],
+          [
+            1784015210.384,
+            "0"
+          ],
+          [
+            1784015220.384,
+            "0"
+          ],
+          [
+            1784015230.384,
+            "0"
+          ],
+          [
+            1784015240.384,
+            "0"
+          ]
+        ]
+      }
+    ],
+    "resultType": "matrix"
+  },
+  "status": "success"
+}

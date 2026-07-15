@@ -1,0 +1,10 @@
+{
+  "hostname": "mc-smoke-runner-01-j89ns",
+  "workers": 16,
+  "samples_per_worker": 10000000,
+  "total_samples": 160000000,
+  "pi_estimate": 3.141692075,
+  "elapsed_seconds": 2.9487253070110455,
+  "started_at": "2026-07-14T07:40:28.560503+00:00",
+  "finished_at": "2026-07-14T07:40:31.509242+00:00"
+}

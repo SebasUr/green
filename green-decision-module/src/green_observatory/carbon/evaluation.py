@@ -97,9 +97,10 @@ def _project_batch(model: ProjectCarbonModel, df, origins, horizons):
     for h in horizons:
         if h not in model.estimators_:
             continue
-        cal = model.feature_builder.calendar_features(origins + pd.Timedelta(hours=h))
-        cal.index = origins
-        x = pd.concat([cal.add_prefix("tgt_"), origin_feats], axis=1)
+        tgt = model.feature_builder.target_block(
+            origins + pd.Timedelta(hours=h), h, index=origins
+        )
+        x = pd.concat([tgt, origin_feats], axis=1)
         x = x.reindex(columns=model.feature_names_[h])
         pred = np.clip(model.estimators_[h].predict(x), 0.0, None)
         frames.append(

@@ -13,14 +13,39 @@ green_score:
   clip: true
 
 windows:
-  # A low-carbon window is a contiguous block sitting below a percentile
-  # threshold of the horizon's intensity distribution.
+  # A low-carbon window is a contiguous block of low-intensity hours. Thresholds
+  # are quantiles of a reference distribution.
   definition: percentile_of_horizon
-  percentile: 0.25             # hours below p25 of the horizon are candidates
-  horizon_hours: 48
+  horizon_hours: 24            # 24h is the primary horizon; 48h is secondary
+
+  # Reference for the quantile thresholds:
+  #   horizon    - relative to the next N hours (adaptive, but a uniformly green
+  #                or dirty horizon is mislabelled).
+  #   historical - anchored to the grid's typical distribution (supplied by the
+  #                caller), so an all-green horizon yields one long window and an
+  #                all-dirty horizon yields none. Recommended.
+  reference: historical
+
+  # Hysteresis (stable, "kinder" windows): open at enter_percentile, stay open
+  # while intensity remains under exit_percentile (a looser bar). Set both null to
+  # fall back to a single `percentile` threshold.
+  percentile: 0.33            # single-threshold fallback if enter/exit are unset
+  enter_percentile: 0.25
+  exit_percentile: 0.40
+
+  # Fixed ABSOLUTE thresholds (gCO2/kWh) for hysteresis, instead of percentiles.
+  # null = use percentiles. Suggested for the French grid: enter ~20, exit ~40
+  # (a window opens below 20 gCO2/kWh and stays open until it exceeds 40).
+  enter_gco2: null
+  exit_gco2: null
+
+  # Optional absolute guard-rails (gCO2/kWh); null = off.
+  absolute_green_gco2: null   # <= this is always green, regardless of percentile
+  absolute_dirty_gco2: null   # >  this is never green, even if it is the minimum
+
   min_duration_hours: 1
   max_duration_hours: 6
-  merge_gap_hours: 1           # merge candidate blocks separated by <= gap
+  merge_gap_hours: 1           # merge blocks separated by <= gap
   max_windows: 10
 
 confidence:

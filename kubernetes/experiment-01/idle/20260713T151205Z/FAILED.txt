@@ -1,0 +1,4 @@
+Esta captura diagnóstica quedó incompleta.
+
+Prometheus agotó el tiempo al evaluar una consulta cAdvisor por contenedor. No
+usar este directorio como baseline ni como resultado experimental.

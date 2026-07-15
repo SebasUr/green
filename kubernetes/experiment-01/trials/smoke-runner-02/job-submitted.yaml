@@ -1,0 +1,62 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: mc-smoke-runner-02
+  namespace: green-experiment
+  labels:
+    sustainability.cern.ch/experiment: "green-window-01"
+    sustainability.cern.ch/trial: "smoke-runner-02"
+    sustainability.cern.ch/policy: "calibration"
+spec:
+  backoffLimit: 0
+
+  template:
+    metadata:
+      labels:
+        sustainability.cern.ch/experiment: "green-window-01"
+        sustainability.cern.ch/trial: "smoke-runner-02"
+        sustainability.cern.ch/policy: "calibration"
+
+    spec:
+      restartPolicy: Never
+
+      nodeSelector:
+        sustainability.cern.ch/hardware: baremetal
+
+      containers:
+        - name: monte-carlo
+          image: "python:3.12-slim"
+          imagePullPolicy: IfNotPresent
+
+          command:
+            - python
+            - /workload/monte_carlo.py
+
+          env:
+            - name: WORKERS
+              value: "16"
+
+            - name: SAMPLES_PER_WORKER
+              value: "100000000"
+
+            - name: BASE_SEED
+              value: "20260713"
+
+          resources:
+            requests:
+              cpu: "16"
+              memory: "2Gi"
+
+            limits:
+              cpu: "16"
+              memory: "2Gi"
+
+          volumeMounts:
+            - name: workload
+              mountPath: /workload
+              readOnly: true
+
+      volumes:
+        - name: workload
+          configMap:
+            name: monte-carlo-code

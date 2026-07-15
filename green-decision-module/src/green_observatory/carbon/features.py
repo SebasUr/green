@@ -1,6 +1,6 @@
 """Leakage-safe feature construction for the project carbon model.
 
-We use a **direct multi-horizon** setup: one model per horizon ``h``. For an
+The model uses a **direct multi-horizon** setup: one model per horizon ``h``. For an
 origin ``t0`` predicting target ``tt = t0 + h``, the feature vector combines:
 
 * **target calendar** (``tgt_*``) - deterministic, known in advance, so using
@@ -48,6 +48,8 @@ class FeatureBuilder:
         rolling_slope_hours: int = DEFAULT_ROLLING_SLOPE_HOURS,
         use_system: Sequence[str] = tuple(MIX_COLUMNS),
         residual_from_climatology: bool = True,
+        forecast_frame: pd.DataFrame | None = None,
+        forecast_maxlead_h: int = 24,
     ) -> None:
         self.climatology = climatology
         self.local_tz = local_tz
@@ -57,6 +59,12 @@ class FeatureBuilder:
         self.rolling_slope_hours = int(rolling_slope_hours)
         self.use_system = tuple(use_system)
         self.residual_from_climatology = residual_from_climatology
+        # Optional target-time forecast features (wind/solar/consumption forecast),
+        # indexed by time. Only values available at the origin are used: weather
+        # forecasts extend days out (all horizons); the day-ahead consumption
+        # forecast is gated to horizons <= forecast_maxlead_h.
+        self.forecast_frame = forecast_frame
+        self.forecast_maxlead_h = int(forecast_maxlead_h)
         self._holidays_cache: dict[tuple[int, int], object] = {}
 
     # -- calendar (deterministic; safe for the target time) ------------- #
@@ -125,17 +133,39 @@ class FeatureBuilder:
         return x
 
     # -- supervised assembly -------------------------------------------- #
+    def target_block(
+        self, target_times: pd.DatetimeIndex, horizon: int, *, index: pd.Index | None = None
+    ) -> pd.DataFrame:
+        """Features valid at the TARGET time: deterministic calendar (``tgt_*``)
+        plus any real-time-available forecast features (``fc_*``).
+
+        Weather forecasts (wind/solar) are available for every horizon; the
+        day-ahead consumption forecast is gated to ``horizon <= forecast_maxlead_h``
+        because it is not yet published two days out.
+        """
+        block = self.calendar_features(target_times).add_prefix("tgt_")
+        forecast_frame = getattr(self, "forecast_frame", None)
+        if forecast_frame is not None:
+            fc = forecast_frame.reindex(target_times).add_prefix("fc_")
+            if horizon > getattr(self, "forecast_maxlead_h", 24):
+                # day-ahead consumption forecast not available this far out: drop
+                # it (rather than NaN the whole column, which breaks binning).
+                fc = fc.drop(columns=[c for c in fc.columns if "consumption_forecast" in c])
+            block = pd.concat([block, fc], axis=1)
+        if index is not None:
+            block.index = index
+        return block
+
     def build_supervised(
         self, frame: pd.DataFrame, horizon: int, *, origin_features: pd.DataFrame | None = None
     ) -> tuple[pd.DataFrame, pd.Series]:
         """Return ``(X, y)`` for one horizon: origin features at ``t0`` +
-        target calendar at ``t0+h``, label ``y(t0+h)``. Rows lacking a label are
-        dropped (tree models tolerate remaining feature NaNs)."""
+        target-time features at ``t0+h``, label ``y(t0+h)``. Rows lacking a label
+        are dropped (tree models tolerate remaining feature NaNs)."""
         xo = self.origin_features(frame) if origin_features is None else origin_features
         target_times = frame.index + pd.Timedelta(hours=horizon)
-        cal = self.calendar_features(target_times)
-        cal.index = frame.index
-        x = pd.concat([cal.add_prefix("tgt_"), xo], axis=1)
+        tgt = self.target_block(target_times, horizon, index=frame.index)
+        x = pd.concat([tgt, xo], axis=1)
         y = pd.to_numeric(frame[CARBON], errors="coerce").shift(-horizon)
         mask = y.notna()
         return x.loc[mask], y.loc[mask]
@@ -145,20 +175,24 @@ class FeatureBuilder:
     ) -> pd.DataFrame:
         """Assemble the single feature row to predict ``origin + horizon``."""
         target_time = origin + pd.Timedelta(hours=horizon)
-        cal = self.calendar_features(pd.DatetimeIndex([target_time]))
-        cal.index = pd.DatetimeIndex([origin])
+        tgt = self.target_block(
+            pd.DatetimeIndex([target_time]), horizon, index=pd.DatetimeIndex([origin])
+        )
         xo = origin_features.loc[[origin]]
-        return pd.concat([cal.add_prefix("tgt_"), xo], axis=1)
+        return pd.concat([tgt, xo], axis=1)
 
 
 def feature_builder_from_config(
-    carbon_cfg: dict, climatology: ClimatologyModel | None = None
+    carbon_cfg: dict,
+    climatology: ClimatologyModel | None = None,
+    forecast_frame: pd.DataFrame | None = None,
 ) -> FeatureBuilder:
     """Build a :class:`FeatureBuilder` from a carbon-model config dict."""
     feats = carbon_cfg.get("features", {})
     recent = feats.get("recent_signal", {})
     cal = carbon_cfg.get("calendar", {})
     system = feats.get("electricity_system", {}).get("use", list(MIX_COLUMNS))
+    fc_cfg = feats.get("target_forecasts", {})
     return FeatureBuilder(
         climatology=climatology,
         local_tz=cal.get("local_timezone", DEFAULT_LOCAL_TZ),
@@ -168,4 +202,6 @@ def feature_builder_from_config(
         rolling_slope_hours=recent.get("rolling_slope_hours", DEFAULT_ROLLING_SLOPE_HOURS),
         use_system=system,
         residual_from_climatology=recent.get("residual_from_climatology", True),
+        forecast_frame=forecast_frame,
+        forecast_maxlead_h=fc_cfg.get("consumption_maxlead_h", 24),
     )

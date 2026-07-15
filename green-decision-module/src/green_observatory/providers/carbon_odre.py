@@ -258,6 +258,55 @@ class OdreCarbonProvider:
             df = df[df[CARBON].notna()]
         return ensure_canonical(df, require_carbon=False)
 
+    def import_consumption_forecast(
+        self,
+        start: pd.Timestamp | str,
+        end: pd.Timestamp | str,
+        *,
+        hourly: bool = True,
+        client: httpx.Client | None = None,
+    ) -> pd.DataFrame:
+        """Day-ahead consumption forecast (``prevision_j1``), indexed by target time.
+
+        This is a genuine forecast published ~D-1, so at a decision time ``t0`` it
+        is available for target hours up to ~24-32 h out (the feature layer gates
+        it accordingly). Returned as a one-column frame ``consumption_forecast_mw``.
+        """
+        start = to_utc_timestamp(start)
+        end = to_utc_timestamp(end)
+        url = f"{self.base_url}/catalog/datasets/{self.history_dataset}/exports/json"
+        owns = client is None
+        client = client or httpx.Client(timeout=self.timeout)
+        frames: list[pd.DataFrame] = []
+        try:
+            for a, b in _year_bounds(start, end):
+                s = a.strftime("%Y-%m-%dT%H:%M:%SZ")
+                e = b.strftime("%Y-%m-%dT%H:%M:%SZ")
+                where = f"prevision_j1 IS NOT NULL AND date_heure >= '{s}' AND date_heure < '{e}'"
+                resp = client.get(
+                    url, params={"select": "date_heure,prevision_j1", "where": where,
+                                 "timezone": "UTC"}
+                )
+                resp.raise_for_status()
+                recs = resp.json()
+                if recs:
+                    frames.append(pd.DataFrame.from_records(recs))
+        finally:
+            if owns:
+                client.close()
+        if not frames:
+            return pd.DataFrame(columns=["consumption_forecast_mw"])
+        raw = pd.concat(frames)
+        raw["date_heure"] = pd.to_datetime(raw["date_heure"], utc=True, errors="coerce")
+        raw = raw.dropna(subset=["date_heure"]).set_index("date_heure").sort_index()
+        raw = raw[~raw.index.duplicated(keep="last")]
+        series = pd.to_numeric(raw["prevision_j1"], errors="coerce")
+        if hourly:
+            series = series.resample("1h").mean()
+        out = series.dropna().rename("consumption_forecast_mw").to_frame()
+        out.index.name = TIMESTAMP
+        return out
+
     def load_hourly(
         self,
         start: pd.Timestamp | None = None,

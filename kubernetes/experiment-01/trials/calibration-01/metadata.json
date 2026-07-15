@@ -1,0 +1,48 @@
+{
+  "available_zones": [
+    {
+      "path": "aggregated-core",
+      "zone": "core"
+    },
+    {
+      "path": "aggregated-package",
+      "zone": "package"
+    }
+  ],
+  "capture_type": "monte-carlo-trial",
+  "command": [
+    "scripts/run_monte_carlo.py",
+    "--trial-id",
+    "calibration-01"
+  ],
+  "job_name": "mc-calibration-01",
+  "node": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+  "node_internal_ip": "188.184.49.170",
+  "pod_name": "mc-calibration-01-xm5vj",
+  "pod_uid": "18e8ae69-7c5c-4f32-9cfa-b1e811fab0b3",
+  "preflight": {
+    "blocking_conditions": [],
+    "container_restarts": {},
+    "crashloop_pods": [],
+    "running_pods": [
+      "kepler/kepler-5k5h5",
+      "kube-system/cern-magnum-ceph-csi-cephfs-nodeplugin-wjmdz",
+      "kube-system/cern-magnum-cvmfs-csi-nodeplugin-jsm4k",
+      "kube-system/cern-magnum-eosxd-csi-nodeplugin-w9st8",
+      "kube-system/cern-magnum-falco-zbjrb",
+      "kube-system/cern-magnum-node-feature-discovery-worker-5l2g7",
+      "kube-system/cern-magnum-node-problem-detector-pxtnb",
+      "kube-system/cilium-envoy-vzrgm",
+      "kube-system/cilium-fqr2k",
+      "monitoring/monitoring-prometheus-node-exporter-rxjld"
+    ]
+  },
+  "primary_zone": "package",
+  "query_ended_at": "2026-07-14T08:19:23.212842Z",
+  "query_started_at": "2026-07-14T08:02:47.983832Z",
+  "query_step_seconds": 10,
+  "schema_version": "1.0",
+  "submitted_at": "2026-07-14T08:03:17.983832Z",
+  "timezone": "UTC",
+  "trial_id": "calibration-01"
+}

@@ -62,3 +62,31 @@ def test_max_windows_limit():
         _two_dip_horizon(), percentile=0.25, min_duration_hours=2, max_windows=1
     )
     assert len(wins) == 1
+
+
+def test_hysteresis_bridges_uptick_within_exit_band():
+    ref = np.linspace(0, 60, 100)  # p25 = 15, p75 = 45
+    v = np.full(24, 50.0)
+    v[4:8] = 10.0
+    v[8] = 40.0  # brief uptick: above enter (15), below exit (45)
+    v[9:13] = 10.0
+    s = _series(v)
+    hyst = compute_low_carbon_windows(
+        s, reference=ref, enter_percentile=0.25, exit_percentile=0.75,
+        min_duration_hours=2, max_duration_hours=99, merge_gap_hours=0,
+    )
+    single = compute_low_carbon_windows(
+        s, reference=ref, percentile=0.25,
+        min_duration_hours=2, max_duration_hours=99, merge_gap_hours=0,
+    )
+    assert any(w.duration_hours >= 8 for w in hyst)     # hysteresis keeps one window
+    assert all(w.duration_hours <= 5 for w in single)   # single threshold splits it
+
+
+def test_absolute_guardrails():
+    s = _series(np.linspace(5, 8, 24))  # every hour is absolutely green
+    assert compute_low_carbon_windows(s, absolute_dirty_gco2=4, min_duration_hours=2) == []
+    allw = compute_low_carbon_windows(
+        s, absolute_green_gco2=100, min_duration_hours=2, max_duration_hours=99
+    )
+    assert len(allw) == 1 and allw[0].duration_hours >= 20

@@ -1,0 +1,2 @@
+NAME                                        CPU(cores)   CPU(%)   MEMORY(bytes)   MEMORY(%)   
+sebas-green-baremetal-jpmdwiscskyy-node-0   483m         0%       5091Mi          1%          

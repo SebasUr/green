@@ -1,4 +1,4 @@
-"""Live forward comparison: our forecast vs Electricity Maps (next ~24h).
+"""Live forward comparison: project forecast vs Electricity Maps (next ~24h).
 
 Electricity Maps exposes only its *current* forecast (no historical forecasts)
 and uses a *consumption-based* basis, so it cannot join the historical backtest.
@@ -25,7 +25,7 @@ from green_observatory.providers.carbon_base import CARBON
 
 
 def live_comparison(model, odre_provider, em_provider, *, horizon_hours: int = 24) -> dict:
-    """Compare our dense forecast against Electricity Maps for the next hours.
+    """Compare the dense project forecast against Electricity Maps for the next hours.
 
     ``model`` supplies the embedded climatology for a dense (corrected) forecast;
     ``odre_provider`` fetches fresh production-based data; ``em_provider`` must be
@@ -35,7 +35,7 @@ def live_comparison(model, odre_provider, em_provider, *, horizon_hours: int = 2
     origin = rt.index.max()
     corrected = CorrectedClimatologyForecaster(model.feature_builder.climatology)
     ours = corrected.predict(rt, origin, list(range(1, horizon_hours + 8)))
-    our_fc = pd.Series(ours["prediction"].to_numpy(), index=ours.index, name="ours")
+    our_fc = pd.Series(ours["prediction"].to_numpy(), index=ours.index, name="project")
 
     em_fc = em_provider.forecast_series()
     em_hist = em_provider.history_series()
