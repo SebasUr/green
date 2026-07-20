@@ -154,9 +154,10 @@ def _build_inputs(args: argparse.Namespace):
     evaluation_origins = pd.date_range(
         _utc(args.eval_start), _utc(args.eval_end), freq="1D"
     )
-    x, meta = builder.build(
-        full, historical_origins.append(evaluation_origins), supervised=True
-    )
+    # Evaluation windows before the historical cutoff (e.g. a winter backtest)
+    # overlap historical_origins; dedupe so each origin is built exactly once.
+    build_origins = historical_origins.append(evaluation_origins).drop_duplicates()
+    x, meta = builder.build(full, build_origins, supervised=True)
     return full, x, meta, evaluation_origins
 
 
