@@ -21,7 +21,7 @@ from collections.abc import Sequence
 import numpy as np
 import pandas as pd
 
-from green_observatory.carbon.fossil_regime import fossil_regime_labels
+from green_observatory.carbon.protocols import fossil_regime_labels
 from green_observatory.carbon.rte_availability import RteAvailabilityFeatureStore
 from green_observatory.carbon.rte_forecast_features import (
     RteGenerationForecastFeatureStore,

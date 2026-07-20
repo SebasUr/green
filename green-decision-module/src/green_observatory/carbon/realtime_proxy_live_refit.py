@@ -22,14 +22,14 @@ import pandas as pd
 import multiprocessing
 from concurrent.futures import ProcessPoolExecutor, as_completed
 
-from green_observatory.carbon.annual_evaluation import _utc
+from green_observatory.carbon.protocols import _utc
 from green_observatory.carbon.protocols import regularize_hourly
 from green_observatory.carbon.realtime_proxy import (
     PhysicalProxyMoE,
     physical_targets,
     proxy_training_frame,
 )
-from green_observatory.carbon.fossil_regime import fossil_regime_labels
+from green_observatory.carbon.protocols import fossil_regime_labels
 from green_observatory.carbon.regime_moe import DirectRegimeMoE, RegimeMoEFeatureBuilder
 from green_observatory.carbon.rte_availability import RteAvailabilityFeatureStore
 from green_observatory.providers.carbon_base import CARBON

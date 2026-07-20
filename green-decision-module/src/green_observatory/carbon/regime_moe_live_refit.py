@@ -22,7 +22,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-from green_observatory.carbon.annual_evaluation import _utc
+from green_observatory.carbon.protocols import _utc
 from green_observatory.carbon.protocols import regularize_hourly
 from green_observatory.carbon.regime_moe import (
     DirectRegimeMoE,

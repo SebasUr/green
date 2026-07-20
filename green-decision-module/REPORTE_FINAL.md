@@ -269,10 +269,18 @@ python -m green_observatory.carbon.realtime_proxy_live_refit \
   --output-dir runs/daily_refit_2026/realtime_proxy_daily_refit_tr_extended_sys
 ```
 
-**Referencia académica consolidada (11,83 %):** ver
-`consolidated_physical_calibration` y `consolidated_share` en el track
-`runs/daily_refit_2026/` (checkpoints closed-hour mar–abr).
+**Referencia académica consolidada (11,83 %):** el código y los artefactos del
+track consolidado (`consolidated_physical*`, `consolidated_share*`, checkpoints
+closed-hour mar–abr) viven en la rama **`snapshot2007`**, igual que todos los
+experimentos rechazados del ledger (§7). La rama `main` conserva solo el stack
+de producción: físico + Direct + gate + ventanas.
 
 **Datos que solo se pueden re-obtener con cuenta/OAuth (no regenerables sin ella):**
 `carbon_fr_realtime_2026_full.parquet` (TR, se purga en origen),
 `rte_exchange_schedule_da.parquet`, `entsoe_a71_generation_forecast_fr.parquet`.
+
+**Runs conservados en `runs/daily_refit_2026/`:** producción física
+(`realtime_proxy_daily_refit_tr_extended_sys`), calibración
+(`causal_operational_gate_tr_extended_sys`), Direct de referencia
+(`live_direct_daily_refit_tr_extended_ctx3`) y el backtest de invierno
+(`live_direct_winter_2025_26`).
