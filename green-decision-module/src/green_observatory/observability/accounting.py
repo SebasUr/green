@@ -31,6 +31,17 @@ class CounterMeasurement:
     warnings: list[str] = field(default_factory=list)
 
 
+@dataclass(frozen=True)
+class CarbonInterval:
+    """One energy increment joined to the carbon intensity in force at its midpoint."""
+
+    start: float
+    end: float
+    joules: float
+    intensity_gco2eq_per_kwh: float | None
+    emissions_gco2eq: float | None
+
+
 @dataclass
 class CarbonMeasurement:
     """Carbon attributed to energy increments."""
@@ -44,6 +55,8 @@ class CarbonMeasurement:
     first_carbon_at: float | None
     last_carbon_at: float | None
     warnings: list[str] = field(default_factory=list)
+    #: Per-interval audit trail behind the totals (one entry per energy increment).
+    intervals: list[CarbonInterval] = field(default_factory=list)
 
 
 def _finite_samples(samples: list[tuple[float, float]]) -> list[tuple[float, float]]:
@@ -194,6 +207,10 @@ def account_carbon(
             first_carbon_at=None,
             last_carbon_at=None,
             warnings=["no RTE carbon-intensity points cover the execution"],
+            intervals=[
+                CarbonInterval(item.start, item.end, item.joules, None, None)
+                for item in increments
+            ],
         )
 
     point_index = 0
@@ -202,6 +219,7 @@ def account_carbon(
     accounted_intervals = 0
     missing = 0
     used_timestamps: list[float] = []
+    detail: list[CarbonInterval] = []
     for increment in increments:
         midpoint = increment.start + (increment.end - increment.start) / 2
         while point_index + 1 < len(points) and points[point_index + 1][0] <= midpoint:
@@ -209,11 +227,20 @@ def account_carbon(
         carbon_at, intensity = points[point_index]
         if carbon_at > midpoint or midpoint - carbon_at > max_carbon_age_seconds:
             missing += 1
+            detail.append(
+                CarbonInterval(increment.start, increment.end, increment.joules, None, None)
+            )
             continue
-        emissions += increment.joules / 3_600_000 * intensity
+        interval_emissions = increment.joules / 3_600_000 * intensity
+        emissions += interval_emissions
         accounted_energy += increment.joules
         accounted_intervals += 1
         used_timestamps.append(carbon_at)
+        detail.append(
+            CarbonInterval(
+                increment.start, increment.end, increment.joules, intensity, interval_emissions
+            )
+        )
 
     coverage = 1.0 if total_energy == 0 and not missing else (
         accounted_energy / total_energy if total_energy > 0 else 0.0
@@ -232,4 +259,5 @@ def account_carbon(
         first_carbon_at=min(used_timestamps) if used_timestamps else None,
         last_carbon_at=max(used_timestamps) if used_timestamps else None,
         warnings=warnings,
+        intervals=detail,
     )

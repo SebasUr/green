@@ -166,12 +166,66 @@ coberturas y las dimensiones `workload`, `policy`, `scheduler`, `experiment` y
 `trial`. Usa `--include-provisional` solamente para diagnosticar capturas aún no
 finalizadas.
 
+## Enriquecimiento de reproducibilidad (schema 1.1)
+
+Además de energía y carbono, el reporte captura **post-hoc y en solo lectura**
+todo lo necesario para que un run sea reproducible y comparable. Ningún bloque
+es obligatorio: si una consulta falla, el bloque queda vacío con un warning y la
+contabilidad no se pierde.
+
+| Bloque | Contiene | Para qué |
+|---|---|---|
+| `provenance` | imagen + **imageID (digest real)**, command/args, env literal, requests/limits, `nodeSelector` | saber exactamente qué corrió |
+| `node_context` | energía total/activa/idle del nodo, CPU ratio, `job_share_of_active_energy` | validación secundaria |
+| `isolation` | **post-flight**: co-tenants y su energía, restarts, `kepler_up_ratio`, `clean_node` | ¿la medición es comparable? |
+| `workload_outputs` | stdout + **`stdout_sha256`** (+ `parsed_json` si es JSON) | igualdad de salida científica |
+| `energy_intervals` | traza por intervalo de scrape: J + intensidad + gCO2eq | auditoría; reemplaza a `metrics.csv` |
+
+```bash
+greenctl jobs report mc-calibration-01 -n green-experiment --include-intervals
+greenctl jobs report mc-calibration-01 -n green-experiment --no-context --no-capture-logs
+```
+
+Flags: `--include-intervals` (traza por intervalo, off por defecto),
+`--no-context` (omite provenance/node_context/isolation), `--no-capture-logs`
+(omite stdout). Aplican igual a `jobs report` y a `jobs observe`.
+
+### El post-flight es más fuerte que un pre-flight
+
+Un pre-flight solo prueba que el nodo estaba limpio en `t0`. `isolation` se
+reconstruye desde Prometheus y cubre **toda la ventana**: si otro pod arrancó a
+mitad del run, aparece. `clean_node` es `false` cuando los co-tenants superan el
+5 % de la energía atribuida, hubo restarts en el nodo, o Kepler no fue
+scrapeable ≥99 % de la ventana.
+
+**`clean_node` NO afecta a `quality.valid`/`final`**, y es deliberado: la
+contabilidad sigue siendo correcta aunque el nodo estuviera sucio. Son dos
+preguntas distintas — *«¿la medición es buena?»* (`quality`) y *«¿este run es
+comparable con otro?»* (`isolation`). Mezclarlas haría que un run contaminado se
+reintentara para siempre.
+
+### `stdout_sha256`: igualdad de salida sin lógica por workload
+
+Dos ejecuciones deterministas con los mismos parámetros deben dar el **mismo
+hash**. Eso cubre el criterio *«identical scientific outputs»* para **cualquier**
+workload, sin parsear π ni nada específico del Monte Carlo. En el CSV de
+`summarize` sale como columna `stdout_sha256`.
+
 ## Límites operativos
 
 - El alcance actual es energía operacional CPU atribuida por Kepler; no aplica
   PUE ni estima el consumo total del nodo.
+- `node_context` es **contexto, no atribución**: si algo más corrió en el nodo,
+  esas cifras lo incluyen. Lo atribuible al Job es `energy.total_joules`.
 - El Job y sus pods deben seguir visibles hasta que el observador los lea. No
-  uses un `ttlSecondsAfterFinished` inferior al intervalo de polling.
+  uses un `ttlSecondsAfterFinished` inferior al intervalo de polling. Esto es
+  especialmente cierto para `workload_outputs`: los logs viven con el pod, así
+  que si el GC se lo lleva, el stdout y su hash se pierden (la energía y el
+  carbono no: siguen en Prometheus).
+- `provenance.env` solo recoge variables con `value` literal; las que vienen de
+  `valueFrom` (secrets, configmaps) **no se resuelven** a propósito.
+- `container_restarts` necesita kube-state-metrics (`kube_pod_info`); sin él el
+  campo queda a `null` con un warning.
 - Prometheus debe retener las series Kepler durante el tiempo suficiente.
 - Los Jobs sin serie Kepler o sin cobertura RTE permanecen provisionales y
   conservan las causas en `quality.warnings`.

@@ -1,0 +1,121 @@
+# RTE carbon-intensity exporter: Deployment + Service + ServiceMonitor.
+#
+# Runs the zero-dependency exporter.py (mounted from the ConfigMap) on a stock
+# python:3.12-slim image — no image build/registry needed. Scheduled on the
+# observability node so it never adds noise to the baremetal measurement node.
+#
+# Requires egress to https://odre.opendatasoft.com. If the cluster blocks
+# internet egress, run the exporter off-cluster and use Prometheus remote_write
+# or a Pushgateway instead (see README).
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rte-carbon-exporter
+  namespace: monitoring
+  labels:
+    app.kubernetes.io/name: rte-carbon-exporter
+    app.kubernetes.io/part-of: green-observatory
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: rte-carbon-exporter
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: rte-carbon-exporter
+        app.kubernetes.io/part-of: green-observatory
+    spec:
+      # Keep it off the baremetal measurement node.
+      nodeSelector:
+        sustainability.cern.ch/role: observability
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 65534
+        runAsGroup: 65534
+        seccompProfile:
+          type: RuntimeDefault
+      containers:
+        - name: exporter
+          image: python:3.12-slim
+          imagePullPolicy: IfNotPresent
+          command: ["python", "/app/exporter.py"]
+          env:
+            - name: LISTEN_PORT
+              value: "9110"
+            - name: REFRESH_SECONDS
+              value: "300"
+            - name: ZONE
+              value: "FR"
+          ports:
+            - name: http-metrics
+              containerPort: 9110
+          resources:
+            requests:
+              cpu: 10m
+              memory: 32Mi
+            limits:
+              cpu: 100m
+              memory: 96Mi
+          securityContext:
+            allowPrivilegeEscalation: false
+            readOnlyRootFilesystem: true
+            capabilities:
+              drop: ["ALL"]
+          readinessProbe:
+            httpGet:
+              path: /healthz
+              port: http-metrics
+            initialDelaySeconds: 5
+            periodSeconds: 10
+          livenessProbe:
+            httpGet:
+              path: /healthz
+              port: http-metrics
+            initialDelaySeconds: 10
+            periodSeconds: 30
+          volumeMounts:
+            - name: code
+              mountPath: /app
+              readOnly: true
+      volumes:
+        - name: code
+          configMap:
+            name: rte-carbon-exporter-code
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: rte-carbon-exporter
+  namespace: monitoring
+  labels:
+    app.kubernetes.io/name: rte-carbon-exporter
+    app.kubernetes.io/part-of: green-observatory
+spec:
+  selector:
+    app.kubernetes.io/name: rte-carbon-exporter
+  ports:
+    - name: http-metrics
+      port: 9110
+      targetPort: http-metrics
+---
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: rte-carbon-exporter
+  namespace: monitoring
+  labels:
+    # Matches the kube-prometheus-stack serviceMonitorSelector in this cluster.
+    release: monitoring
+    app.kubernetes.io/part-of: green-observatory
+spec:
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: rte-carbon-exporter
+  namespaceSelector:
+    matchNames: ["monitoring"]
+  endpoints:
+    - port: http-metrics
+      path: /metrics
+      interval: 60s
+      scrapeTimeout: 30s

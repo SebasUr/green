@@ -34,6 +34,14 @@ def test_origin_features_do_not_look_ahead():
     t0 = frame.index[200]
     truncated = fb.origin_features(frame.loc[:t0])
     pd.testing.assert_series_equal(full.loc[t0], truncated.loc[t0], check_names=False)
+    previous = t0 - pd.Timedelta(hours=1)
+    assert full.loc[t0, "carbon_now"] == frame.loc[previous, CARBON]
+    assert full.loc[t0, "consumption_mw"] == frame.loc[previous, "consumption_mw"]
+
+    changed_open_hour = frame.copy()
+    changed_open_hour.loc[t0, [CARBON, "consumption_mw"]] = 1e9
+    changed = fb.origin_features(changed_open_hour)
+    pd.testing.assert_series_equal(full.loc[t0], changed.loc[t0], check_names=False)
 
 
 def test_supervised_label_is_future_value_and_calendar_is_target():
@@ -54,3 +62,19 @@ def test_holiday_flag():
     idx = pd.DatetimeIndex(["2026-01-01T08:00:00Z", "2026-01-02T08:00:00Z"])
     cal = fb.calendar_features(idx)
     assert cal["is_holiday"].tolist() == [1, 0]  # New Year's Day is a FR holiday
+
+
+def test_day_ahead_generation_forecast_is_not_exposed_at_48_hours():
+    index = pd.date_range("2026-01-01", periods=80, freq="1h", tz="UTC")
+    forecast = pd.DataFrame(
+        {
+            "wind_onshore_day_ahead_forecast_mw": 5000.0,
+            "solar_day_ahead_forecast_mw": 1000.0,
+        },
+        index=index,
+    )
+    builder = FeatureBuilder(climatology=None, forecast_frame=forecast)
+    short = builder.target_block(index[:1] + pd.Timedelta(hours=24), 24)
+    long = builder.target_block(index[:1] + pd.Timedelta(hours=48), 48)
+    assert "fc_wind_onshore_day_ahead_forecast_mw" in short
+    assert "fc_wind_onshore_day_ahead_forecast_mw" not in long

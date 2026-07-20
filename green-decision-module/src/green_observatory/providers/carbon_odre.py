@@ -56,8 +56,41 @@ FIELD_MAP: dict[str, str] = {
     "bioenergies": "bioenergy_mw",
     "pompage": "pumped_storage_mw",
     "ech_physiques": "physical_exchange_mw",
+    "eolien_terrestre": "wind_onshore_mw",
+    "eolien_offshore": "wind_offshore_mw",
+    "fioul_tac": "fuel_oil_turbine_mw",
+    "fioul_cogen": "fuel_oil_cogeneration_mw",
+    "fioul_autres": "fuel_oil_other_mw",
+    "gaz_tac": "gas_turbine_mw",
+    "gaz_cogen": "gas_cogeneration_mw",
+    "gaz_ccg": "gas_ccg_mw",
+    "gaz_autres": "gas_other_mw",
+    "hydraulique_fil_eau_eclusee": "hydro_run_of_river_mw",
+    "hydraulique_lacs": "hydro_reservoir_mw",
+    "hydraulique_step_turbinage": "hydro_pumped_turbining_mw",
+    "bioenergies_dechets": "bioenergy_waste_mw",
+    "bioenergies_biomasse": "bioenergy_biomass_mw",
+    "bioenergies_biogaz": "bioenergy_biogas_mw",
+    "ech_comm_angleterre": "commercial_exchange_gb_mw",
+    "ech_comm_espagne": "commercial_exchange_es_mw",
+    "ech_comm_italie": "commercial_exchange_it_mw",
+    "ech_comm_suisse": "commercial_exchange_ch_mw",
+    "ech_comm_allemagne_belgique": "commercial_exchange_de_be_mw",
+    "stockage_batterie": "battery_charging_mw",
+    "destockage_batterie": "battery_discharging_mw",
 }
 TIMESTAMP_FIELD = "date_heure"
+
+# These fields currently exist only in the rolling real-time dataset.  Keeping
+# them in the canonical schema is useful for live inference, but asking the
+# consolidated export endpoint to select an unknown field makes the whole
+# request fail.
+REALTIME_ONLY_FIELDS = {
+    "eolien_terrestre",
+    "eolien_offshore",
+    "stockage_batterie",
+    "destockage_batterie",
+}
 
 #: Earliest instant with a populated ``taux_co2`` in the consolidated dataset.
 EARLIEST_TAUX_CO2 = pd.Timestamp("2011-12-31T23:00:00Z")
@@ -155,7 +188,10 @@ class OdreCarbonProvider:
         client: httpx.Client | None = None,
     ) -> list[dict]:
         """Fetch all records in ``[start, end)`` via the export/json endpoint."""
-        select = ",".join([TIMESTAMP_FIELD, *FIELD_MAP.keys()])
+        fields = list(FIELD_MAP)
+        if dataset == self.history_dataset:
+            fields = [field for field in fields if field not in REALTIME_ONLY_FIELDS]
+        select = ",".join([TIMESTAMP_FIELD, *fields])
         s = start.strftime("%Y-%m-%dT%H:%M:%SZ")
         e = end.strftime("%Y-%m-%dT%H:%M:%SZ")
         where = f"{TIMESTAMP_FIELD} >= '{s}' AND {TIMESTAMP_FIELD} < '{e}'"

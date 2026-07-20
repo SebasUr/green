@@ -190,7 +190,7 @@ def month_rolling_figure(df, model, month_start, outpath, *, days: int = 28, wcf
     for origin in origins:
         if origin not in df.index:
             continue
-        pred = forecaster.predict(df.loc[df.index <= origin], origin, hs)
+        pred = forecaster.predict(df.loc[df.index < origin], origin, hs)
         s = pd.Series(pred["prediction"].to_numpy(), index=pred.index)
         hourly = pd.date_range(
             origin + pd.Timedelta(hours=1), origin + pd.Timedelta(hours=24), freq="h", tz="UTC"
@@ -254,7 +254,7 @@ def _make_forecast_example(df, model, origin, wcfg, outpath, horizon: int = 24) 
 
     forecaster = model.make_forecaster(df)
     hs = [h for h in model.horizons if h <= horizon]
-    pred = forecaster.predict(df.loc[df.index <= origin], origin, hs)
+    pred = forecaster.predict(df.loc[df.index < origin], origin, hs)
     marker = pd.Series(pred["prediction"].to_numpy(), index=pred.index)
     hourly = pd.date_range(
         origin + pd.Timedelta(hours=1), origin + pd.Timedelta(hours=horizon), freq="h", tz="UTC"

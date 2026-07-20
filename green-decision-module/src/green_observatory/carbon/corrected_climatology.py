@@ -44,7 +44,7 @@ class CorrectedClimatologyForecaster:
 
     def _recent_correction(self, history: pd.DataFrame, origin: pd.Timestamp) -> float:
         lo = origin - pd.Timedelta(hours=self.max_lookback_hours)
-        mask = (history.index <= origin) & (history.index > lo)
+        mask = (history.index < origin) & (history.index > lo)
         window = pd.to_numeric(history.loc[mask, CARBON], errors="coerce").dropna()
         if window.empty:
             return 0.0

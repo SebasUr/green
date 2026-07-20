@@ -18,7 +18,10 @@ import numpy as np
 import pandas as pd
 
 from green_observatory.carbon.climatology import ClimatologyModel
+from green_observatory.carbon.ensemble_ci import EnsembleCIModel
 from green_observatory.carbon.model import ProjectCarbonModel
+from green_observatory.carbon.physical import PhysicalCarbonModel
+from green_observatory.carbon.ranking import RegretRankingModel
 from green_observatory.providers.carbon_base import CARBON
 
 DEFAULT_HORIZONS = (1, 3, 6, 12, 24, 48)
@@ -112,6 +115,43 @@ def _project_batch(model: ProjectCarbonModel, df, origins, horizons):
     return pd.concat(frames, ignore_index=True)
 
 
+def _physical_batch(model: PhysicalCarbonModel, df, origins, horizons, *, residual=True):
+    """Vectorized Phase-C predictor with the same tidy contract as other models."""
+    return model.predict_batch(
+        df, origins, horizons, residual_correction=residual
+    ).loc[:, ["origin", "horizon", "target_time", "prediction"]]
+
+
+def _physical_blend_batch(project_model, physical_model, df, origins, horizons):
+    """Fixed, leakage-free equal blend of the direct and raw physical forecasts."""
+    direct = _project_batch(project_model, df, origins, horizons).rename(
+        columns={"prediction": "direct_prediction"}
+    )
+    physical = _physical_batch(
+        physical_model, df, origins, horizons, residual=False
+    ).rename(columns={"prediction": "physical_prediction"})
+    keys = ["origin", "horizon", "target_time"]
+    out = direct.merge(physical, on=keys, how="inner", validate="one_to_one")
+    out["prediction"] = 0.5 * (
+        out["direct_prediction"] + out["physical_prediction"]
+    )
+    return out.loc[:, keys + ["prediction"]]
+
+
+def _ranking_batch(model: RegretRankingModel, df, origins, horizons, *, apply_ranking=True):
+    """Phase-D direct-exogenous or regret-ranked batch."""
+    return model.predict_batch(
+        df, origins, horizons, apply_ranking=apply_ranking
+    ).loc[:, ["origin", "horizon", "target_time", "prediction"]]
+
+
+def _ensemble_ci_batch(model: EnsembleCIModel, df, origins, horizons):
+    """Vectorized two-layer EnsembleCI adaptation."""
+    return model.predict_batch(df, origins, horizons).loc[
+        :, ["origin", "horizon", "target_time", "prediction"]
+    ]
+
+
 def backtest_predictions(
     df: pd.DataFrame,
     origins: pd.DatetimeIndex,
@@ -119,6 +159,9 @@ def backtest_predictions(
     horizons: Sequence[int] = DEFAULT_HORIZONS,
     climatology: ClimatologyModel | None = None,
     project_model: ProjectCarbonModel | None = None,
+    physical_model: PhysicalCarbonModel | None = None,
+    ranking_model: RegretRankingModel | None = None,
+    ensemble_ci_model: EnsembleCIModel | None = None,
     corrected_cfg: dict | None = None,
     include: Sequence[str] = ("persistence", "climatology", "corrected", "project"),
 ) -> pd.DataFrame:
@@ -141,6 +184,44 @@ def backtest_predictions(
         )
     if "project" in include and project_model is not None:
         parts.append(_project_batch(project_model, df, origins, horizons).assign(model="project"))
+    if "physical" in include and physical_model is not None:
+        parts.append(
+            _physical_batch(physical_model, df, origins, horizons).assign(model="physical")
+        )
+    if "physical_raw" in include and physical_model is not None:
+        parts.append(
+            _physical_batch(
+                physical_model, df, origins, horizons, residual=False
+            ).assign(model="physical_raw")
+        )
+    if (
+        "physical_blend" in include
+        and project_model is not None
+        and physical_model is not None
+    ):
+        parts.append(
+            _physical_blend_batch(
+                project_model, physical_model, df, origins, horizons
+            ).assign(model="physical_blend")
+        )
+    if "exogenous_project" in include and ranking_model is not None:
+        parts.append(
+            _ranking_batch(
+                ranking_model, df, origins, horizons, apply_ranking=False
+            ).assign(model="exogenous_project")
+        )
+    if "ranking" in include and ranking_model is not None:
+        parts.append(
+            _ranking_batch(
+                ranking_model, df, origins, horizons, apply_ranking=True
+            ).assign(model="ranking")
+        )
+    if "ensemble_ci" in include and ensemble_ci_model is not None:
+        parts.append(
+            _ensemble_ci_batch(
+                ensemble_ci_model, df, origins, horizons
+            ).assign(model="ensemble_ci")
+        )
 
     pred = pd.concat(parts, ignore_index=True)
     actual = df[CARBON].reindex(pd.DatetimeIndex(pred["target_time"])).to_numpy()
@@ -154,11 +235,11 @@ def forecaster_batch(
     """Run any (non-vectorized) ``Forecaster`` over origins into the tidy frame.
 
     Used for forecasters without a vectorized batch predictor (e.g. SARIMAX).
-    Each call receives as-of history (``timestamp <= origin``).
+    Each call receives fully closed history (``timestamp < origin``).
     """
     frames: list[pd.DataFrame] = []
     for origin in origins:
-        hist = df.loc[df.index <= origin]
+        hist = df.loc[df.index < origin]
         p = forecaster.predict(hist, origin, horizons)
         frames.append(
             pd.DataFrame(

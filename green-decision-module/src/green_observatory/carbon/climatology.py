@@ -8,7 +8,7 @@ every stored instant stays in UTC.
 All forecasters share the :class:`Forecaster` interface so the evaluation
 backtest can treat persistence, climatology, corrected climatology and the
 project model uniformly. A forecaster receives an *as-of* ``history`` frame
-(only rows with ``timestamp <= origin``) and must not look into the future.
+(only fully closed rows with ``timestamp < origin``) and must not look into the future.
 """
 
 from __future__ import annotations
@@ -202,7 +202,7 @@ class PersistenceForecaster:
     def predict(
         self, history: pd.DataFrame, origin: pd.Timestamp, horizons_hours: Sequence[float]
     ) -> pd.DataFrame:
-        past = history.loc[history.index <= origin, CARBON].dropna()
+        past = history.loc[history.index < origin, CARBON].dropna()
         if past.empty:
             raise ValueError(f"persistence has no observed value at/before {origin}")
         last_val = float(past.iloc[-1])

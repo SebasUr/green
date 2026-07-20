@@ -83,8 +83,115 @@ class MeasurementQuality(_ReportModel):
     warnings: list[str] = Field(default_factory=list)
 
 
+# --------------------------------------------------------------------------- #
+# Reproducibility enrichment (schema 1.1). Every block is optional: it is filled
+# on a best-effort basis and degrades to ``None`` with a warning rather than
+# failing the report, so accounting never depends on it.
+# --------------------------------------------------------------------------- #
+class ContainerProvenance(_ReportModel):
+    """Exactly what ran, as resolved by the kubelet."""
+
+    name: str
+    image: str | None = None
+    #: Digest-pinned identity actually pulled (``status.containerStatuses[].imageID``).
+    image_id: str | None = None
+    command: list[str] = Field(default_factory=list)
+    args: list[str] = Field(default_factory=list)
+    env: dict[str, str] = Field(default_factory=dict)
+    cpu_request: str | None = None
+    cpu_limit: str | None = None
+    memory_request: str | None = None
+    memory_limit: str | None = None
+
+
+class PodProvenance(_ReportModel):
+    pod_uid: str
+    pod_name: str
+    node_name: str | None = None
+    node_selector: dict[str, str] = Field(default_factory=dict)
+    containers: list[ContainerProvenance] = Field(default_factory=list)
+
+
+class JobProvenance(_ReportModel):
+    backoff_limit: int | None = None
+    completions: int | None = None
+    parallelism: int | None = None
+    pods: list[PodProvenance] = Field(default_factory=list)
+
+
+class NodeContext(_ReportModel):
+    """Node-level energy during the window.
+
+    Context, **not attribution**: if anything else ran on the node these numbers
+    include it. Use ``energy.total_joules`` for what the Job actually caused.
+    """
+
+    node_name: str | None = None
+    zone: str = "package"
+    total_energy_joules: float | None = Field(None, ge=0)
+    active_energy_joules: float | None = Field(None, ge=0)
+    idle_energy_joules: float | None = Field(None, ge=0)
+    cpu_utilization_mean: float | None = Field(None, ge=0, le=1)
+    cpu_utilization_max: float | None = Field(None, ge=0, le=1)
+    #: Job energy / node active energy over the window.
+    job_share_of_active_energy: float | None = Field(None, ge=0)
+    counter_resets: int = Field(0, ge=0)
+    warnings: list[str] = Field(default_factory=list)
+
+
+class CoTenantPod(_ReportModel):
+    pod_namespace: str | None = None
+    pod_name: str | None = None
+    energy_joules: float = Field(..., ge=0)
+
+
+class NodeIsolation(_ReportModel):
+    """Post-flight: was the node clean for the *whole* window?
+
+    Stronger than a pre-flight, which only proves the node was clean at t0.
+    Reconstructed from Prometheus, so it covers every interval of the run.
+    """
+
+    clean_node: bool
+    co_tenant_pods: list[CoTenantPod] = Field(default_factory=list)
+    co_tenant_energy_joules: float | None = Field(None, ge=0)
+    #: co-tenant energy / (job + co-tenant) energy over the window.
+    co_tenant_energy_share: float | None = Field(None, ge=0, le=1)
+    container_restarts: int | None = Field(None, ge=0)
+    kepler_up_ratio: float | None = Field(None, ge=0, le=1)
+    warnings: list[str] = Field(default_factory=list)
+
+
+class WorkloadOutput(_ReportModel):
+    """Container stdout, for scientific-output equality across runs.
+
+    ``stdout_sha256`` is the generic replacement for workload-specific parsing:
+    two deterministic runs with the same inputs must produce the same hash.
+    """
+
+    pod_uid: str
+    pod_name: str
+    stdout_sha256: str | None = None
+    stdout_bytes: int = Field(0, ge=0)
+    truncated: bool = False
+    stdout: str | None = None
+    #: Populated when stdout parses as a JSON object.
+    parsed_json: dict | None = None
+    warnings: list[str] = Field(default_factory=list)
+
+
+class EnergyIntervalRecord(_ReportModel):
+    """One scrape interval: the audit trail behind the totals."""
+
+    start: UtcDatetime
+    end: UtcDatetime
+    joules: float = Field(..., ge=0)
+    carbon_intensity_gco2eq_per_kwh: float | None = Field(None, ge=0)
+    emissions_gco2eq: float | None = Field(None, ge=0)
+
+
 class JobCarbonReport(_ReportModel):
-    schema_version: str = "1.0"
+    schema_version: str = "1.1"
     generated_at: UtcDatetime
     job: JobIdentity
     execution_started_at: UtcDatetime
@@ -94,6 +201,13 @@ class JobCarbonReport(_ReportModel):
     energy: EnergyAccounting
     carbon: CarbonAccounting
     quality: MeasurementQuality
+    # Optional reproducibility blocks (schema 1.1); absent when not collected.
+    provenance: JobProvenance | None = None
+    node_context: NodeContext | None = None
+    isolation: NodeIsolation | None = None
+    workload_outputs: list[WorkloadOutput] = Field(default_factory=list)
+    #: Per-scrape-interval audit trail; only when ``--include-intervals``.
+    energy_intervals: list[EnergyIntervalRecord] | None = None
     formula: str = (
         "sum(delta_kepler_joules_interval / 3600000 "
         "* rte_carbon_intensity_gco2eq_per_kwh_interval)"
@@ -103,6 +217,7 @@ class JobCarbonReport(_ReportModel):
             "No PUE is applied.",
             "This is operational CPU energy attributed to pods by Kepler, not total node energy.",
             "All timestamps are UTC.",
+            "node_context is node-level context, not attribution to this Job.",
         ]
     )
 

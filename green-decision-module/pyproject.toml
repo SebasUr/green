@@ -33,6 +33,7 @@ api = ["fastapi>=0.110", "uvicorn>=0.29"]
 viz = ["matplotlib>=3.8"]
 stats = ["statsmodels>=0.14"]  # SARIMAX comparison forecaster (optional)
 dl = ["torch>=2.2"]            # LSTM comparison forecaster (optional)
+ensemble = ["lightgbm>=4.6", "catboost>=1.2"]  # EnsembleCI paper sublearners
 dev = ["pytest>=8.0", "statsmodels>=0.14"]
 
 [project.scripts]

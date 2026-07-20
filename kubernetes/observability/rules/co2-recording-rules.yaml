@@ -1,0 +1,60 @@
+# Recording rules that turn the live Kepler power series x the RTE-exporter
+# carbon intensity into ready-to-use CO2 emission-rate series.
+#
+# Why recording rules (vs inline dashboard math):
+#   * Correctness — each rule is evaluated every `evaluationInterval` (15s) with
+#     the intensity that was current at that instant, so a cumulative built with
+#     sum_over_time is per-interval weighted (same philosophy as `greenctl jobs`),
+#     not multiplied by a single "current" intensity.
+#   * Cheap & reusable — the join is computed once, then dashboards, alerts and
+#     `sum_over_time` reuse a single small series.
+#
+# Units:  emission rate [gCO2eq/s] = watts * intensity[gCO2eq/kWh] / 3_600_000
+#         gCO2eq/h  = series * 3600
+#         gCO2eq over range T = sum_over_time(series[T:15s]) * 15   (Riemann, 15s = eval interval)
+#
+# Requires: Kepler (kepler_*_watts) and the rte-carbon-exporter
+# (rte_carbon_intensity_gco2eq_per_kwh). Label `release: monitoring` so the
+# kube-prometheus-stack Prometheus picks the rule up.
+apiVersion: monitoring.coreos.com/v1
+kind: PrometheusRule
+metadata:
+  name: green-observatory-co2
+  namespace: monitoring
+  labels:
+    release: monitoring
+    app.kubernetes.io/part-of: green-observatory
+spec:
+  groups:
+    - name: green-observatory.co2
+      interval: 15s
+      rules:
+        # Whole-node CPU emissions (active + idle) — the node's real CPU CO2.
+        - record: node_co2_emission_gco2_per_second
+          expr: |
+            sum by (node_name, zone) (
+              kepler_node_cpu_watts{zone="package"}
+            )
+            * on() group_left()
+            max(rte_carbon_intensity_gco2eq_per_kwh)
+            / 3600000
+
+        # Dynamic part attributable to running work (active watts).
+        - record: node_co2_emission_active_gco2_per_second
+          expr: |
+            sum by (node_name, zone) (
+              kepler_node_cpu_active_watts{zone="package"}
+            )
+            * on() group_left()
+            max(rte_carbon_intensity_gco2eq_per_kwh)
+            / 3600000
+
+        # Per-pod attributed emissions (state-deduplicated).
+        - record: pod_co2_emission_gco2_per_second
+          expr: |
+            sum by (pod_namespace, pod_name, node_name) (
+              max without (state) (kepler_pod_cpu_watts{zone="package"})
+            )
+            * on() group_left()
+            max(rte_carbon_intensity_gco2eq_per_kwh)
+            / 3600000

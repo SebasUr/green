@@ -1,0 +1,221 @@
+{
+  "schema_version": "1.1",
+  "generated_at": "2026-07-16T15:07:49.090802Z",
+  "job": {
+    "uid": "16279908-7ce5-478d-b510-9636a8365459",
+    "namespace": "green-experiment",
+    "name": "mc-calibration-02",
+    "labels": {
+      "sustainability.cern.ch/experiment": "green-window-01",
+      "sustainability.cern.ch/policy": "calibration",
+      "sustainability.cern.ch/track": "true",
+      "sustainability.cern.ch/trial": "calibration-02",
+      "sustainability.cern.ch/workload": "monte-carlo"
+    },
+    "annotations": {},
+    "outcome": "succeeded"
+  },
+  "execution_started_at": "2026-07-16T13:14:39Z",
+  "execution_finished_at": "2026-07-16T13:29:55Z",
+  "duration_seconds": 916.0,
+  "pod_executions": [
+    {
+      "uid": "827100f7-ca77-4ecd-89df-c6887a5e6425",
+      "name": "mc-calibration-02-66s57",
+      "phase": "Succeeded",
+      "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+      "started_at": "2026-07-16T13:14:39Z",
+      "finished_at": "2026-07-16T13:29:55Z",
+      "duration_seconds": 916.0,
+      "succeeded": true
+    }
+  ],
+  "energy": {
+    "metric": "kepler_pod_cpu_joules_total",
+    "zone": "package",
+    "scope": "operational_cpu_energy_attributed_by_kepler",
+    "total_joules": 41933.979823,
+    "total_kwh": 0.01164832772861111,
+    "average_power_watts": 45.77945395524018,
+    "pods": [
+      {
+        "pod_uid": "827100f7-ca77-4ecd-89df-c6887a5e6425",
+        "pod_name": "mc-calibration-02-66s57",
+        "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+        "energy_joules": 41933.979823,
+        "energy_kwh": 0.01164832772861111,
+        "sample_count": 93,
+        "counter_resets": 0,
+        "coverage_ratio": 1.0,
+        "first_sample_at": "2026-07-16T13:14:39Z",
+        "last_sample_at": "2026-07-16T13:29:59Z",
+        "warnings": [
+          "counter assumed to start at zero when the pod was created"
+        ]
+      }
+    ]
+  },
+  "carbon": {
+    "source": "rte:eco2mix",
+    "basis": "production",
+    "accounting_scope": "operational_cpu_no_pue",
+    "energy_weighted_intensity_gco2eq_per_kwh": 16.0,
+    "emissions_gco2eq": 0.18637324365777777,
+    "accounted_energy_joules": 41933.979823,
+    "interval_count": 92,
+    "first_carbon_at": "2026-07-16T13:00:00Z",
+    "last_carbon_at": "2026-07-16T13:15:00Z"
+  },
+  "quality": {
+    "valid": true,
+    "final": true,
+    "energy_coverage_ratio": 1.0,
+    "carbon_energy_coverage_ratio": 1.0,
+    "prometheus_series_expected": 1,
+    "prometheus_series_found": 1,
+    "sample_count": 93,
+    "counter_resets": 0,
+    "carbon_points": 11,
+    "missing_carbon_intervals": 0,
+    "warnings": [
+      "mc-calibration-02-66s57: counter assumed to start at zero when the pod was created"
+    ]
+  },
+  "provenance": {
+    "backoff_limit": 0,
+    "completions": 1,
+    "parallelism": 1,
+    "pods": [
+      {
+        "pod_uid": "827100f7-ca77-4ecd-89df-c6887a5e6425",
+        "pod_name": "mc-calibration-02-66s57",
+        "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+        "node_selector": {
+          "sustainability.cern.ch/hardware": "baremetal"
+        },
+        "containers": [
+          {
+            "name": "monte-carlo",
+            "image": "python:3.12-slim",
+            "image_id": "docker.io/library/python@sha256:64695412729fbe8cf054511723820c82bbe5a077d4a6b4070cd4a7225d3422ce",
+            "command": [
+              "python",
+              "/workload/monte_carlo.py"
+            ],
+            "args": [],
+            "env": {
+              "WORKERS": "16",
+              "SAMPLES_PER_WORKER": "3150000000",
+              "BASE_SEED": "20260713"
+            },
+            "cpu_request": "16",
+            "cpu_limit": "16",
+            "memory_request": "2Gi",
+            "memory_limit": "2Gi"
+          }
+        ]
+      }
+    ]
+  },
+  "node_context": {
+    "node_name": "sebas-green-baremetal-jpmdwiscskyy-node-0",
+    "zone": "package",
+    "total_energy_joules": 165552.315753,
+    "active_energy_joules": 42978.7017514,
+    "idle_energy_joules": 124347.8412635997,
+    "cpu_utilization_mean": 0.2528812627233643,
+    "cpu_utilization_max": 0.26243835445316355,
+    "job_share_of_active_energy": 0.9756921013007106,
+    "counter_resets": 1,
+    "warnings": []
+  },
+  "isolation": {
+    "clean_node": true,
+    "co_tenant_pods": [
+      {
+        "pod_namespace": "kepler",
+        "pod_name": "kepler-5k5h5",
+        "energy_joules": 263.4237709999994
+      },
+      {
+        "pod_namespace": "kube-system",
+        "pod_name": "cern-magnum-falco-zbjrb",
+        "energy_joules": 92.99373159999996
+      },
+      {
+        "pod_namespace": "kube-system",
+        "pod_name": "cilium-fqr2k",
+        "energy_joules": 77.71136599999973
+      },
+      {
+        "pod_namespace": "kube-system",
+        "pod_name": "cilium-envoy-vzrgm",
+        "energy_joules": 33.0705539999999
+      },
+      {
+        "pod_namespace": "monitoring",
+        "pod_name": "monitoring-prometheus-node-exporter-rxjld",
+        "energy_joules": 24.61686759999993
+      },
+      {
+        "pod_namespace": "kube-system",
+        "pod_name": "cern-magnum-node-feature-discovery-worker-5l2g7",
+        "energy_joules": 14.052731800000037
+      },
+      {
+        "pod_namespace": "kube-system",
+        "pod_name": "cern-magnum-eosxd-csi-nodeplugin-w9st8",
+        "energy_joules": 2.579874999999987
+      },
+      {
+        "pod_namespace": "kube-system",
+        "pod_name": "cern-magnum-node-problem-detector-pxtnb",
+        "energy_joules": 1.5376819999999896
+      },
+      {
+        "pod_namespace": "kube-system",
+        "pod_name": "cern-magnum-ceph-csi-cephfs-nodeplugin-wjmdz",
+        "energy_joules": 0.5817790000000045
+      },
+      {
+        "pod_namespace": "kube-system",
+        "pod_name": "cern-magnum-cvmfs-csi-nodeplugin-jsm4k",
+        "energy_joules": 0.2637350000000005
+      }
+    ],
+    "co_tenant_energy_joules": 510.83209299999896,
+    "co_tenant_energy_share": 0.012035206894330368,
+    "container_restarts": 0,
+    "kepler_up_ratio": 1.0,
+    "warnings": []
+  },
+  "workload_outputs": [
+    {
+      "pod_uid": "827100f7-ca77-4ecd-89df-c6887a5e6425",
+      "pod_name": "mc-calibration-02-66s57",
+      "stdout_sha256": "1e404c2e2f61d2bd60449d3d96b9eb94062dbff18dd3623fe4160a12fd7a4081",
+      "stdout_bytes": 311,
+      "truncated": false,
+      "stdout": "{\n  \"hostname\": \"mc-calibration-02-66s57\",\n  \"workers\": 16,\n  \"samples_per_worker\": 3150000000,\n  \"total_samples\": 50400000000,\n  \"pi_estimate\": 3.1415938055555555,\n  \"elapsed_seconds\": 915.0175213239854,\n  \"started_at\": \"2026-07-16T13:14:40.511973+00:00\",\n  \"finished_at\": \"2026-07-16T13:29:55.529517+00:00\"\n}\n",
+      "parsed_json": {
+        "hostname": "mc-calibration-02-66s57",
+        "workers": 16,
+        "samples_per_worker": 3150000000,
+        "total_samples": 50400000000,
+        "pi_estimate": 3.1415938055555555,
+        "elapsed_seconds": 915.0175213239854,
+        "started_at": "2026-07-16T13:14:40.511973+00:00",
+        "finished_at": "2026-07-16T13:29:55.529517+00:00"
+      },
+      "warnings": []
+    }
+  ],
+  "energy_intervals": null,
+  "formula": "sum(delta_kepler_joules_interval / 3600000 * rte_carbon_intensity_gco2eq_per_kwh_interval)",
+  "notes": [
+    "No PUE is applied.",
+    "This is operational CPU energy attributed to pods by Kepler, not total node energy.",
+    "All timestamps are UTC.",
+    "node_context is node-level context, not attribution to this Job."
+  ]
+}

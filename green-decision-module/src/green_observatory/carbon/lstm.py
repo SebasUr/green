@@ -186,7 +186,7 @@ class LSTMForecaster:
     ) -> pd.DataFrame:
         if self.net is None:
             raise RuntimeError("LSTMForecaster.predict called before fit")
-        c = pd.to_numeric(history.loc[history.index <= origin, CARBON], errors="coerce")
+        c = pd.to_numeric(history.loc[history.index < origin, CARBON], errors="coerce")
         cn = ((c - self.c_mean) / self.c_std).to_numpy()
         seq = cn[-self.seq_len :]
         if len(seq) < self.seq_len:

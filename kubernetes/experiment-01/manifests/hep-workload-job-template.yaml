@@ -1,0 +1,92 @@
+# Generic CERN hep-workloads Job, measured by Kepler + greenctl.
+#
+# Works for ANY workload from https://gitlab.cern.ch/hep-benchmarks/hep-workloads
+# because the images share one contract: the entrypoint IS the benchmark script
+# and takes -c/-t/-e. Do NOT override `command` - pass args only.
+#
+# Render + apply — NOTE the explicit variable list. It is required: the args
+# below contain shell variables ($rc, $?) that plain `envsubst` would eat.
+#   envsubst '${TRIAL_ID} ${WORKLOAD} ${POLICY} ${IMAGE} ${ENTRYPOINT} ${COPIES} ${THREADS} ${EVENTS} ${CPU} ${MEMORY}' \
+#     < hep-workload-job-template.yaml | kubectl apply -f -
+#
+# Facts verified against the registry (2026-07-16):
+#   * anonymous pull works (no imagePullSecret needed)
+#   * images run as USER 1001  -> fsGroup is required to write /results
+#   * images are multi-arch manifest lists -> pin the LIST digest, containerd
+#     resolves linux/amd64 for this node
+#
+# NOTE on `-c`: `nproc` inside the container reports the HOST's 64 CPUs, not the
+# cgroup quota, so the image's default (nproc/threads) would oversubscribe a
+# smaller quota and throttle. Always pass -c and -t explicitly, and keep
+# COPIES * THREADS == CPU.
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: hep-${TRIAL_ID}
+  namespace: green-experiment
+  labels:
+    sustainability.cern.ch/experiment: "green-window-01"
+    sustainability.cern.ch/workload: "${WORKLOAD}"
+    sustainability.cern.ch/trial: "${TRIAL_ID}"
+    sustainability.cern.ch/policy: "${POLICY}"
+    sustainability.cern.ch/track: "true"
+spec:
+  backoffLimit: 0
+
+  template:
+    metadata:
+      labels:
+        sustainability.cern.ch/experiment: "green-window-01"
+        sustainability.cern.ch/workload: "${WORKLOAD}"
+        sustainability.cern.ch/trial: "${TRIAL_ID}"
+        sustainability.cern.ch/policy: "${POLICY}"
+        sustainability.cern.ch/track: "true"
+
+    spec:
+      restartPolicy: Never
+
+      nodeSelector:
+        sustainability.cern.ch/hardware: baremetal
+
+      # The image runs as uid 1001; fsGroup makes the emptyDir group-writable
+      # so the benchmark can write its JSON report into /results.
+      securityContext:
+        fsGroup: 1001
+
+      containers:
+        - name: hep-workload
+          image: "${IMAGE}"
+          imagePullPolicy: IfNotPresent
+
+          # The benchmark writes its score JSON into /results, which dies with the
+          # pod (kubectl cp needs a *running* container, so a terminated Job's
+          # emptyDir is unrecoverable). We therefore call the image's entrypoint
+          # ourselves and cat the summary to stdout, where `greenctl jobs report`
+          # captures it into workload_outputs.parsed_json — energy, carbon and the
+          # physics result end up in one archived JSON.
+          # The benchmark's exit code is preserved, so a failed run still fails.
+          command: ["/bin/bash", "-c"]
+          args:
+            - |
+              "${ENTRYPOINT}" -c "${COPIES}" -t "${THREADS}" -e "${EVENTS}"
+              rc=$?
+              echo "===== BEGIN wl-summary ====="
+              cat /results/*/*_summary.json 2>/dev/null || echo '{"error":"no summary json produced"}'
+              echo "===== END wl-summary ====="
+              exit $rc
+
+          resources:
+            requests:
+              cpu: "${CPU}"
+              memory: "${MEMORY}"
+            limits:
+              cpu: "${CPU}"
+              memory: "${MEMORY}"
+
+          volumeMounts:
+            - name: results
+              mountPath: /results
+
+      volumes:
+        - name: results
+          emptyDir: {}

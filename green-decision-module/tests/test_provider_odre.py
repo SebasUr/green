@@ -7,7 +7,8 @@ from green_observatory.providers.carbon_odre import OdreCarbonProvider
 
 RAW = [
     {"date_heure": "2026-01-15T10:00:00+00:00", "taux_co2": 35, "consommation": 60000,
-     "nucleaire": 45000, "solaire": 100, "ech_physiques": -5000},
+     "nucleaire": 45000, "solaire": 100, "ech_physiques": -5000,
+     "gaz_ccg": 1200, "hydraulique_lacs": 900, "ech_comm_espagne": -300},
     {"date_heure": "2026-01-15T10:15:00+00:00", "taux_co2": None, "consommation": None,
      "nucleaire": None, "solaire": None, "ech_physiques": None},
     {"date_heure": "2026-01-15T10:30:00+00:00", "taux_co2": 33, "consommation": 60500,
@@ -34,6 +35,9 @@ def test_field_mapping_and_export_sign_convention():
     assert row["consumption_mw"] == 60000
     assert row["nuclear_mw"] == 45000
     assert row["physical_exchange_mw"] == -5000  # negative = export from France
+    assert row["gas_ccg_mw"] == 1200
+    assert row["hydro_reservoir_mw"] == 900
+    assert row["commercial_exchange_es_mw"] == -300
 
 
 def test_hourly_aggregation_averages_halfhour_points():

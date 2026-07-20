@@ -6,16 +6,14 @@ origin ``t0`` predicting target ``tt = t0 + h``, the feature vector combines:
 * **target calendar** (``tgt_*``) - deterministic, known in advance, so using
   the target's hour/day/month/holiday is *not* leakage;
 * **origin recent-signal** - lags, rolling means and a short slope of the carbon
-  series, plus its residual from climatology, all as-of ``t0``;
-* **origin system state** - the observed electricity mix at ``t0`` and a few
-  derived shares.
+  series, plus its residual from climatology, ending at the last closed hour;
+* **origin system state** - the last completely observed electricity mix and a
+  few derived shares.
 
-The single invariant: **no feature may use information after ``t0``**. Recent
-and system features come from ``shift(k>=0)`` / trailing ``rolling`` / the
-current row only; the future value ``y(t0+h)`` is used solely as the label.
-Because none of the origin transforms look ahead, origin features computed on
-the full series equal those computed on ``history <= t0`` - which the evaluation
-layer exploits for speed without any leakage.
+The single invariant: **no feature may use an hourly bin that is still open at
+``t0``**.  ODRE rows are hour-start-labelled averages, so the default one-hour
+observation lag maps issue time ``t0`` to the completed bin ``t0-1h``.  The
+future value ``y(t0+h)`` is used solely as the label.
 """
 
 from __future__ import annotations
@@ -50,6 +48,7 @@ class FeatureBuilder:
         residual_from_climatology: bool = True,
         forecast_frame: pd.DataFrame | None = None,
         forecast_maxlead_h: int = 24,
+        hourly_state_lag_hours: int = 1,
     ) -> None:
         self.climatology = climatology
         self.local_tz = local_tz
@@ -65,6 +64,9 @@ class FeatureBuilder:
         # forecast is gated to horizons <= forecast_maxlead_h.
         self.forecast_frame = forecast_frame
         self.forecast_maxlead_h = int(forecast_maxlead_h)
+        self.hourly_state_lag_hours = int(hourly_state_lag_hours)
+        if self.hourly_state_lag_hours < 1:
+            raise ValueError("hourly_state_lag_hours must be at least 1")
         self._holidays_cache: dict[tuple[int, int], object] = {}
 
     # -- calendar (deterministic; safe for the target time) ------------- #
@@ -101,7 +103,8 @@ class FeatureBuilder:
 
     # -- origin features (as-of t0; never look ahead) ------------------- #
     def origin_features(self, frame: pd.DataFrame) -> pd.DataFrame:
-        s = pd.to_numeric(frame[CARBON], errors="coerce")
+        known = frame.shift(self.hourly_state_lag_hours)
+        s = pd.to_numeric(known[CARBON], errors="coerce")
         feats: dict[str, pd.Series] = {"carbon_now": s}
         for k in self.lags_hours:
             feats[f"carbon_lag_{k}h"] = s.shift(k)
@@ -110,26 +113,29 @@ class FeatureBuilder:
         sw = self.rolling_slope_hours
         feats[f"carbon_slope_{sw}h"] = s.diff().rolling(sw, min_periods=2).mean()
         if self.climatology is not None and self.residual_from_climatology:
-            clim = self.climatology.predict_carbon(frame.index).to_numpy()
+            observation_times = frame.index - pd.Timedelta(
+                hours=self.hourly_state_lag_hours
+            )
+            clim = self.climatology.predict_carbon(observation_times).to_numpy()
             feats["carbon_resid_clim"] = pd.Series(s.to_numpy() - clim, index=frame.index)
 
         x = pd.DataFrame(feats, index=frame.index)
 
-        sys_cols = [c for c in self.use_system if c in frame.columns]
-        x_sys = frame[sys_cols].apply(pd.to_numeric, errors="coerce")
+        sys_cols = [c for c in self.use_system if c in known.columns]
+        x_sys = known[sys_cols].apply(pd.to_numeric, errors="coerce")
         x = pd.concat([x, x_sys], axis=1)
 
         # derived shares (guarded against missing columns / zero consumption)
-        cons = pd.to_numeric(frame.get("consumption_mw"), errors="coerce")
+        cons = pd.to_numeric(known.get("consumption_mw"), errors="coerce")
         if cons is not None and cons.notna().any():
             cons_safe = cons.where(cons > 0)
-            ren_cols = [c for c in ("wind_mw", "solar_mw", "hydro_mw") if c in frame.columns]
+            ren_cols = [c for c in ("wind_mw", "solar_mw", "hydro_mw") if c in known.columns]
             if ren_cols:
-                x["renewable_share"] = frame[ren_cols].sum(axis=1) / cons_safe
-            if "nuclear_mw" in frame.columns:
-                x["nuclear_share"] = pd.to_numeric(frame["nuclear_mw"], errors="coerce") / cons_safe
-        if "physical_exchange_mw" in frame.columns:
-            x["net_export_mw"] = -pd.to_numeric(frame["physical_exchange_mw"], errors="coerce")
+                x["renewable_share"] = known[ren_cols].sum(axis=1) / cons_safe
+            if "nuclear_mw" in known.columns:
+                x["nuclear_share"] = pd.to_numeric(known["nuclear_mw"], errors="coerce") / cons_safe
+        if "physical_exchange_mw" in known.columns:
+            x["net_export_mw"] = -pd.to_numeric(known["physical_exchange_mw"], errors="coerce")
         return x
 
     # -- supervised assembly -------------------------------------------- #
@@ -150,7 +156,16 @@ class FeatureBuilder:
             if horizon > getattr(self, "forecast_maxlead_h", 24):
                 # day-ahead consumption forecast not available this far out: drop
                 # it (rather than NaN the whole column, which breaks binning).
-                fc = fc.drop(columns=[c for c in fc.columns if "consumption_forecast" in c])
+                # The same gate applies to Energy-Charts' explicit day-ahead
+                # generation vintage; using it at 48h would be look-ahead.
+                fc = fc.drop(
+                    columns=[
+                        c
+                        for c in fc.columns
+                        if "consumption_forecast" in c
+                        or "day_ahead_forecast" in c
+                    ]
+                )
             block = pd.concat([block, fc], axis=1)
         if index is not None:
             block.index = index
@@ -204,4 +219,5 @@ def feature_builder_from_config(
         residual_from_climatology=recent.get("residual_from_climatology", True),
         forecast_frame=forecast_frame,
         forecast_maxlead_h=fc_cfg.get("consumption_maxlead_h", 24),
+        hourly_state_lag_hours=feats.get("hourly_state_lag_hours", 1),
     )

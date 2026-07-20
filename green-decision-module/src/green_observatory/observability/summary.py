@@ -28,6 +28,17 @@ def summarize_reports(
         if not include_provisional and not report.quality.final:
             continue
         labels = report.job.labels
+        node = report.node_context
+        isolation = report.isolation
+        first_output = report.workload_outputs[0] if report.workload_outputs else None
+        first_container = next(
+            (
+                container
+                for pod in (report.provenance.pods if report.provenance else [])
+                for container in pod.containers
+            ),
+            None,
+        )
         row = {
             "report_path": str(path.resolve()),
             "job_uid": report.job.uid,
@@ -50,6 +61,18 @@ def summarize_reports(
             "energy_coverage_ratio": report.quality.energy_coverage_ratio,
             "carbon_energy_coverage_ratio": report.quality.carbon_energy_coverage_ratio,
             "counter_resets": report.quality.counter_resets,
+            # Reproducibility dimensions (schema 1.1): are two runs comparable,
+            # and did they produce identical scientific output?
+            "clean_node": isolation.clean_node if isolation else None,
+            "co_tenant_energy_share": isolation.co_tenant_energy_share if isolation else None,
+            "kepler_up_ratio": isolation.kepler_up_ratio if isolation else None,
+            "node_name": node.node_name if node else None,
+            "node_active_energy_joules": node.active_energy_joules if node else None,
+            "job_share_of_active_energy": node.job_share_of_active_energy if node else None,
+            "cpu_utilization_mean": node.cpu_utilization_mean if node else None,
+            "image": first_container.image if first_container else None,
+            "image_id": first_container.image_id if first_container else None,
+            "stdout_sha256": first_output.stdout_sha256 if first_output else None,
             "warnings": " | ".join(report.quality.warnings),
             "labels_json": json.dumps(labels, sort_keys=True, ensure_ascii=False),
         }

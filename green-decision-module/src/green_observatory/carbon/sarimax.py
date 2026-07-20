@@ -116,7 +116,9 @@ class SarimaxForecaster:
             raise RuntimeError("SarimaxForecaster.predict called before fit")
         max_h = int(max(horizons_hours))
         win = _regular_hourly(
-            history[CARBON], start=origin - pd.Timedelta(hours=self.apply_window_hours), end=origin
+            history[CARBON],
+            start=origin - pd.Timedelta(hours=self.apply_window_hours),
+            end=origin - pd.Timedelta(hours=1),
         )
         fut_idx = pd.date_range(
             origin + pd.Timedelta(hours=1), origin + pd.Timedelta(hours=max_h), freq="h", tz="UTC"

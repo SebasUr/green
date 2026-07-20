@@ -32,6 +32,31 @@ MIX_COLUMNS: list[str] = [
     "bioenergy_mw",
     "pumped_storage_mw",
     "physical_exchange_mw",
+    # Optional eCO2mix detail.  These columns are not populated over the whole
+    # history (for example onshore/offshore wind and batteries are recent), so
+    # consumers must keep treating them as nullable features.
+    "wind_onshore_mw",
+    "wind_offshore_mw",
+    "fuel_oil_turbine_mw",
+    "fuel_oil_cogeneration_mw",
+    "fuel_oil_other_mw",
+    "gas_turbine_mw",
+    "gas_cogeneration_mw",
+    "gas_ccg_mw",
+    "gas_other_mw",
+    "hydro_run_of_river_mw",
+    "hydro_reservoir_mw",
+    "hydro_pumped_turbining_mw",
+    "bioenergy_waste_mw",
+    "bioenergy_biomass_mw",
+    "bioenergy_biogas_mw",
+    "commercial_exchange_gb_mw",
+    "commercial_exchange_es_mw",
+    "commercial_exchange_it_mw",
+    "commercial_exchange_ch_mw",
+    "commercial_exchange_de_be_mw",
+    "battery_charging_mw",
+    "battery_discharging_mw",
 ]
 
 #: Full canonical column set (carbon first, then the mix).

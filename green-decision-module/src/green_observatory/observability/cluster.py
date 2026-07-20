@@ -10,7 +10,12 @@ import time
 from datetime import datetime
 from typing import Any
 
-from green_observatory.observability.models import PodExecution
+from green_observatory.observability.models import (
+    ContainerProvenance,
+    JobProvenance,
+    PodExecution,
+    PodProvenance,
+)
 
 
 class KubernetesCommandError(RuntimeError):
@@ -70,6 +75,17 @@ class KubectlClient:
             )
         ]
 
+    def pod_logs(self, namespace: str, name: str, container: str | None = None) -> str:
+        """Return a pod's stdout. Only available while the pod object still exists."""
+        args = ["logs", name, "-n", namespace]
+        if container:
+            args.extend(["-c", container])
+        proc = self.run(*args, check=False)
+        if proc.returncode:
+            detail = proc.stderr.strip() or proc.stdout.strip()
+            raise KubernetesCommandError(f"kubectl {' '.join(args)}: {detail}")
+        return proc.stdout
+
 
 def job_outcome(job: dict[str, Any]) -> str | None:
     conditions = {
@@ -115,6 +131,71 @@ def pod_execution(pod: dict[str, Any]) -> PodExecution | None:
         finished_at=finish,
         duration_seconds=max(0.0, (finish - start).total_seconds()),
         succeeded=status.get("phase") == "Succeeded",
+    )
+
+
+def _container_provenance(spec: dict[str, Any], statuses: dict[str, dict]) -> ContainerProvenance:
+    name = spec.get("name", "")
+    status = statuses.get(name, {})
+    resources = spec.get("resources", {}) or {}
+    requests = resources.get("requests", {}) or {}
+    limits = resources.get("limits", {}) or {}
+    env = {
+        item["name"]: str(item.get("value"))
+        for item in (spec.get("env", []) or [])
+        # valueFrom (secrets/configmaps/fieldRef) is deliberately not resolved.
+        if item.get("value") is not None and "name" in item
+    }
+    return ContainerProvenance(
+        name=name,
+        image=spec.get("image"),
+        image_id=status.get("imageID"),
+        command=list(spec.get("command", []) or []),
+        args=list(spec.get("args", []) or []),
+        env=env,
+        cpu_request=requests.get("cpu"),
+        cpu_limit=limits.get("cpu"),
+        memory_request=requests.get("memory"),
+        memory_limit=limits.get("memory"),
+    )
+
+
+def pod_provenance(pod: dict[str, Any]) -> PodProvenance:
+    """Extract exactly what ran: resolved image digests, command, resources."""
+    metadata = pod.get("metadata", {})
+    spec = pod.get("spec", {}) or {}
+    status = pod.get("status", {}) or {}
+    statuses = {
+        item.get("name"): item
+        for item in [
+            *(status.get("initContainerStatuses", []) or []),
+            *(status.get("containerStatuses", []) or []),
+        ]
+        if item.get("name")
+    }
+    containers = [
+        _container_provenance(item, statuses)
+        for item in [
+            *(spec.get("initContainers", []) or []),
+            *(spec.get("containers", []) or []),
+        ]
+    ]
+    return PodProvenance(
+        pod_uid=metadata.get("uid", ""),
+        pod_name=metadata.get("name", ""),
+        node_name=spec.get("nodeName"),
+        node_selector=dict(spec.get("nodeSelector", {}) or {}),
+        containers=containers,
+    )
+
+
+def job_provenance(job: dict[str, Any], pods: list[dict[str, Any]]) -> JobProvenance:
+    spec = job.get("spec", {}) or {}
+    return JobProvenance(
+        backoff_limit=spec.get("backoffLimit"),
+        completions=spec.get("completions"),
+        parallelism=spec.get("parallelism"),
+        pods=[pod_provenance(pod) for pod in pods],
     )
 
 
